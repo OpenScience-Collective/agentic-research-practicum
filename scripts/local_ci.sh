@@ -9,8 +9,12 @@
 # Usage:
 #   ./scripts/local_ci.sh                 # run miss_hit + all phase tests
 #   ./scripts/local_ci.sh --phase 1       # only test_phase1_*.m
-#   ./scripts/local_ci.sh --quick         # skip miss_hit (fast iteration)
-#   ./scripts/local_ci.sh --no-lint       # skip miss_hit even if installed
+#   ./scripts/local_ci.sh --quick         # alias of --no-lint (fast iteration)
+#   ./scripts/local_ci.sh --no-lint       # skip miss_hit style + lint
+#
+# --quick and --no-lint are the same flag today. The alias exists so
+# `--quick` reads naturally for fast-iteration mode and so a future "skip
+# more than just lint" interpretation can land without breaking callers.
 #
 # Required env:
 #   EEGLAB_PATH   absolute path to the EEGLAB install
@@ -43,8 +47,8 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-if [[ -n "$PHASE" && ! "$PHASE" =~ ^[0-9]+$ ]]; then
-    echo "ERROR: --phase requires a positive integer, got '$PHASE'" >&2
+if [[ -n "$PHASE" && ! "$PHASE" =~ ^[1-9][0-9]*$ ]]; then
+    echo "ERROR: --phase requires a positive integer (>=1), got '$PHASE'" >&2
     exit 2
 fi
 

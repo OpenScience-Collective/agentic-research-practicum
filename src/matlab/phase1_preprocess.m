@@ -48,8 +48,9 @@ function paramsPath = phase1_preprocess(opts)
 
     if ~isfolder(opts.OutDir); mkdir(opts.OutDir); end
 
-    % Truncate stale per-subject artifacts so re-runs do not append duplicate
-    % rows to the CSV while params.json gets overwritten with new counters.
+    % Delete stale qa_channels.csv so re-runs do not append duplicate rows
+    % while params.json gets overwritten with new counters; per-subject .set
+    % and PNG files are overwritten in place by their respective writers.
     qaPath = fullfile(opts.OutDir, "qa_channels.csv");
     if isfile(qaPath); delete(qaPath); end
 

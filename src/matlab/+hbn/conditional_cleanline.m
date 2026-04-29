@@ -1,5 +1,5 @@
 function [EEG, status] = conditional_cleanline(EEG, opts)
-%CONDITIONAL_CLEANLINE Apply cleanline only when forced or when srate >= 500 Hz.
+%CONDITIONAL_CLEANLINE Apply cleanline at >=500 Hz; no-op on the 100 Hz L100 dataset unless forced.
 %   [EEG, status] = hbn.conditional_cleanline(EEG, opts) runs pop_cleanline
 %   with the reference-pipeline parameters when opts.RunCleanline is true
 %   OR EEG.srate >= 500. At 100 Hz sampling the 60 Hz US line fundamental
@@ -37,7 +37,7 @@ function [EEG, status] = conditional_cleanline(EEG, opts)
             'newversion', true);
     catch ME
         error("hbn:conditional_cleanline:pop_cleanline_failed", ...
-            "pop_cleanline failed: %s", ME.message);
+            "pop_cleanline failed: %s (%s)", ME.message, ME.identifier);
     end
     status = "applied";
 end

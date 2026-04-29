@@ -32,8 +32,8 @@ function [EEG, rejected] = reject_bad_channels(EEG, opts)
             'fusechanrej', 1);
     catch ME
         error("hbn:reject_bad_channels:pop_clean_rawdata_failed", ...
-            "pop_clean_rawdata failed for subject %s: %s", ...
-            string(EEG.subject), ME.message);
+            "pop_clean_rawdata failed for subject %s: %s (%s)", ...
+            string(EEG.subject), ME.message, ME.identifier);
     end
     after = string({EEG.chanlocs.labels});
     rejected = setdiff(before, after, 'stable');

@@ -82,19 +82,24 @@ function test_phase1_smoke
         EEG.nbchan, qa.n_channels_after(1));
     assert(EEG.nbchan > 0, "checkpoint has zero channels");
     assert(EEG.pnts > 0, "checkpoint has empty data");
-    % Verify the high-pass actually ran by comparing low-frequency power on
-    % the saved checkpoint against a freshly-imported raw segment from the
-    % same subject. A no-op pop_eegfiltnew would leave near-DC power intact.
+    % Verify the high-pass actually ran by comparing 0-0.5 Hz power (well
+    % below the 1 Hz HPF passband) on the saved checkpoint against a
+    % freshly-imported raw segment from the same subject. The threshold of
+    % 0.5x is conservative: a real 1 Hz HPF kills sub-passband power by
+    % orders of magnitude; a no-op leaves the ratio near 1.
     rawSet = dir(fullfile(testOut, "_bids_import_scratch", "**", ...
         sprintf("%s_*.set", string(EEG.subject))));
-    if ~isempty(rawSet)
-        rawEEG = pop_loadset('filename', rawSet(1).name, 'filepath', rawSet(1).folder);
-        rawLow = mean(bandpower_safe(rawEEG.data, rawEEG.srate, 0, 0.5));
-        cleanLow = mean(bandpower_safe(EEG.data, EEG.srate, 0, 0.5));
-        assert(cleanLow < 0.5 * rawLow, ...
-            "1 Hz HPF appears not to have run: rawLow=%.3g cleanLow=%.3g", ...
-            rawLow, cleanLow);
-    end
+    % Fail loudly if the scratch tree layout changed; silently skipping the
+    % HPF assertion would defeat its purpose.
+    assert(~isempty(rawSet), ...
+        "raw scratch SET not found under %s; HPF efficacy check would silently skip", ...
+        fullfile(testOut, "_bids_import_scratch"));
+    rawEEG = pop_loadset('filename', rawSet(1).name, 'filepath', rawSet(1).folder);
+    rawLow = mean(bandpower_safe(rawEEG.data, rawEEG.srate, 0, 0.5));
+    cleanLow = mean(bandpower_safe(EEG.data, EEG.srate, 0, 0.5));
+    assert(cleanLow < 0.5 * rawLow, ...
+        "1 Hz HPF appears not to have run: rawLow=%.3g cleanLow=%.3g", ...
+        rawLow, cleanLow);
 
     fprintf("test_phase1_smoke: OK\n");
 end

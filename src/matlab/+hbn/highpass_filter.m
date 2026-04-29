@@ -11,6 +11,6 @@ function EEG = highpass_filter(EEG, hz)
         EEG = pop_eegfiltnew(EEG, hz, 0);
     catch ME
         error("hbn:highpass_filter:pop_eegfiltnew_failed", ...
-            "pop_eegfiltnew failed at %g Hz: %s", hz, ME.message);
+            "pop_eegfiltnew failed at %g Hz: %s (%s)", hz, ME.message, ME.identifier);
     end
 end

@@ -16,12 +16,20 @@ function setPath = save_subject_checkpoint(EEG, outDir, task)
     if ~isfolder(eegDir); mkdir(eegDir); end
     setName = sprintf("%s_task-%s_desc-clean_eeg.set", subjId, task);
     try
-        pop_saveset(EEG, 'filename', char(setName), 'filepath', char(eegDir));
+        EEG = pop_saveset(EEG, 'filename', char(setName), 'filepath', char(eegDir));
     catch ME
         error("hbn:save_subject_checkpoint:pop_saveset_failed", ...
-            "pop_saveset failed for %s: %s", subjId, ME.message);
+            "pop_saveset failed for %s: %s (%s)", subjId, ME.message, ME.identifier);
     end
-    setPath = fullfile(eegDir, setName);
+    % Trust the post-save EEG.filepath/filename pair over the input path so
+    % that case-insensitive normalization or symlink resolution by
+    % pop_saveset does not produce a phantom mismatch in isfile below.
+    if isfield(EEG, 'filepath') && ~isempty(EEG.filepath) && ...
+            isfield(EEG, 'filename') && ~isempty(EEG.filename)
+        setPath = fullfile(string(EEG.filepath), string(EEG.filename));
+    else
+        setPath = fullfile(eegDir, setName);
+    end
     if ~isfile(setPath)
         % pop_saveset can return after a partial write (e.g. disk full)
         % without throwing. Guard against silent ok-with-no-file.

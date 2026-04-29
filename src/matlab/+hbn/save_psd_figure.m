@@ -37,7 +37,8 @@ function pngPath = save_psd_figure(EEG, outDir, stageTag, note)
             'verbose', 'off');
     catch ME
         error("hbn:save_psd_figure:spectopo_failed", ...
-            "spectopo failed for %s at stage %s: %s", subjId, stageTag, ME.message);
+            "spectopo failed for %s at stage %s: %s (%s)", ...
+            subjId, stageTag, ME.message, ME.identifier);
     end
     after = findall(groot, 'Type', 'figure');
     newFigs = setdiff(after, before);
@@ -61,8 +62,8 @@ function pngPath = save_psd_figure(EEG, outDir, stageTag, note)
         exportgraphics(h, pngPath, 'Resolution', 150);
     catch ME
         error("hbn:save_psd_figure:export_failed", ...
-            "exportgraphics failed for %s at stage %s: %s", ...
-            subjId, stageTag, ME.message);
+            "exportgraphics failed for %s at stage %s: %s (%s)", ...
+            subjId, stageTag, ME.message, ME.identifier);
     end
 end
 
