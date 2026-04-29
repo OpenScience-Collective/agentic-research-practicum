@@ -9,9 +9,9 @@ function results = run_all_tests
         @test_phase1_no_subjects, ...
         @test_phase1_smoke};
 
-    names = strings(numel(tests),1);
-    passed = false(numel(tests),1);
-    messages = strings(numel(tests),1);
+    names = strings(numel(tests), 1);
+    passed = false(numel(tests), 1);
+    messages = strings(numel(tests), 1);
 
     for k = 1:numel(tests)
         names(k) = string(func2str(tests{k}));
@@ -26,7 +26,7 @@ function results = run_all_tests
     end
 
     results = table(names, passed, messages, ...
-        'VariableNames', {'name','passed','message'});
+        'VariableNames', {'name', 'passed', 'message'});
     nOk = sum(passed);
     fprintf("run_all_tests: %d/%d passed\n", nOk, numel(tests));
     if nOk < numel(tests)

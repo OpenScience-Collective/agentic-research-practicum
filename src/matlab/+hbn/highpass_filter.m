@@ -5,7 +5,12 @@ function EEG = highpass_filter(EEG, hz)
 %   that destabilizes decomposition.
     arguments
         EEG struct
-        hz (1,1) double {mustBePositive}
+        hz (1, 1) double {mustBePositive}
     end
-    EEG = pop_eegfiltnew(EEG, hz, 0);
+    try
+        EEG = pop_eegfiltnew(EEG, hz, 0);
+    catch ME
+        error("hbn:highpass_filter:pop_eegfiltnew_failed", ...
+            "pop_eegfiltnew failed at %g Hz: %s", hz, ME.message);
+    end
 end

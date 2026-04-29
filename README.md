@@ -20,12 +20,16 @@ pre-commit install
 # 2. Sanity check the local R3 dataset (184 subjects expected)
 ls /Volumes/S1/Datasets/HBN/L100/R3_L100_bdf/ | grep '^sub-' | wc -l
 
-# 3. Run a single phase from MATLAB (one function per step, CLI callable)
-matlab -batch "phase1_preprocess(BidsRoot='/Volumes/S1/Datasets/HBN/L100/R3_L100_bdf', \
-  Subjects=['sub-NDARAA948VFH'])"
+# 3. Run a single phase from MATLAB (one function per step, CLI callable).
+#    `Subjects` is a string array; for multiple, use ["sub-A" "sub-B"].
+matlab -batch "phase1_preprocess(BidsRoot=\"/Volumes/S1/Datasets/HBN/L100/R3_L100_bdf\", \
+  Subjects=\"sub-NDARAA948VFH\")"
 
-# 4. Local CI (heavy MATLAB checks on real BDF)
-./scripts/local_ci.sh
+# 4. Local CI (heavy MATLAB checks on real BDF). EEGLAB_PATH and BIDS_ROOT
+#    must be set; the script refuses to run without them.
+EEGLAB_PATH=/path/to/eeglab \
+  BIDS_ROOT=/Volumes/S1/Datasets/HBN/L100/R3_L100_bdf \
+  ./scripts/local_ci.sh
 ```
 
 A 30-second real-EEG fixture for `runtests` smoke tests is tracked in issue

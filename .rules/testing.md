@@ -1,8 +1,8 @@
 # Testing Standards - NO MOCKS Policy
 
 ## Core Philosophy: Test Reality, Not Fiction
-**Why NO MOCKS?** Mocks test your assumptions, not your code.  
-**Real bugs** hide in integration points, not unit logic.  
+**Why NO MOCKS?** Mocks test your assumptions, not your code.
+**Real bugs** hide in integration points, not unit logic.
 **Better approach:** No test is better than a false-confidence mock test.
 
 ## [STRICT] NO MOCKS, NO FAKE DATA
