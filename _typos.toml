@@ -48,3 +48,11 @@ ba = "ba"
 caf = "caf"
 ser = "ser"
 PsychoPy = "PsychoPy"
+
+# camelCase split false positives.
+# "PN" appears inside "PNGs" when typos splits PNG+s.
+PN = "PN"
+
+# Upstream API spellings we cannot change.
+# EEGLAB pop_clean_rawdata expects literal 'Euclidian' (sic) as Distance value.
+Euclidian = "Euclidian"
