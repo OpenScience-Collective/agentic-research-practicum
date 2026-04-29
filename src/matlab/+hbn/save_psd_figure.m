@@ -14,9 +14,9 @@ function pngPath = save_psd_figure(EEG, outDir, stageTag, note)
 %   exception during export does not leak a handle across a batch.
     arguments
         EEG struct
-        outDir (1,1) string
-        stageTag (1,1) string
-        note (1,1) string = ""
+        outDir (1, 1) string
+        stageTag (1, 1) string
+        note (1, 1) string = ""
     end
     subjId = string(EEG.subject);
     if subjId == ""
@@ -29,11 +29,17 @@ function pngPath = save_psd_figure(EEG, outDir, stageTag, note)
     before = findall(groot, 'Type', 'figure');
     % spectopo's upper bound is strictly below Nyquist; asking for exact
     % srate/2 triggers the pwelch edge-bin assertion on some MATLAB builds.
-    topFreq = max(1, EEG.srate/2 - 1);
-    spectopo(EEG.data(:,:), EEG.pnts, EEG.srate, ...
-        'freqrange', [0 topFreq], ...
-        'plot', 'on', ...
-        'verbose', 'off');
+    topFreq = max(1, EEG.srate / 2 - 1);
+    try
+        spectopo(EEG.data(:, :), EEG.pnts, EEG.srate, ...
+            'freqrange', [0 topFreq], ...
+            'plot', 'on', ...
+            'verbose', 'off');
+    catch ME
+        error("hbn:save_psd_figure:spectopo_failed", ...
+            "spectopo failed for %s at stage %s: %s (%s)", ...
+            subjId, stageTag, ME.message, ME.identifier);
+    end
     after = findall(groot, 'Type', 'figure');
     newFigs = setdiff(after, before);
     if isempty(newFigs)
@@ -50,9 +56,15 @@ function pngPath = save_psd_figure(EEG, outDir, stageTag, note)
     if note ~= ""
         titleStr = sprintf("%s  [%s]", titleStr, note);
     end
-    sgtitle(h, titleStr, 'Interpreter','tex', 'FontWeight','bold');
+    sgtitle(h, titleStr, 'Interpreter', 'tex', 'FontWeight', 'bold');
 
-    exportgraphics(h, pngPath, 'Resolution', 150);
+    try
+        exportgraphics(h, pngPath, 'Resolution', 150);
+    catch ME
+        error("hbn:save_psd_figure:export_failed", ...
+            "exportgraphics failed for %s at stage %s: %s (%s)", ...
+            subjId, stageTag, ME.message, ME.identifier);
+    end
 end
 
 function close_if_valid(h)

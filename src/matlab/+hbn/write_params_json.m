@@ -7,7 +7,7 @@ function jsonPath = write_params_json(outDir, opts, extra)
 %   jsonPath = hbn.write_params_json(outDir, opts, extra) merges `extra`
 %   (a struct of scalars / strings) into the output.
     arguments
-        outDir (1,1) string
+        outDir (1, 1) string
         opts struct
         extra struct = struct()
     end
@@ -22,7 +22,12 @@ function jsonPath = write_params_json(outDir, opts, extra)
     payload.matlab_version = version;
     try
         payload.eeglab_version = eeg_getversion;
-    catch
+    catch ME
+        % Reproducibility hole: silently recording "unknown" hides cases
+        % where eeg_getversion is missing from path or fails on a partial
+        % EEGLAB install. Surface the specific failure.
+        warning("hbn:write_params_json:eeglab_version_unknown", ...
+            "eeg_getversion failed: %s", ME.message);
         payload.eeglab_version = "unknown";
     end
     try
@@ -30,12 +35,16 @@ function jsonPath = write_params_json(outDir, opts, extra)
         if st == 0
             payload.git_sha = strtrim(sha);
         else
+            warning("hbn:write_params_json:git_sha_unknown", ...
+                "git rev-parse HEAD exited with %d: %s", st, strtrim(sha));
             payload.git_sha = "unknown";
         end
-    catch
+    catch ME
+        warning("hbn:write_params_json:git_sha_unknown", ...
+            "git rev-parse HEAD threw: %s", ME.message);
         payload.git_sha = "unknown";
     end
-    payload.timestamp_iso = string(datetime('now','TimeZone','UTC','Format',"yyyy-MM-dd'T'HH:mm:ss'Z'"));
+    payload.timestamp_iso = string(datetime('now', 'TimeZone', 'UTC', 'Format', "yyyy-MM-dd'T'HH:mm:ss'Z'"));
 
     fid = fopen(jsonPath, "w");
     if fid < 0

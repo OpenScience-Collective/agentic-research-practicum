@@ -7,7 +7,7 @@ function [STUDY, ALLEEG] = filter_study_subjects(STUDY, ALLEEG, keepIds)
     arguments
         STUDY struct
         ALLEEG struct
-        keepIds (1,:) string
+        keepIds (1, :) string
     end
     keep = cellstr(keepIds);
     [STUDY, ALLEEG] = std_rmdat(STUDY, ALLEEG, ...

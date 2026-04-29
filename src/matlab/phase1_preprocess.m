@@ -34,19 +34,25 @@ function paramsPath = phase1_preprocess(opts)
 %     SmokeSubjectCount  (1,1) double   default 0      (>0 limits to first N)
 
     arguments
-        opts.BidsRoot (1,1) string = "/Volumes/S1/Datasets/HBN/L100/R3_L100_bdf"
-        opts.Task (1,1) string = "ThePresent"
-        opts.OutDir (1,1) string = "derivatives/preproc"
-        opts.Subjects (1,:) string = string.empty
-        opts.HpfHz (1,1) double {mustBePositive} = 1
-        opts.RunCleanline (1,1) logical = false
-        opts.LineNoiseHz (1,:) double = [60 120 180]
-        opts.ChannelCriterion (1,1) double = 0.8
-        opts.LineNoiseCriterion (1,1) double = 5
-        opts.SmokeSubjectCount (1,1) double {mustBeNonnegative, mustBeInteger} = 0
+        opts.BidsRoot (1, 1) string = "/Volumes/S1/Datasets/HBN/L100/R3_L100_bdf"
+        opts.Task (1, 1) string = "ThePresent"
+        opts.OutDir (1, 1) string = "derivatives/preproc"
+        opts.Subjects (1, :) string = string.empty
+        opts.HpfHz (1, 1) double {mustBePositive} = 1
+        opts.RunCleanline (1, 1) logical = false
+        opts.LineNoiseHz (1, :) double = [60 120 180]
+        opts.ChannelCriterion (1, 1) double = 0.8
+        opts.LineNoiseCriterion (1, 1) double = 5
+        opts.SmokeSubjectCount (1, 1) double {mustBeNonnegative, mustBeInteger} = 0
     end
 
     if ~isfolder(opts.OutDir); mkdir(opts.OutDir); end
+
+    % Delete stale qa_channels.csv so re-runs do not append duplicate rows
+    % while params.json gets overwritten with new counters; per-subject .set
+    % and PNG files are overwritten in place by their respective writers.
+    qaPath = fullfile(opts.OutDir, "qa_channels.csv");
+    if isfile(qaPath); delete(qaPath); end
 
     eligible = hbn.list_eligible_subjects(opts.BidsRoot, opts.Task);
     if ~isempty(opts.Subjects)
@@ -106,6 +112,13 @@ function paramsPath = phase1_preprocess(opts)
         catch ME
             nFailed = nFailed + 1;
             stage = extract_stage_from_error(ME);
+            if stage == "unknown"
+                % Unclassified failures lose context once only ME.message
+                % reaches the QA CSV. Surface the full report so the cohort
+                % log retains identifier + stack for postmortem.
+                warning("hbn:phase1:unclassified_failure", ...
+                    "subject %s: %s\n%s", subjId, ME.identifier, getReport(ME));
+            end
             warning("hbn:phase1:subject_failed", ...
                 "subject %s failed at stage %s: %s", subjId, stage, ME.message);
             hbn.write_qa_channels_csv(opts.OutDir, struct( ...
@@ -168,11 +181,11 @@ function stage = extract_stage_from_error(ME)
         stage = "unknown";
         for k = 1:numel(ME.stack)
             f = string(ME.stack(k).name);
-            if contains(f, "highpass_filter"); stage = "hpf"; return;
-            elseif contains(f, "conditional_cleanline"); stage = "cleanline"; return;
-            elseif contains(f, "reject_bad_channels"); stage = "chanreject"; return;
-            elseif contains(f, "save_psd_figure"); stage = "psd"; return;
-            elseif contains(f, "save_subject_checkpoint"); stage = "save"; return;
+            if contains(f, "highpass_filter"); stage = "hpf"; return
+            elseif contains(f, "conditional_cleanline"); stage = "cleanline"; return
+            elseif contains(f, "reject_bad_channels"); stage = "chanreject"; return
+            elseif contains(f, "save_psd_figure"); stage = "psd"; return
+            elseif contains(f, "save_subject_checkpoint"); stage = "save"; return
             end
         end
     end

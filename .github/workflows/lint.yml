@@ -26,7 +26,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Lint workflows
         run: |
-          bash <(curl -s https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
+          # Pin actionlint installer to a specific tag rather than `main`
+          # so a poisoned upstream commit cannot inject code into CI.
+          bash <(curl -sSL https://raw.githubusercontent.com/rhysd/actionlint/v1.7.4/scripts/download-actionlint.bash)
           ./actionlint -color
 
   yamllint:
@@ -66,7 +68,10 @@ jobs:
         with:
           command: |
             files = dir(fullfile('src','matlab','**','*.m'));
-            if isempty(files); fprintf('No MATLAB files yet, skipping.\n'); return; end
+            if isempty(files)
+                error('hbn:lint:no_sources', ...
+                    'No MATLAB sources found under src/matlab; refusing to pass.');
+            end
             paths = fullfile({files.folder}, {files.name});
             issues = checkcode(paths{:}, '-id', '-severity');
             n = 0;

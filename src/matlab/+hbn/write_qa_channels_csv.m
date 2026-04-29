@@ -15,14 +15,14 @@ function csvPath = write_qa_channels_csv(outDir, row)
 %   Numeric fields that do not apply to a failed row (e.g. n_channels_after
 %   before rejection ran) may be passed as NaN; they write as empty cells.
     arguments
-        outDir (1,1) string
+        outDir (1, 1) string
         row struct
     end
     if ~isfolder(outDir); mkdir(outDir); end
     csvPath = fullfile(outDir, "qa_channels.csv");
 
-    header = ["participant_id","status","n_channels_before","n_channels_after", ...
-        "rejected_channels","srate","cleanline_status","duration_s","error_message"];
+    header = ["participant_id", "status", "n_channels_before", "n_channels_after", ...
+        "rejected_channels", "srate", "cleanline_status", "duration_s", "error_message"];
     needsHeader = ~isfile(csvPath);
 
     fid = fopen(csvPath, "a");
@@ -64,6 +64,10 @@ function v = field_or_default(s, name, default)
 end
 
 function c = numeric_cell(x)
+    if ~isnumeric(x)
+        error("hbn:write_qa_channels_csv:non_numeric", ...
+            "numeric_cell expected numeric, got %s", class(x));
+    end
     if isnan(x)
         c = "";
     elseif x == floor(x)
