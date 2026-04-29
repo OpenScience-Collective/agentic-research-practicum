@@ -1,0 +1,59 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.(set|fdt|bdf|edf|mat)$
+      - id: end-of-file-fixer
+        exclude: \.(set|fdt|bdf|edf|mat|tsv)$
+      - id: check-yaml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: mixed-line-ending
+        args: [--fix=lf]
+
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.29.4
+    hooks:
+      - id: typos
+        args: [--config=_typos.toml]
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args: [-c, .yamllint.yml]
+
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.14.0
+    hooks:
+      - id: markdownlint-cli2
+        args: [--config, .markdownlint.json]
+
+  # Python linting; only fires when .py files are staged
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.4
+    hooks:
+      - id: ruff
+        args: [--fix, --unsafe-fixes]
+      - id: ruff-format
+
+  # MATLAB style + lint via miss_hit (lightweight, no MATLAB install needed).
+  # miss_hit doesn't ship a .pre-commit-hooks.yaml, so wrap as local hooks.
+  # Install once: `uv tool install miss_hit` (or `pipx install miss_hit`).
+  - repo: local
+    hooks:
+      - id: mh_style
+        name: mh_style
+        entry: mh_style --fix
+        language: system
+        files: \.m$
+        pass_filenames: true
+      - id: mh_lint
+        name: mh_lint
+        entry: mh_lint
+        language: system
+        files: \.m$
+        pass_filenames: true
