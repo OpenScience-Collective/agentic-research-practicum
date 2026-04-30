@@ -14,26 +14,29 @@
 
 ## Analysis Sources
 1. **.context/scratch_history.md:** Mine for anti-patterns
-2. **.context/research.md:** Extract proven solutions  
+2. **.context/research.md:** Extract proven solutions
 3. **.context/ideas.md:** Promote design principles
 4. **.context/plan.md:** Identify workflow patterns
 5. **Code reviews:** Track common feedback
 
 ## Rule Updates
 
-### Add Rules When:
+### Add Rules When
+
 - New pattern appears 3+ times
 - Common bug could be prevented
 - Better approach discovered
 - Security/performance pattern emerges
 
-### Modify Rules When:
+### Modify Rules When
+
 - Better examples found in codebase
 - Edge cases discovered
 - Implementation changed
 - Related rules updated
 
-### Remove Rules When:
+### Remove Rules When
+
 - Tech stack changed
 - Pattern deprecated
 - No longer applicable

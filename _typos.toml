@@ -1,0 +1,58 @@
+[files]
+extend-exclude = [
+    "derivatives/",
+    "*.set",
+    "*.fdt",
+    "*.bdf",
+    "*.edf",
+    "*.mat",
+    "*.tsv",
+    "*.json",
+    ".git/",
+    "shot_events.tsv",
+]
+
+[default]
+extend-ignore-re = [
+    # ignore HBN/BIDS subject IDs like sub-NDARAA948VFH
+    "sub-[A-Z0-9]+",
+    # ignore short hex/UUID-ish runs
+    "\\b[0-9a-f]{6,}\\b",
+]
+
+[default.extend-words]
+# EEG/neuro/method jargon
+ALLEEG = "ALLEEG"
+EEGlab = "EEGlab"
+EEGLAB = "EEGLAB"
+amica = "amica"
+AMICA = "AMICA"
+ICLabel = "ICLabel"
+iclabel = "iclabel"
+dipfit = "dipfit"
+ERSP = "ERSP"
+ersp = "ersp"
+HED = "HED"
+BIDS = "BIDS"
+HBN = "HBN"
+LSL = "LSL"
+NEMAR = "NEMAR"
+LLR = "LLR"
+mne = "mne"
+ths = "ths"
+nd = "nd"
+fo = "fo"
+bu = "bu"
+te = "te"
+ba = "ba"
+caf = "caf"
+ser = "ser"
+PsychoPy = "PsychoPy"
+
+# camelCase split false positives.
+# "PN" appears inside "PNGs" when typos splits PNG+s.
+PN = "PN"
+
+# Upstream API spellings we cannot change.
+# EEGLAB pop_clean_rawdata expects literal 'Euclidian' (sic) as Distance value.
+Euclidian = "Euclidian"
