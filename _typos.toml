@@ -10,6 +10,11 @@ extend-exclude = [
     "*.json",
     ".git/",
     "shot_events.tsv",
+    # Lit-review PDF-converted markdown (Mistral / markitdown) carries OCR
+    # extraction artifacts that fire many false-positive typos; not authored.
+    "research/collection/*/*/source.md",
+    # Strand BibTeX files contain author surnames and journal abbreviations.
+    "research/collection/*/*.bib",
 ]
 
 [default]
@@ -69,3 +74,19 @@ Behav = "Behav"
 Psychol = "Psychol"
 Sci = "Sci"
 Opin = "Opin"
+Reson = "Reson"
+Mapp = "Mapp"
+Lond = "Lond"
+
+# Author surnames cited in cards.
+Comon = "Comon"
+Sepulcre = "Sepulcre"
+Sergent = "Sergent"
+Hendler = "Hendler"
+Theis = "Theis"
+
+# Compound English words flagged by typos default dictionary.
+mis = "mis"
+
+# Suffixes appearing in Semantic Scholar BibTeX keys (e.g. "DevelopmentOT").
+OT = "OT"

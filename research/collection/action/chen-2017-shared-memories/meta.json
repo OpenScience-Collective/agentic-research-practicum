@@ -1,0 +1,9 @@
+{
+  "doi": "10.1038/nn.4450",
+  "source_url": "https://doi.org/10.1038/nn.4450",
+  "retrieved_at": "2026-05-06",
+  "pdf_sha256": null,
+  "pdf_license": "publisher-paywall (Springer Nature, Nature Neuroscience); PMC author manuscript at PMC5191958",
+  "redistribution_ok": false,
+  "notes": "Springer Nature paywall; opencite returned HTTP 406 from doi.org and HTML from PMC. source.md captures abstract and methods/results summary."
+}
