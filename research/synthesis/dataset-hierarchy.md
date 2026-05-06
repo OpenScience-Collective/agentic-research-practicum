@@ -302,7 +302,9 @@ Abbreviations: event-related spectral perturbation (ERSP), inter-subject correla
 - Sentence-reading paradigms.
 - Used by [brennan-2017-phrase-structure-meg](../collection/language/brennan-2017-phrase-structure-meg/card.md).
 
-## Multimodal datasets
+## Multimodal and ancillary datasets
+
+This section gathers naturalistic-paradigm datasets that combine more than one recording channel (e.g., EEG plus eye tracking plus pupillometry) and reference cohorts that do not fit neatly under a single modality heading above. Reviews and meta-analyses that aggregate across many studies rather than report a single dataset are listed here as cross-strand reference rather than as a single primary dataset.
 
 ### Madsen and Parra brain-body-eyes naturalistic videos
 

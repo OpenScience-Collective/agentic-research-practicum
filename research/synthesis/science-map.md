@@ -114,7 +114,7 @@ Across the corpus only six cards primarily report on a child or developmental co
 
 Distributed multivariate signatures (NPS, EmoNet, MVPA decoders, shared-memory pattern reinstatement) are the corpus's response to the failure of strict regional locationism for emotion and high-level cognition. For EEG independent component clusters, this argues for distributed cluster contrasts rather than single-IC decoding.
 
-**Open questions**: Whether MVPA signatures derived from fMRI transfer to EEG IC space; whether IC clustering during ThePresent should mirror fMRI parcellation or follow the EEG-internal AMICA structure.
+**Open questions**: Whether MVPA signatures derived from fMRI transfer to EEG IC space; whether IC clustering during ThePresent should mirror fMRI parcellation or follow the EEG-internal AMICA structure; whether the constructionist distributed-network account ([lindquist-2012-emotion-meta-analysis](../collection/emotion/lindquist-2012-emotion-meta-analysis/card.md)) and the basic-emotion locationist account ([sergerie-2008-amygdala-meta-analysis](../collection/emotion/sergerie-2008-amygdala-meta-analysis/card.md), [etkin-2011-acc-mpfc-emotion](../collection/emotion/etkin-2011-acc-mpfc-emotion/card.md)) can be discriminated at EEG IC scale during a 0 to 500 ms window in ThePresent given the available sample size.
 
 ## Theme 15: Predictive processing across observation, perception, and language
 
