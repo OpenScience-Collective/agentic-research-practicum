@@ -47,8 +47,8 @@ Cross-modality reference. "The Present" Phase 5 is fundamentally about time-reso
 Primary BibTeX key: `Kaneshiro2021InterSubjectEC` (in `psychophysics.bib`).
 
 Related works:
-- Dmochowski et al. (2012) Front Hum Neurosci 6:112 — correlated-component analysis used here.
-- Madsen et al. (2019) Sci Rep 9:3576 — peripheral and EEG sync to music.
-- Cheung et al. (2019) Curr Biol 29:4084 — predictive uncertainty and music engagement.
-- Kaneshiro, Nguyen, Norcia, Dmochowski, Berger (2020) Sci Rep 10:14959 — auditory ISC across listeners and excerpts.
-- Sankaran et al. (2020) Front Neurosci 14:557 — EEG envelope tracking in music.
+- Dmochowski et al. (2012) Front Hum Neurosci 6:112, correlated-component analysis used here.
+- Madsen et al. (2019) Sci Rep 9:3576, peripheral and EEG sync to music.
+- Cheung et al. (2019) Curr Biol 29:4084, predictive uncertainty and music engagement.
+- Kaneshiro, Nguyen, Norcia, Dmochowski, Berger (2020) Sci Rep 10:14959, auditory ISC across listeners and excerpts.
+- Sankaran et al. (2020) Front Neurosci 14:557, EEG envelope tracking in music.

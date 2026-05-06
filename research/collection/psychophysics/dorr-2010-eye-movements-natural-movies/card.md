@@ -45,8 +45,8 @@ Direct context for "The Present" pipeline. The animated short has scene cuts and
 Primary BibTeX key: `Dorr2010VariabilityOE` (in `psychophysics.bib`).
 
 Related works:
-- Goldstein, Woods, Peli (2007) Perception 36:1471 — eye movements on commercial videos; complementary scope.
-- Mital, Smith, Hill, Henderson (2011) Cogn Comput 3:5 — gaze clustering on dynamic scenes; cited downstream.
-- Dorr, Vig, Barth (2012) IEEE Trans Image Process — saliency model trained on this dataset.
-- Carmi, Itti (2006) Vision Res 46:4333 — top-down vs bottom-up gaze allocation in natural movies.
-- Smith, Mital (2013) J Eye Mov Res — attentional synchrony and film cuts.
+- Goldstein, Woods, Peli (2007) Perception 36:1471, eye movements on commercial videos; complementary scope.
+- Mital, Smith, Hill, Henderson (2011) Cogn Comput 3:5, gaze clustering on dynamic scenes; cited downstream.
+- Dorr, Vig, Barth (2012) IEEE Trans Image Process, saliency model trained on this dataset.
+- Carmi, Itti (2006) Vision Res 46:4333, top-down vs bottom-up gaze allocation in natural movies.
+- Smith, Mital (2013) J Eye Mov Res, attentional synchrony and film cuts.

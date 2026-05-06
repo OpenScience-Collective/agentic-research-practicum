@@ -46,8 +46,8 @@ Direct dependency for the boy-shot vs puppy-shot ERSP question on "The Present".
 Primary BibTeX key: `Ki2016AttentionSM` (in `psychophysics.bib`).
 
 Related works:
-- Dmochowski et al. (2012) Front Hum Neurosci 6:112 — EEG-ISC parent paper.
-- Cohen, Parra (2016) eNeuro 3:0203 — memorable narratives and ISC.
-- Madsen, Parra (2022) PNAS Nexus 1:pgac020 — multi-modal sync.
-- Petroni et al. (2018) Sci Rep 8:6107 — narrative engagement and EEG.
-- Kaneshiro et al. (2021) bioRxiv 2021.04.14.439913 — ISC during music listening.
+- Dmochowski et al. (2012) Front Hum Neurosci 6:112, EEG-ISC parent paper.
+- Cohen, Parra (2016) eNeuro 3:0203, memorable narratives and ISC.
+- Madsen, Parra (2022) PNAS Nexus 1:pgac020, multi-modal sync.
+- Petroni et al. (2018) Sci Rep 8:6107, narrative engagement and EEG.
+- Kaneshiro et al. (2021) bioRxiv 2021.04.14.439913, ISC during music listening.

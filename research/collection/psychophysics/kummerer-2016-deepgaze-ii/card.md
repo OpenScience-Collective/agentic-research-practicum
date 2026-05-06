@@ -46,8 +46,8 @@ Tangential to "The Present" mainline. The HBN-EEG R3 dataset has no eye tracker,
 Primary BibTeX key: `kmmerer2016deepgaze` (in `psychophysics.bib`).
 
 Related works:
-- Itti, Koch (2001) Nat Rev Neurosci 2:194 — classical saliency model.
-- Vig et al. (2014) CVPR — first deep-network saliency.
-- Kümmerer, Theis, Bethge (2015) ICLR — DeepGaze I.
-- Bylinskii et al. (2019) IEEE TPAMI 41:740 — saliency benchmark methodology.
-- Cornia et al. (2018) IEEE TIP 27:5142 — alternative LSTM-based saliency.
+- Itti, Koch (2001) Nat Rev Neurosci 2:194, classical saliency model.
+- Vig et al. (2014) CVPR, first deep-network saliency.
+- Kümmerer, Theis, Bethge (2015) ICLR, DeepGaze I.
+- Bylinskii et al. (2019) IEEE TPAMI 41:740, saliency benchmark methodology.
+- Cornia et al. (2018) IEEE TIP 27:5142, alternative LSTM-based saliency.

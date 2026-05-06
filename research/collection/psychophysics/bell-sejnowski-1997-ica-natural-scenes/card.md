@@ -45,8 +45,8 @@ Indirect dependency. ICA is the algorithmic backbone of the AMICA decomposition 
 Primary BibTeX key: `Bell1997TheC` (in `psychophysics.bib`).
 
 Related works:
-- Olshausen, Field (1996) Nature 381:607 — sparse coding from natural images, complementary derivation.
-- Simoncelli, Olshausen (2001) Annu Rev Neurosci 24:1193 — review embedding this result in natural-image-statistics theory.
-- Hyvärinen, Hurri, Hoyer (2009) Natural Image Statistics — textbook treatment.
-- van Hateren, Ruderman (1998) Proc R Soc B 265:2315 — ICA on natural movies, spatiotemporal extension.
-- Bell, Sejnowski (1995) Neural Comput 7:1129 — original infomax derivation.
+- Olshausen, Field (1996) Nature 381:607, sparse coding from natural images, complementary derivation.
+- Simoncelli, Olshausen (2001) Annu Rev Neurosci 24:1193, review embedding this result in natural-image-statistics theory.
+- Hyvärinen, Hurri, Hoyer (2009) Natural Image Statistics, textbook treatment.
+- van Hateren, Ruderman (1998) Proc R Soc B 265:2315, ICA on natural movies, spatiotemporal extension.
+- Bell, Sejnowski (1995) Neural Comput 7:1129, original infomax derivation.

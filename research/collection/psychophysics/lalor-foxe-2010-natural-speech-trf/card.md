@@ -46,8 +46,8 @@ Methodological precedent. The TRF approach offers an alternative to the discrete
 Primary BibTeX key: `Lalor2010NeuralRT` (in `psychophysics.bib`).
 
 Related works:
-- Lalor et al. (2006) NeuroImage 33:1063 — VESPA visual analogue.
-- Crosse et al. (2016) Front Hum Neurosci 10:604 — mTRF toolbox built on this idea.
-- Ding, Simon (2012) J Neurophysiol 107:78 — speech envelope tracking in MEG.
-- Di Liberto et al. (2015) Curr Biol 25:2457 — TRFs to phonemes.
-- Brodbeck, Simon (2020) Curr Opin Neurobiol 65:175 — review of continuous stimulus EEG.
+- Lalor et al. (2006) NeuroImage 33:1063, VESPA visual analogue.
+- Crosse et al. (2016) Front Hum Neurosci 10:604, mTRF toolbox built on this idea.
+- Ding, Simon (2012) J Neurophysiol 107:78, speech envelope tracking in MEG.
+- Di Liberto et al. (2015) Curr Biol 25:2457, TRFs to phonemes.
+- Brodbeck, Simon (2020) Curr Opin Neurobiol 65:175, review of continuous stimulus EEG.

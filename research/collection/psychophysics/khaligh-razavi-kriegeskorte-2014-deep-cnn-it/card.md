@@ -46,8 +46,8 @@ Tangential to "The Present" boy-shot vs puppy-shot ERSP project. We are not usin
 Primary BibTeX key: `Khaligh-Razavi2014DeepSB` (in `psychophysics.bib`).
 
 Related works:
-- Riesenhuber, Poggio (1999) Nat Neurosci 2:1019 — HMAX original.
-- Yamins et al. (2014) PNAS 111:8619 — companion CNN-IT paper.
-- Cadieu et al. (2014) PLoS Comput Biol 10:e1003963 — deep nets matching IT.
-- Kriegeskorte (2015) Annu Rev Vis Sci 1:417 — deep nets and brain review.
-- Schrimpf et al. (2018) bioRxiv 407007 — Brain-Score model benchmark.
+- Riesenhuber, Poggio (1999) Nat Neurosci 2:1019, HMAX original.
+- Yamins et al. (2014) PNAS 111:8619, companion CNN-IT paper.
+- Cadieu et al. (2014) PLoS Comput Biol 10:e1003963, deep nets matching IT.
+- Kriegeskorte (2015) Annu Rev Vis Sci 1:417, deep nets and brain review.
+- Schrimpf et al. (2018) bioRxiv 407007, Brain-Score model benchmark.

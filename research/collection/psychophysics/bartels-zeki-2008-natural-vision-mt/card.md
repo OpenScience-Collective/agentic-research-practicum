@@ -45,8 +45,8 @@ Direct dependency for "The Present" preprocessing logic. Their residual regresso
 Primary BibTeX key: `Bartels2008NaturalVR` (in `psychophysics.bib`).
 
 Related works:
-- Hasson et al. (2004) Science 303:1634 — naturalistic-movie inter-subject correlation; foundational.
-- Nishimoto et al. (2011) Curr Biol 21:1641 — motion-energy encoding/decoding from BOLD; cites this work.
-- Smith et al. (2006) J Neurosci 26:773 — V6 and self-motion processing.
-- Pitzalis et al. (2010) J Neurosci 30:1962 — V6 and visual flow.
-- Whittingstall et al. (2010) Magn Reson Imaging 28:1478 — EEG-fMRI integration on natural movies.
+- Hasson et al. (2004) Science 303:1634, naturalistic-movie inter-subject correlation; foundational.
+- Nishimoto et al. (2011) Curr Biol 21:1641, motion-energy encoding/decoding from BOLD; cites this work.
+- Smith et al. (2006) J Neurosci 26:773, V6 and self-motion processing.
+- Pitzalis et al. (2010) J Neurosci 30:1962, V6 and visual flow.
+- Whittingstall et al. (2010) Magn Reson Imaging 28:1478, EEG-fMRI integration on natural movies.

@@ -47,8 +47,8 @@ Direct dependency. This is the closest published analogue of "The Present" boy-s
 Primary BibTeX key: `Nentwich2023SemanticNM` (in `psychophysics.bib`).
 
 Related works:
-- Bartels, Zeki, Logothetis (2008) Cereb Cortex 18:705 — motion vs residual decomposition in fMRI.
-- Hasson et al. (2008) Neuron 57:452 — event boundaries in fMRI.
-- Russ, Leopold (2015) NeuroImage 109:84 — saccade-locked responses in monkey.
-- Dimigen, Sommer et al. (2011) J Exp Psychol Gen 140:552 — fixation-related potentials.
-- Itti, Koch (2001) Nat Rev Neurosci 2:194 — saliency and visual novelty.
+- Bartels, Zeki, Logothetis (2008) Cereb Cortex 18:705, motion vs residual decomposition in fMRI.
+- Hasson et al. (2008) Neuron 57:452, event boundaries in fMRI.
+- Russ, Leopold (2015) NeuroImage 109:84, saccade-locked responses in monkey.
+- Dimigen, Sommer et al. (2011) J Exp Psychol Gen 140:552, fixation-related potentials.
+- Itti, Koch (2001) Nat Rev Neurosci 2:194, saliency and visual novelty.

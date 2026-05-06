@@ -46,8 +46,8 @@ Direct dependency. This paper is the canonical reference for time-resolved EEG i
 Primary BibTeX key: `dmochowski2012correlated` (in `psychophysics.bib`).
 
 Related works:
-- Hasson et al. (2004) Science 303:1634 — fMRI ISC parent paradigm.
-- Dmochowski et al. (2014) Nat Commun 5:4567 — audience preferences from EEG ISC.
-- Ki, Kelly, Parra (2016) J Neurosci 36:3092 — attention modulates EEG correlated components.
-- Cohen, Parra (2016) eNeuro 3:0203 — memorable narratives and EEG sync.
-- Madsen, Parra (2022) PNAS Nexus 1:pgac020 — brains, hearts, and eyes synchronization.
+- Hasson et al. (2004) Science 303:1634, fMRI ISC parent paradigm.
+- Dmochowski et al. (2014) Nat Commun 5:4567, audience preferences from EEG ISC.
+- Ki, Kelly, Parra (2016) J Neurosci 36:3092, attention modulates EEG correlated components.
+- Cohen, Parra (2016) eNeuro 3:0203, memorable narratives and EEG sync.
+- Madsen, Parra (2022) PNAS Nexus 1:pgac020, brains, hearts, and eyes synchronization.

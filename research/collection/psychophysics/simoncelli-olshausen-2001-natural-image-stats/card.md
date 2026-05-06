@@ -44,8 +44,8 @@ Background-level. The boy-shot vs puppy-shot contrast in "The Present" is operat
 Primary BibTeX key: `Simoncelli2001NaturalIS` (in `psychophysics.bib`).
 
 Related works:
-- Olshausen, Field (1996) Nature 381:607 — original sparse coding result.
-- Bell, Sejnowski (1997) Vision Res 37:3327 — ICA on natural scenes (this strand).
-- Carandini, Heeger (2011) Nat Rev Neurosci 13:51 — divisive normalization as canonical computation.
-- Dong, Atick (1995) Network 6:159 — spatiotemporal natural-image statistics.
-- van Hateren, Ruderman (1998) Proc R Soc B 265:2315 — independent components of natural movies.
+- Olshausen, Field (1996) Nature 381:607, original sparse coding result.
+- Bell, Sejnowski (1997) Vision Res 37:3327, ICA on natural scenes (this strand).
+- Carandini, Heeger (2011) Nat Rev Neurosci 13:51, divisive normalization as canonical computation.
+- Dong, Atick (1995) Network 6:159, spatiotemporal natural-image statistics.
+- van Hateren, Ruderman (1998) Proc R Soc B 265:2315, independent components of natural movies.

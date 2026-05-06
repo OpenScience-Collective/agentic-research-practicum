@@ -45,8 +45,8 @@ Important context for interpreting log luminance ratio (LLR) effects on early sh
 Primary BibTeX key: `Carandini2011NormalizationAA` (in `psychophysics.bib`).
 
 Related works:
-- Heeger (1992) Vis Neurosci 9:181 — original normalization model in V1.
-- Reynolds, Heeger (2009) Neuron 61:168 — normalization model of attention.
-- Albrecht, Hamilton (1982) J Neurophysiol 48:217 — contrast saturation in V1.
-- Geisler, Albrecht (1992) Vis Neurosci 8:413 — cross-orientation suppression.
-- Olsen, Bhandawat, Wilson (2010) Neuron 66:287 — divisive normalization in olfactory bulb.
+- Heeger (1992) Vis Neurosci 9:181, original normalization model in V1.
+- Reynolds, Heeger (2009) Neuron 61:168, normalization model of attention.
+- Albrecht, Hamilton (1982) J Neurophysiol 48:217, contrast saturation in V1.
+- Geisler, Albrecht (1992) Vis Neurosci 8:413, cross-orientation suppression.
+- Olsen, Bhandawat, Wilson (2010) Neuron 66:287, divisive normalization in olfactory bulb.

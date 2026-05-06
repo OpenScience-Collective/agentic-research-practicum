@@ -45,8 +45,8 @@ Direct conceptual dependency. The boy-shot vs puppy-shot ERSP question on "The P
 Primary BibTeX key: `Hasson2004IntersubjectSO` (in `psychophysics.bib`).
 
 Related works:
-- Hasson et al. (2010) Trends Cogn Sci 14:40 — review of naturalistic neuroimaging.
-- Nastase, Goldstein, Hasson (2020) NeuroImage 222:117254 — ISC methodology in 2020.
-- Dmochowski et al. (2012) Front Hum Neurosci 6:112 — EEG ISC analogue.
-- Lerner, Honey, Silbert, Hasson (2011) J Neurosci 31:2906 — temporal receptive windows.
-- Aly et al. (2018) Cereb Cortex 28:4441 — ISC and event boundaries.
+- Hasson et al. (2010) Trends Cogn Sci 14:40, review of naturalistic neuroimaging.
+- Nastase, Goldstein, Hasson (2020) NeuroImage 222:117254, ISC methodology in 2020.
+- Dmochowski et al. (2012) Front Hum Neurosci 6:112, EEG ISC analogue.
+- Lerner, Honey, Silbert, Hasson (2011) J Neurosci 31:2906, temporal receptive windows.
+- Aly et al. (2018) Cereb Cortex 28:4441, ISC and event boundaries.

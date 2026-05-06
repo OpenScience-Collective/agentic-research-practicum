@@ -46,8 +46,8 @@ Indirect dependency. "The Present" is animated and motion-rich at the level of c
 Primary BibTeX key: `Adelson1985SpatiotemporalEM` (in `psychophysics.bib`).
 
 Related works:
-- Watson, Ahumada (1985) JOSA A 2:322 — companion motion-sensor model.
-- van Santen, Sperling (1985) JOSA A 2:300 — elaborated Reichardt model.
-- Heeger (1987) JOSA A 4:1455 — biologically plausible motion-energy implementation.
-- Simoncelli, Heeger (1998) Vis Res 38:743 — MT model built on motion energy.
-- Nishimoto et al. (2011) Curr Biol 21:1641 — motion-energy regressor decodes BOLD movies.
+- Watson, Ahumada (1985) JOSA A 2:322, companion motion-sensor model.
+- van Santen, Sperling (1985) JOSA A 2:300, elaborated Reichardt model.
+- Heeger (1987) JOSA A 4:1455, biologically plausible motion-energy implementation.
+- Simoncelli, Heeger (1998) Vis Res 38:743, MT model built on motion energy.
+- Nishimoto et al. (2011) Curr Biol 21:1641, motion-energy regressor decodes BOLD movies.

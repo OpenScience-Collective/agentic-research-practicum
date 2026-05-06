@@ -46,8 +46,8 @@ Important methodological reference even though we lack eye tracking on R3. Dimig
 Primary BibTeX key: `Dimigen2021RegressionbasedAO` (in `psychophysics.bib`).
 
 Related works:
-- Smith, Kutas (2015) Psychophysiology 52:157 — regression ERP framework.
-- Dimigen et al. (2011) J Exp Psychol Gen 140:552 — FRP review.
-- Ehinger, Dimigen (2019) PeerJ 7:e7838 — unfold toolbox paper.
-- Plöchl, Ossandón, König (2012) Front Hum Neurosci 6:278 — eye-artifact correction with ICA.
-- Nikolaev, Meghanathan, van Leeuwen (2016) Psychophysiology 53:1659 — coregistration review.
+- Smith, Kutas (2015) Psychophysiology 52:157, regression ERP framework.
+- Dimigen et al. (2011) J Exp Psychol Gen 140:552, FRP review.
+- Ehinger, Dimigen (2019) PeerJ 7:e7838, unfold toolbox paper.
+- Plöchl, Ossandón, König (2012) Front Hum Neurosci 6:278, eye-artifact correction with ICA.
+- Nikolaev, Meghanathan, van Leeuwen (2016) Psychophysiology 53:1659, coregistration review.

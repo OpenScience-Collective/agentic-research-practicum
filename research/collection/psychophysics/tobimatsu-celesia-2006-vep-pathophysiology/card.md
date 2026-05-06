@@ -45,8 +45,8 @@ Useful framing for the bottom-up component of "The Present" boy-shot vs puppy-sh
 Primary BibTeX key: `Tobimatsu2006StudiesOH` (in `psychophysics.bib`).
 
 Related works:
-- Odom et al. (2010) Doc Ophthalmol 120:111 — ISCEV standard for clinical VEP recording.
-- Bach, Hawlina (2000) Doc Ophthalmol 99:139 — multifocal VEP methodology.
-- Hoffmann et al. (2003) Vis Res 43:2569 — motion-onset VEPs and MT.
-- Di Russo et al. (2002) Hum Brain Mapp 15:95 — VEP source modeling, V1/V2/V3.
-- Tobimatsu, Kato (1996) Brain 119:1631 — luminance and chromatic VEP dissociation.
+- Odom et al. (2010) Doc Ophthalmol 120:111, ISCEV standard for clinical VEP recording.
+- Bach, Hawlina (2000) Doc Ophthalmol 99:139, multifocal VEP methodology.
+- Hoffmann et al. (2003) Vis Res 43:2569, motion-onset VEPs and MT.
+- Di Russo et al. (2002) Hum Brain Mapp 15:95, VEP source modeling, V1/V2/V3.
+- Tobimatsu, Kato (1996) Brain 119:1631, luminance and chromatic VEP dissociation.

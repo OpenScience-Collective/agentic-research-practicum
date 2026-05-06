@@ -46,8 +46,8 @@ Indirect dependency. The boy-shot vs puppy-shot question on "The Present" is not
 Primary BibTeX key: `Dmochowski2014AudiencePA` (in `psychophysics.bib`).
 
 Related works:
-- Dmochowski et al. (2012) Front Hum Neurosci 6:112 — parent EEG-ISC method.
-- Hasson et al. (2008) Psychol Sci 19:643 — fMRI ISC and preference.
-- Knutson, Genevsky (2018) Neuron 99:1153 — neural-forecast framing.
-- Cohen, Parra (2016) eNeuro 3:0203 — ISC and memory.
-- Boksem, Smidts (2015) J Mark Res 52:482 — neuromarketing and EEG.
+- Dmochowski et al. (2012) Front Hum Neurosci 6:112, parent EEG-ISC method.
+- Hasson et al. (2008) Psychol Sci 19:643, fMRI ISC and preference.
+- Knutson, Genevsky (2018) Neuron 99:1153, neural-forecast framing.
+- Cohen, Parra (2016) eNeuro 3:0203, ISC and memory.
+- Boksem, Smidts (2015) J Mark Res 52:482, neuromarketing and EEG.

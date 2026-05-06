@@ -46,8 +46,8 @@ Methodological alternative for "The Present" Phase 5. The locked plan is shot-on
 Primary BibTeX key: `Crosse2016TheMT` (in `psychophysics.bib`).
 
 Related works:
-- Lalor, Foxe (2010) Eur J Neurosci 31:189 — AESPA forerunner.
-- Ding, Simon (2012) J Neurophysiol 107:78 — speech-envelope tracking with TRFs.
-- de Cheveigné et al. (2018) NeuroImage 172:206 — joint stimulus-response decomposition.
-- Brodbeck, Simon (2020) Curr Opin Neurobiol 65:175 — TRF review.
-- Drennan, Lalor (2019) Eur J Neurosci 49:1430 — visual contrast TRF.
+- Lalor, Foxe (2010) Eur J Neurosci 31:189, AESPA forerunner.
+- Ding, Simon (2012) J Neurophysiol 107:78, speech-envelope tracking with TRFs.
+- de Cheveigné et al. (2018) NeuroImage 172:206, joint stimulus-response decomposition.
+- Brodbeck, Simon (2020) Curr Opin Neurobiol 65:175, TRF review.
+- Drennan, Lalor (2019) Eur J Neurosci 49:1430, visual contrast TRF.

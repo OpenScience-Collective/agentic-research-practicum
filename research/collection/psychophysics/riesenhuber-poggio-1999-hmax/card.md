@@ -46,8 +46,8 @@ Background only for "The Present" project. We are not running HMAX or any deep m
 Primary BibTeX key: `Riesenhuber1999HierarchicalMO` (in `psychophysics.bib`).
 
 Related works:
-- Hubel, Wiesel (1962) J Physiol 160:106 — simple/complex cell foundation.
-- Serre, Wolf, Bileschi, Riesenhuber, Poggio (2007) IEEE TPAMI 29:411 — HMAX object recognition.
-- Khaligh-Razavi, Kriegeskorte (2014) PLoS Comput Biol 10:e1003915 — HMAX vs deep CNN on IT.
-- Yamins et al. (2014) PNAS 111:8619 — modern hierarchical models match IT.
-- Cadieu et al. (2014) PLoS Comput Biol 10:e1003963 — deep nets beat HMAX on object recognition.
+- Hubel, Wiesel (1962) J Physiol 160:106, simple/complex cell foundation.
+- Serre, Wolf, Bileschi, Riesenhuber, Poggio (2007) IEEE TPAMI 29:411, HMAX object recognition.
+- Khaligh-Razavi, Kriegeskorte (2014) PLoS Comput Biol 10:e1003915, HMAX vs deep CNN on IT.
+- Yamins et al. (2014) PNAS 111:8619, modern hierarchical models match IT.
+- Cadieu et al. (2014) PLoS Comput Biol 10:e1003963, deep nets beat HMAX on object recognition.

@@ -23,10 +23,10 @@ High-relevance entries where PDF retrieval failed or licensing forbids redistrib
 
 These have `relevance: high` and would benefit most from a manual fetch:
 
-1. `bartels-zeki-2008-natural-vision-mt` — direct dependency for the motion vs cut decomposition framing in "The Present" Phase 5.
-2. `nishimoto-2011-movie-reconstruction` — foundational motion-energy encoding model for naturalistic-movie BOLD.
-3. `hasson-2004-isc-natural-vision` — foundational ISC paradigm reference.
-4. `adelson-bergen-1985-spatiotemporal-energy` — implicit substrate of every motion-energy regressor.
-5. `dimigen-ehinger-2021-deconvolution-eye-eeg` — already archived, listed for completeness only (PDF retrieved via Europe PMC).
+1. `bartels-zeki-2008-natural-vision-mt`, direct dependency for the motion vs cut decomposition framing in "The Present" Phase 5.
+2. `nishimoto-2011-movie-reconstruction`, foundational motion-energy encoding model for naturalistic-movie BOLD.
+3. `hasson-2004-isc-natural-vision`, foundational ISC paradigm reference.
+4. `adelson-bergen-1985-spatiotemporal-energy`, implicit substrate of every motion-energy regressor.
+5. `dimigen-ehinger-2021-deconvolution-eye-eeg`, already archived, listed for completeness only (PDF retrieved via Europe PMC).
 
 (items 1-4 are paywalled; item 5 was successfully retrieved through Europe PMC and is included only to document that the methodological reference is already in the corpus.)

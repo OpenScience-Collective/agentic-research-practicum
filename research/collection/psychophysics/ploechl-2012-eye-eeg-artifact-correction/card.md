@@ -46,8 +46,8 @@ Direct dependency for "The Present" preprocessing. We are not coregistering eye 
 Primary BibTeX key: `Plöchl2012CombiningEA` (in `psychophysics.bib`).
 
 Related works:
-- Dimigen et al. (2011) J Exp Psychol Gen 140:552 — fixation-related potentials with eye-EEG.
-- Yuval-Greenberg et al. (2008) Neuron 58:429 — induced gamma is microsaccadic spike potential.
-- Pion-Tonachini, Kreutz-Delgado, Makeig (2019) NeuroImage 198:181 — ICLabel automated IC classification.
-- Hoffmann, Falkenstein (2008) PLoS ONE 3:e3004 — regression-based EOG correction.
-- Olbrich et al. (2009) NeuroImage 45:319 — ICA for eye-artifact removal.
+- Dimigen et al. (2011) J Exp Psychol Gen 140:552, fixation-related potentials with eye-EEG.
+- Yuval-Greenberg et al. (2008) Neuron 58:429, induced gamma is microsaccadic spike potential.
+- Pion-Tonachini, Kreutz-Delgado, Makeig (2019) NeuroImage 198:181, ICLabel automated IC classification.
+- Hoffmann, Falkenstein (2008) PLoS ONE 3:e3004, regression-based EOG correction.
+- Olbrich et al. (2009) NeuroImage 45:319, ICA for eye-artifact removal.

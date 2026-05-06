@@ -45,8 +45,8 @@ Born and Bradley synthesize three decades of MT physiology to answer "what does 
 Primary BibTeX key: `Born2005StructureAF` (in `psychophysics.bib`).
 
 Related works:
-- Adelson, Bergen (1985) JOSA A 2:284 — spatiotemporal energy model implemented by MT.
-- Britten et al. (1996) Vis Neurosci 13:87 — neural correlates of decision in MT.
-- Movshon et al. (1985) — pattern vs component motion in MT.
-- Bartels, Zeki, Logothetis (2008) Cereb Cortex 18:705 — MT/MST under naturalistic movies.
-- Nishimoto et al. (2011) Curr Biol 21:1641 — motion-energy decoding from human MT.
+- Adelson, Bergen (1985) JOSA A 2:284, spatiotemporal energy model implemented by MT.
+- Britten et al. (1996) Vis Neurosci 13:87, neural correlates of decision in MT.
+- Movshon et al. (1985), pattern vs component motion in MT.
+- Bartels, Zeki, Logothetis (2008) Cereb Cortex 18:705, MT/MST under naturalistic movies.
+- Nishimoto et al. (2011) Curr Biol 21:1641, motion-energy decoding from human MT.

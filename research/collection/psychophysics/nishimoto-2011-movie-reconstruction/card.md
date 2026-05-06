@@ -45,8 +45,8 @@ Direct dependency for the bottom-up regressor design in Phase 5 of the "The Pres
 Primary BibTeX key: `Nishimoto2011ReconstructingVE` (in `psychophysics.bib`).
 
 Related works:
-- Adelson, Bergen (1985) JOSA A 2:284 — motion-energy model used here.
-- Naselaris et al. (2011) NeuroImage 56:400 — encoding/decoding methodology review.
-- Bartels, Zeki, Logothetis (2008) Cereb Cortex 18:705 — naturalistic-movie fMRI of motion.
-- Huth et al. (2012) Neuron 76:1210 — semantic encoding model on natural movies.
-- Han et al. (2019) NeuroImage 198:125 — encoding models in naturalistic EEG.
+- Adelson, Bergen (1985) JOSA A 2:284, motion-energy model used here.
+- Naselaris et al. (2011) NeuroImage 56:400, encoding/decoding methodology review.
+- Bartels, Zeki, Logothetis (2008) Cereb Cortex 18:705, naturalistic-movie fMRI of motion.
+- Huth et al. (2012) Neuron 76:1210, semantic encoding model on natural movies.
+- Han et al. (2019) NeuroImage 198:125, encoding models in naturalistic EEG.

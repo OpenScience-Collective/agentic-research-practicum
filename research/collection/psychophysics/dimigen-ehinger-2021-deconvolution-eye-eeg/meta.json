@@ -5,5 +5,5 @@
   "pdf_sha256": "4cc1d6a512d26d1117daeb3a76417ef502a0f24c7b00ad5940a2e7135e79dfec",
   "pdf_license": "CC-BY-NC-ND-4.0",
   "redistribution_ok": true,
-  "notes": "Journal of Vision is open access (CC BY-NC-ND); retrieved via Europe PMC PDF render of PMC7804566. Markdown converted via opencite default."
+  "notes": "Journal of Vision is open access (CC BY-NC-ND-4.0); retrieved via Europe PMC PDF render of PMC7804566. Markdown converted via opencite default. CC BY-NC-ND permits unmodified redistribution for non-commercial use, which is the project context (academic literature review repo); flagged here because this is the only NC-ND PDF archived in the corpus."
 }

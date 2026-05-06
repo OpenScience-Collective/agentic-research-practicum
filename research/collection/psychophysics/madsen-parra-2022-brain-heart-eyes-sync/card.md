@@ -46,8 +46,8 @@ Direct dependency for interpreting the boy-shot vs puppy-shot ERSP project. The 
 Primary BibTeX key: `Madsen2022CognitivePO` (in `psychophysics.bib`).
 
 Related works:
-- Dmochowski et al. (2012) Front Hum Neurosci 6:112 — EEG-ISC parent paper.
-- Ki, Kelly, Parra (2016) J Neurosci 36:3092 — attention-modulated EEG ISC.
-- Cohen, Parra (2016) eNeuro 3:0203 — ISC and memory.
-- Pérez et al. (2021) Cell Reports 36:109692 — heart-rate sync as a marker of conscious processing.
-- Czepiel et al. (2021) Sci Rep 11:22457 — peripheral synchrony at music concerts.
+- Dmochowski et al. (2012) Front Hum Neurosci 6:112, EEG-ISC parent paper.
+- Ki, Kelly, Parra (2016) J Neurosci 36:3092, attention-modulated EEG ISC.
+- Cohen, Parra (2016) eNeuro 3:0203, ISC and memory.
+- Pérez et al. (2021) Cell Reports 36:109692, heart-rate sync as a marker of conscious processing.
+- Czepiel et al. (2021) Sci Rep 11:22457, peripheral synchrony at music concerts.

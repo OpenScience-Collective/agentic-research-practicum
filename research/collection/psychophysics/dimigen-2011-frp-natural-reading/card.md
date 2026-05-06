@@ -45,8 +45,8 @@ Tangential to "The Present" mainline because the HBN-EEG R3 dataset has no synch
 Primary BibTeX key: `Dimigen2011CoregistrationOE` (in `psychophysics.bib`).
 
 Related works:
-- Dimigen, Ehinger (2021) J Vis 21:3 — deconvolution-based FRP analysis.
-- Plöchl, Ossandón, König (2012) Front Hum Neurosci 6:278 — eye-artifact correction with ICA.
-- Kretzschmar et al. (2009) Psychophysiology 46:387 — early FRP reading paper.
-- Nikolaev, Meghanathan, van Leeuwen (2016) Psychophysiology 53:1659 — FRP review.
-- Sereno, Rayner (2003) Trends Cogn Sci 7:489 — eye movements and word processing.
+- Dimigen, Ehinger (2021) J Vis 21:3, deconvolution-based FRP analysis.
+- Plöchl, Ossandón, König (2012) Front Hum Neurosci 6:278, eye-artifact correction with ICA.
+- Kretzschmar et al. (2009) Psychophysiology 46:387, early FRP reading paper.
+- Nikolaev, Meghanathan, van Leeuwen (2016) Psychophysiology 53:1659, FRP review.
+- Sereno, Rayner (2003) Trends Cogn Sci 7:489, eye movements and word processing.

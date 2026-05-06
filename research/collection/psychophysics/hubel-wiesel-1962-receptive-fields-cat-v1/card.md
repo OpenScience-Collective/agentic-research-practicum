@@ -47,8 +47,8 @@ Background only. The boy-shot vs puppy-shot ERSP project on "The Present" does n
 Primary BibTeX key: `Hubel1962ReceptiveFB` (in `psychophysics.bib`).
 
 Related works:
-- Hubel, Wiesel (1968) J Physiol 195:215 — extension to monkey.
-- Adelson, Bergen (1985) JOSA A 2:284 — motion-energy formalization built on simple/complex cells.
-- Riesenhuber, Poggio (1999) Nat Neurosci 2:1019 — HMAX hierarchical model.
-- Hubel, Wiesel (2005) Brain and Visual Perception (book) — full retrospective.
-- Carandini et al. (2005) J Neurosci 25:10577 — modern V1 model evaluation.
+- Hubel, Wiesel (1968) J Physiol 195:215, extension to monkey.
+- Adelson, Bergen (1985) JOSA A 2:284, motion-energy formalization built on simple/complex cells.
+- Riesenhuber, Poggio (1999) Nat Neurosci 2:1019, HMAX hierarchical model.
+- Hubel, Wiesel (2005) Brain and Visual Perception (book), full retrospective.
+- Carandini et al. (2005) J Neurosci 25:10577, modern V1 model evaluation.

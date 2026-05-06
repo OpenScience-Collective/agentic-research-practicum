@@ -46,8 +46,8 @@ Tangential but important context. "The Present" is short and the HBN-EEG R3 prot
 Primary BibTeX key: `Cohen2016MemorableAN` (in `psychophysics.bib`).
 
 Related works:
-- Dmochowski et al. (2012) Front Hum Neurosci 6:112 — correlated-component analysis used here.
-- Hasson et al. (2008) Psychol Sci 19:643 — naturalistic-stimuli ISC and memory.
-- Ki, Kelly, Parra (2016) J Neurosci 36:3092 — attention-modulated ISC.
-- Madsen, Parra (2022) PNAS Nexus 1:pgac020 — multi-modal sync.
-- Aly et al. (2018) Cereb Cortex 28:4441 — ISC and event boundaries.
+- Dmochowski et al. (2012) Front Hum Neurosci 6:112, correlated-component analysis used here.
+- Hasson et al. (2008) Psychol Sci 19:643, naturalistic-stimuli ISC and memory.
+- Ki, Kelly, Parra (2016) J Neurosci 36:3092, attention-modulated ISC.
+- Madsen, Parra (2022) PNAS Nexus 1:pgac020, multi-modal sync.
+- Aly et al. (2018) Cereb Cortex 28:4441, ISC and event boundaries.
