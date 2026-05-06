@@ -88,5 +88,6 @@ Theis = "Theis"
 # Compound English words flagged by typos default dictionary.
 mis = "mis"
 
-# Suffixes appearing in Semantic Scholar BibTeX keys (e.g. "DevelopmentOT").
+# Suffixes appearing in Semantic Scholar BibTeX keys (e.g. "DevelopmentOT", "Naci2014ACN").
 OT = "OT"
+ACN = "ACN"

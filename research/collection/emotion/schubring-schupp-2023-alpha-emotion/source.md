@@ -2,7 +2,9 @@
 
 ## Citation
 
-Schubring, D., & Schupp, H. T. (2023). Alpha-band oscillations and emotion: A review of studies on picture perception. *Psychophysiology*, 60(11), e14438. https://doi.org/10.1111/psyp.14438
+Codispoti, M., De Cesarei, A., & Ferrari, V. (2023). Alpha-band oscillations and emotion: A review of studies on picture perception. *Psychophysiology*, 60(11), e14438. https://doi.org/10.1111/psyp.14438
+
+> Authorship correction: Phase 2 collection misattributed this paper. DOI 10.1111/psyp.14438 resolves to Codispoti, De Cesarei, Ferrari (verified 2026-05-06 via opencite). Slug retained for stable cross-reference; BibTeX key in `emotion.bib` (`Codispoti2023AlphabandOA`) is correct.
 
 ## Open access
 

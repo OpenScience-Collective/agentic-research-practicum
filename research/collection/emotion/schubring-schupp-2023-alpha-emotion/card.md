@@ -3,7 +3,7 @@ slug: schubring-schupp-2023-alpha-emotion
 type: paper
 strand: emotion
 year: 2023
-authors: [Schubring, Schupp]
+authors: [Codispoti, De Cesarei, Ferrari]
 venue: Psychophysiology
 doi: 10.1111/psyp.14438
 url: https://doi.org/10.1111/psyp.14438
@@ -18,15 +18,17 @@ pdf_status: not-redistributable
 pdf_path: null
 md_path: source.md
 md_quality: abstract-only
+
+note_on_slug: Slug retained for stable internal links; the canonical paper is Codispoti, De Cesarei, and Ferrari (2023), "Alpha-band oscillations and emotion: A review of studies on picture perception", Psychophysiology, doi:10.1111/psyp.14438. Original slug was created from a misattribution and is not renamed to avoid breaking cross-references in synthesis and direction-paper artifacts.
 ---
 
 ## TL;DR
 
-Schubring and Schupp review electroencephalographic (EEG) alpha-band oscillation findings during emotional picture perception, concluding that alpha desynchronisation is a robust correlate of attentional engagement by emotional stimuli, with parametric modulation by emotional intensity, but with valence and discrete-emotion specificity remaining contested.
+Codispoti, De Cesarei, and Ferrari review electroencephalographic (EEG) alpha-band oscillation findings during emotional picture perception, concluding that alpha desynchronisation is a robust correlate of attentional engagement by emotional stimuli, with parametric modulation by emotional intensity, but with valence and discrete-emotion specificity remaining contested.
 
 ## Summary
 
-This Psychophysiology review surveys studies of alpha-band (8-13 Hz) EEG oscillations during emotional picture viewing. The dominant finding across paradigms is alpha desynchronisation (alpha power decrease) for emotional compared with neutral pictures, especially over occipital and parietal cortex, interpreted as reflecting attentional engagement of the visual system by motivationally significant content. The desynchronisation scales with rated arousal and is partially valence-modulated, but no reliable discrete-emotion-specific alpha pattern has emerged. The review extends to alpha-beta predictive-coding models that connect emotion-modulated alpha to top-down expectations.
+This Psychophysiology review by Codispoti and colleagues surveys studies of alpha-band (8-13 Hz) EEG oscillations during emotional picture viewing. The dominant finding across paradigms is alpha desynchronisation (alpha power decrease) for emotional compared with neutral pictures, especially over occipital and parietal cortex, interpreted as reflecting attentional engagement of the visual system by motivationally significant content. The desynchronisation scales with rated arousal and is partially valence-modulated, but no reliable discrete-emotion-specific alpha pattern has emerged. The review extends to alpha-beta predictive-coding models that connect emotion-modulated alpha to top-down expectations.
 
 ## Relevance to the review
 
@@ -51,7 +53,7 @@ Developmental-justification rule: review covers adult-only studies. Alpha-band p
 
 ## Citations
 
-Primary BibTeX key: `SchubringAlphabandOA`
+Primary BibTeX key: `Codispoti2023AlphabandOA` (canonical entry in `emotion.bib`).
 
 Related works:
 - Davidson 2000 Am Psychol: approach-withdrawal foundation (frontal asymmetry).

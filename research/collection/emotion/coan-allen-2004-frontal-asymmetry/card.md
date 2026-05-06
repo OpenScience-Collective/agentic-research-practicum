@@ -56,4 +56,4 @@ Related works:
 - Reznik & Allen 2018 Psychophysiology: updated review.
 - van der Vinne 2017 NeuroImage Clinical: meta-analytic critique.
 - Harmon-Jones 2010: anger and approach motivation.
-- Schubring & Schupp 2023: alpha-emotion review.
+- Codispoti, De Cesarei, Ferrari 2023 Psychophysiology: alpha-band oscillations and emotion review (slug retained as schubring-schupp-2023-alpha-emotion for stable cross-reference).
