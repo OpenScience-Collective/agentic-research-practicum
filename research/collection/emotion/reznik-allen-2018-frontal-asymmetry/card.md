@@ -56,5 +56,5 @@ Related works:
 - Coan & Allen 2004 Biol Psychol: capability model.
 - Davidson 2000 Am Psychol: approach-withdrawal foundation.
 - van der Vinne 2017 NeuroImage Clinical: meta-analytic critique of asymmetry as depression marker.
-- Schubring & Schupp 2023 Psychophysiology: alpha-band oscillations and emotion review.
+- Codispoti, De Cesarei, Ferrari 2023 Psychophysiology: alpha-band oscillations and emotion review (slug retained as schubring-schupp-2023-alpha-emotion for stable cross-reference).
 - Briesemeister 2013 (cited within Reznik): EEG of affect.
