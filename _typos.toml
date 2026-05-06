@@ -10,6 +10,11 @@ extend-exclude = [
     "*.json",
     ".git/",
     "shot_events.tsv",
+    # Lit-review PDF-converted markdown (Mistral / markitdown) carries OCR
+    # extraction artifacts that fire many false-positive typos; not authored.
+    "research/collection/*/*/source.md",
+    # Strand BibTeX files contain author surnames and journal abbreviations.
+    "research/collection/*/*.bib",
 ]
 
 [default]
@@ -56,3 +61,33 @@ PN = "PN"
 # Upstream API spellings we cannot change.
 # EEGLAB pop_clean_rawdata expects literal 'Euclidian' (sic) as Distance value.
 Euclidian = "Euclidian"
+
+# Journal abbreviations used in literature-review briefs and citations.
+# Standard ISO 4 journal-name abbreviations; common in BibTeX and APA style.
+Commun = "Commun"
+Neurosci = "Neurosci"
+Biobehav = "Biobehav"
+Neurol = "Neurol"
+Neurophysiol = "Neurophysiol"
+Cogn = "Cogn"
+Behav = "Behav"
+Psychol = "Psychol"
+Sci = "Sci"
+Opin = "Opin"
+Reson = "Reson"
+Mapp = "Mapp"
+Lond = "Lond"
+
+# Author surnames cited in cards.
+Comon = "Comon"
+Sepulcre = "Sepulcre"
+Sergent = "Sergent"
+Hendler = "Hendler"
+Theis = "Theis"
+
+# Compound English words flagged by typos default dictionary.
+mis = "mis"
+
+# Suffixes appearing in Semantic Scholar BibTeX keys (e.g. "DevelopmentOT", "Naci2014ACN").
+OT = "OT"
+ACN = "ACN"

@@ -1,0 +1,9 @@
+{
+  "doi": "10.1038/nrn3136",
+  "source_url": "https://www.nature.com/articles/nrn3136",
+  "retrieved_at": "2026-05-06",
+  "pdf_sha256": null,
+  "pdf_license": "publisher-paywall (Nature Reviews Neuroscience)",
+  "redistribution_ok": false,
+  "notes": "Nature Reviews paywall. PMC archive (PMC3273486) exists but PMC OAI marks it as not Open Access. opencite tried doi.org and Europe PMC PDF render and both failed (HTTP 406 / HTTP 500). PubMed abstract archived in source.md."
+}

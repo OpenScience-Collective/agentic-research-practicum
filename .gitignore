@@ -30,3 +30,5 @@ __pycache__/
 .env.*
 !.env.example
 *.local
+.claude/*.local.md
+.claude/settings.local.json
