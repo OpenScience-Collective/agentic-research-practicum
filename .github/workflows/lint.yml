@@ -54,6 +54,7 @@ jobs:
             **/*.md
             !derivatives/**
             !node_modules/**
+            !research/collection/*/*/source.md
 
   matlab-syntax:
     name: matlab syntax (checkcode)
