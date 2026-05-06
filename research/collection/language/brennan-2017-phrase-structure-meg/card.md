@@ -50,7 +50,7 @@ Often cited together with Brennan and Hale 2019 ("Hierarchical structure guides 
 
 ## Citations
 
-Primary BibTeX key: see `language.bib` (brennan-2017-phrase-structure-meg entry).
+Primary BibTeX key: `Nelson2017NeurophysiologicalDO` in `language.bib`. Note: the slug `brennan-2017-phrase-structure-meg` is a Phase 2 misattribution; the actual paper is Nelson et al. 2017 PNAS at the DOI listed above. The slug is retained for stable cross-reference; the BibTeX key and the front matter `authors:` field reflect the canonical authorship.
 
 Related works cited in this card:
 - Hasson et al. 2004, naturalistic-vision ISC foundation.
