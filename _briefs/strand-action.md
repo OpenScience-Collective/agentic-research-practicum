@@ -13,7 +13,7 @@ Cover six categories. Animated-stimulus findings receive priority because ThePre
 - Saygin (2007) Brain on STS lesions and biological motion
 - Pelphrey, Morris social perception in autism using point-light displays
 
-### 2. Action observation networks (parietal–premotor, mirror system)
+### 2. Action observation networks (parietal-premotor, mirror system)
 - Rizzolatti, Craighero (2004) mirror neuron review
 - Caspers, Zilles, Eickhoff meta-analysis of action observation fMRI
 - Kilner, Friston, Frith predictive coding account of mirror system
@@ -37,8 +37,8 @@ Cover six categories. Animated-stimulus findings receive priority because ThePre
 ### 5. Naturalistic movie fMRI/EEG of agentive interactions
 - Hasson et al. Sherlock and other naturalistic narratives
 - Lerner, Honey, Hasson temporal hierarchies during stories
-- Wagner, Sliwa, Gardner naturalistic chimp / human social-action coding
-- Vodrahalli et al. (2018) Sherlock fMRI release
+- Sliwa and Freiwald (2017) Science specialized macaque cortex for social interaction observation
+- Chen et al. (2017) Nat Neurosci Sherlock dataset release on shared memories of naturalistic events
 - McMahon, Bonner, Kanwisher action representation in dynamic stimuli
 
 ### 6. Animation / cartoon-specific findings
@@ -62,10 +62,10 @@ Use `opencite:opencite` for DOI lookup, PDF retrieval, and PDF→markdown conver
 
 ## Seed material
 
-- `project_brief.md` — boy and puppy as animated agents; shot-onset paradigm
-- `.context/research.md` — HBN-EEG dataset, ThePresent subject pool, sampling rate
-- `.context/ideas.md` — contrast-choice rationale (boy-only vs puppy-only is socially asymmetric across agents)
-- `shot_events.tsv` — `has_boy`, `has_puppy` per-shot indicators
+- `project_brief.md`, boy and puppy as animated agents; shot-onset paradigm
+- `.context/research.md`, HBN-EEG dataset, ThePresent subject pool, sampling rate
+- `.context/ideas.md`, contrast-choice rationale (boy-only vs puppy-only is socially asymmetric across agents)
+- `shot_events.tsv`, `has_boy`, `has_puppy` per-shot indicators
 
 Imported entries from these seeds must set `imported_from: <relative path>` in `card.md`.
 

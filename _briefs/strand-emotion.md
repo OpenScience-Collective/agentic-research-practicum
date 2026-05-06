@@ -10,7 +10,7 @@ Cover seven categories. Category 5 (pet/animal-evoked affective response) is sma
 - Saarimäki et al. discrete emotions during movies (Cereb Cortex, 2016)
 - Nummenmaa et al. emotional networks during film viewing
 - Karjalainen, Nummenmaa naturalistic emotion categorization
-- Kragel et al. (2019) population coding of affect from videos
+- Kragel, Reddan, LaBar, Wager (2019) Sci Adv emotion schemas embedded in the human visual system (EmoNet); not to be confused with Chikazoe et al. (2014) Nat Neurosci on population coding of affect
 - Cowen, Keltner emotion taxonomies from short videos
 
 ### 2. Social cognition and Theory of Mind during movie watching
@@ -29,16 +29,16 @@ Cover seven categories. Category 5 (pet/animal-evoked affective response) is sma
 
 ### 4. Inter-subject correlation (ISC) and reliability driven by emotional content
 - Nummenmaa et al. ISC modulated by emotion intensity
-- Hasson, Yang, Vallines emotion-driven ISC patterns
+- Nummenmaa, Lahnakoski, Glerean (2018) Curr Opin Psychol intersubject neural synchronization driven by social and affective content
 - Cohen et al. memorable / engaging events drive EEG ISC
 - Schmälzle et al. media psychology ISC during film
 - Kauttonen et al. predictive ISC for engagement metrics
 
 ### 5. Pet / animal-evoked affective response
-- Stoeckel et al. mother responses to baby vs puppy faces (PLOS ONE 2014)
+- Stoeckel et al. (2014) PLOS ONE mothers viewing own child versus own dog (use this exact contrast, not generic baby vs puppy)
 - Borgi, Cogliati Dezza, Brelsford, Meints baby-schema and animal cuteness
 - Glocker et al. baby schema activates nucleus accumbens
-- Filippi et al. infant- and puppy-face fMRI meta-comparison
+- Hahn and Perrett (2014) Neurosci Biobehav Rev neural and behavioural responses to attractiveness in adult and infant faces
 - Kringelbach, Stark, Alexander pet-bonding neuroimaging
 
 ### 6. Frontal alpha asymmetry and EEG affective markers
@@ -69,10 +69,10 @@ Use `opencite:opencite` for DOI lookup, PDF retrieval, and PDF→markdown conver
 
 ## Seed material
 
-- `project_brief.md` — boy and puppy as primary affective agents; HBN child population
-- `.context/research.md` — HBN cohort age range, EEG band coverage at 100 Hz
-- `.context/ideas.md` — boy-only vs puppy-only as cleanest social-stimulus contrast
-- `shot_events.tsv` — `has_boy`, `has_puppy` per-shot indicators
+- `project_brief.md`, boy and puppy as primary affective agents; HBN child population
+- `.context/research.md`, HBN cohort age range, EEG band coverage at 100 Hz
+- `.context/ideas.md`, boy-only vs puppy-only as cleanest social-stimulus contrast
+- `shot_events.tsv`, `has_boy`, `has_puppy` per-shot indicators
 
 Imported entries from these seeds must set `imported_from: <relative path>` in `card.md`.
 

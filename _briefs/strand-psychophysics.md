@@ -11,7 +11,7 @@ Cover six categories. Aim for breadth first, depth where it bears on log-luminan
 - Simoncelli, Olshausen (2001) review of natural image statistics and neural representation
 - Dorr, Vig, Barth on natural movie eye-movement and saliency statistics
 - Carandini, Heeger normalization model evidence in natural scenes
-- LLR-style luminance step responses in cortex (Carmel, Lavie, Rees and successors)
+- Tobimatsu and Celesia (2006) Clin Neurophysiol review of luminance and contrast visual evoked potentials
 
 ### 2. Motion / optic flow and MT/V5 responses to natural motion
 - Born, Bradley (2005) Annu Rev Neurosci on MT/MST
@@ -29,7 +29,8 @@ Cover six categories. Aim for breadth first, depth where it bears on log-luminan
 
 ### 4. Inter-subject correlation (ISC) driven by stimulus-locked low-level features
 - Hasson et al. (2004) ISC in naturalistic fMRI
-- Dmochowski et al. (2012, 2014) EEG ISC and engagement
+- Dmochowski et al. (2012) Front Hum Neurosci EEG ISC during natural viewing
+- Dmochowski et al. (2014) Nat Commun audience preferences predicted by neural reliability
 - Nentwich et al. EEG ISC across movies with different feature loads
 - Kaneshiro et al. EEG ISC in music vs film
 - Madsen, Parra ISC dependence on stimulus type
@@ -61,10 +62,10 @@ Use `opencite:opencite` for DOI lookup, PDF retrieval (where licensing permits),
 
 ## Seed material
 
-- `project_brief.md` — boy-shot vs puppy-shot ERSP question; LLR and shot-event columns
-- `.context/research.md` — HBN-EEG dataset DOI, sampling rate, 100 Hz vs 500 Hz tradeoffs
-- `.context/ideas.md` — LLR as continuous regressor of no interest in the group-level GLM
-- `shot_events.tsv` — per-shot annotations including LLR
+- `project_brief.md`, boy-shot vs puppy-shot ERSP question; LLR and shot-event columns
+- `.context/research.md`, HBN-EEG dataset DOI, sampling rate, 100 Hz vs 500 Hz tradeoffs
+- `.context/ideas.md`, LLR as continuous regressor of no interest in the group-level GLM
+- `shot_events.tsv`, per-shot annotations including LLR
 
 Imported entries from these seeds must set `imported_from: <relative path>` in `card.md`.
 

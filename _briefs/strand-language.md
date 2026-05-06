@@ -24,7 +24,7 @@ Cover six categories. Categories 5 and 6 are load-bearing for the HBN-relevance 
 - van Wassenhove, Grant, Poeppel audiovisual speech integration
 - Schroeder, Lakatos cross-modal entrainment
 - Senkowski, Engel multisensory neural oscillations review
-- Ferrari, Kalmus film-cut and audiovisual integration findings
+- Magliano and Zacks (2011) Cogn Sci continuity editing in narrative film and event segmentation
 - Lankinen et al. naturalistic audiovisual MEG
 
 ### 4. Story network: temporo-parietal, default-mode, language-network
@@ -32,20 +32,20 @@ Cover six categories. Categories 5 and 6 are load-bearing for the HBN-relevance 
 - Simony et al. dynamic functional connectivity during stories
 - Yeshurun, Hasson individual variation in narrative interpretation
 - Chen et al. narrative-induced default-mode synchronization
-- AlSaid et al. language-network parcellation under naturalistic listening
+- Lipkin, Tuckute, Affourtit, Fedorenko et al. (2022) Sci Data probabilistic language-network atlas
 
 ### 5. Silent-film and wordless storytelling neural correlates
 - Castelli, Happé, Frith Heider-Simmel animations and theory-of-mind fMRI
 - Naci, Owen Hitchcock silent-clip task as covert assessment
 - Ben-Yakov, Henson event boundaries in silent narrative
 - Studyforrest German-dubbed Forrest Gump cohort papers including silent-only contrasts
-- Vodrahalli, Norman Sherlock release with audio vs visual ablations
+- Vanderwal et al. (2015) NeuroImage Inscapes silent abstract movie paradigm for fMRI compliance
 
 ### 6. Language models as regressors in naturalistic neuroimaging
 - Goldstein et al. (2022) Nature Neurosci shared computational principles
-- Caucheteux, King (2022) brains and algorithms partially converge
+- Caucheteux and King (2022) Comm Biol brains and algorithms partially converge in natural language
 - Schrimpf et al. neural predictivity and language-model alignment
-- Tikochinski, Barzilay representational alignment in MEG
+- Toneva and Wehbe (2019) NeurIPS interpreting natural-language processing via brain recordings
 - Antonello et al. transformer features as regressors
 
 ## Per-entry deliverable
@@ -62,10 +62,10 @@ Use `opencite:opencite` for DOI lookup, PDF retrieval, and PDF→markdown conver
 
 ## Seed material
 
-- `project_brief.md` — silent-stimulus framing of ThePresent
-- `.context/research.md` — HBN-EEG dataset DOI, no audio track in ThePresent stream
-- `.context/ideas.md` — language as comparator strand rather than primary fit
-- `shot_events.tsv` — onset-aligned shot annotations (no transcript, no dialogue)
+- `project_brief.md`, silent-stimulus framing of ThePresent
+- `.context/research.md`, HBN-EEG dataset DOI, no audio track in ThePresent stream
+- `.context/ideas.md`, language as comparator strand rather than primary fit
+- `shot_events.tsv`, onset-aligned shot annotations (no transcript, no dialogue)
 
 Imported entries from these seeds must set `imported_from: <relative path>` in `card.md`.
 

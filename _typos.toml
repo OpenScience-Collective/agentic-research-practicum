@@ -56,3 +56,16 @@ PN = "PN"
 # Upstream API spellings we cannot change.
 # EEGLAB pop_clean_rawdata expects literal 'Euclidian' (sic) as Distance value.
 Euclidian = "Euclidian"
+
+# Journal abbreviations used in literature-review briefs and citations.
+# Standard ISO 4 journal-name abbreviations; common in BibTeX and APA style.
+Commun = "Commun"
+Neurosci = "Neurosci"
+Biobehav = "Biobehav"
+Neurol = "Neurol"
+Neurophysiol = "Neurophysiol"
+Cogn = "Cogn"
+Behav = "Behav"
+Psychol = "Psychol"
+Sci = "Sci"
+Opin = "Opin"
