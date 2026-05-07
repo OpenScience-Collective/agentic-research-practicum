@@ -10,7 +10,9 @@ repos:
       - id: check-json
       - id: check-merge-conflict
       - id: check-added-large-files
-        args: [--maxkb=1000]
+        # Lit-review PDFs (CC-BY/PD/open-archive) can run 5-30 MB; cap at 30 MB.
+        # EEG data files (.bdf .edf .set .fdt .mat) are gitignored, not bypassed by this limit.
+        args: [--maxkb=30000]
       - id: mixed-line-ending
         args: [--fix=lf]
 
@@ -19,6 +21,9 @@ repos:
     hooks:
       - id: typos
         args: [--config=_typos.toml]
+        # PDF-converted source.md and BibTeX have OCR/author-name false positives;
+        # _typos.toml extend-exclude is ignored when files are passed explicitly.
+        exclude: ^research/collection/[^/]+/[^/]+/source\.md$|^research/collection/[^/]+/[^/]+\.bib$
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.35.1
@@ -31,6 +36,9 @@ repos:
     hooks:
       - id: markdownlint-cli2
         args: [--config, .markdownlint.json]
+        # source.md files under research/collection are PDF-converted (Mistral / markitdown).
+        # Their headings and ordered lists reflect publisher layout, not authored markdown.
+        exclude: ^research/collection/.+/source\.md$
 
   # Python linting; only fires when .py files are staged
   - repo: https://github.com/astral-sh/ruff-pre-commit

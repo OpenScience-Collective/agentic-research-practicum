@@ -1,0 +1,11 @@
+{
+  "doi": "10.1111/psyp.14438",
+  "source_url": "https://onlinelibrary.wiley.com/doi/10.1111/psyp.14438",
+  "retrieved_at": "2026-05-06",
+  "pdf_sha256": null,
+  "pdf_license": "publisher-paywall (Wiley, Psychophysiology)",
+  "redistribution_ok": false,
+  "authors": ["Codispoti", "De Cesarei", "Ferrari"],
+  "bibtex_key": "Codispoti2023AlphabandOA",
+  "notes": "Wiley paywall; PDF not redistributable (HTTP 403 on opencite). Abstract captured from publisher metadata. Slug retained as `schubring-schupp-2023-alpha-emotion` to avoid breaking internal cross-references; the canonical paper is Codispoti, De Cesarei, and Ferrari (2023), Psychophysiology."
+}

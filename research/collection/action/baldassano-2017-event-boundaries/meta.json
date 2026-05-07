@@ -1,0 +1,9 @@
+{
+  "doi": "10.1016/j.neuron.2017.06.041",
+  "source_url": "https://doi.org/10.1016/j.neuron.2017.06.041",
+  "retrieved_at": "2026-05-06",
+  "pdf_sha256": null,
+  "pdf_license": "publisher-paywall (Cell Press / Elsevier, Neuron)",
+  "redistribution_ok": false,
+  "notes": "Cell Press paywall. opencite returned 403 from www.cell.com and text/html from doi.org. Sherlock fMRI dataset (used in this paper) is openly available on OpenNeuro ds001131."
+}
