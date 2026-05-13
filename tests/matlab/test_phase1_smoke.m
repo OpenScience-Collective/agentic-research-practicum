@@ -10,11 +10,7 @@ function test_phase1_smoke
 %   No mocks. If the local BIDS dataset is missing, the test fails with
 %   a clear message and must be run on a machine with the data available.
 
-    bidsRoot = "/Volumes/S1/Datasets/HBN/L100/R3_L100_bdf";
-    if ~isfolder(bidsRoot)
-        error("test_phase1_smoke:no_data", ...
-            "BIDS dataset not present at %s; cannot run a real-data test.", bidsRoot);
-    end
+    bidsRoot = test_bids_root();
 
     testOut = string(tempname);
     cleaner = onCleanup(@() rmdir_if_exists(testOut)); %#ok<NASGU>

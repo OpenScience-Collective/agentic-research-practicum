@@ -3,9 +3,12 @@ repos:
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
-        exclude: \.(set|fdt|bdf|edf|mat)$
+        # tests/fixtures/ mirrors upstream HBN sidecars byte-for-byte.
+        exclude: \.(set|fdt|bdf|edf|mat)$|^tests/fixtures/
       - id: end-of-file-fixer
-        exclude: \.(set|fdt|bdf|edf|mat|tsv)$
+        # tests/fixtures/ mirrors upstream HBN sidecars byte-for-byte;
+        # do not rewrite their final newlines.
+        exclude: \.(set|fdt|bdf|edf|mat|tsv)$|^tests/fixtures/
       - id: check-yaml
       - id: check-json
       - id: check-merge-conflict
@@ -15,6 +18,10 @@ repos:
         args: [--maxkb=30000]
       - id: mixed-line-ending
         args: [--fix=lf]
+        # Skip binary EEG formats; the hook treats unknown files as text
+        # and would corrupt BDF/EDF/SET/FDT/MAT by rewriting bytes that
+        # happen to match CRLF/CR patterns.
+        exclude: \.(set|fdt|bdf|edf|mat)$
 
   - repo: https://github.com/crate-ci/typos
     rev: v1.29.4
@@ -23,7 +30,9 @@ repos:
         args: [--config=_typos.toml]
         # PDF-converted source.md and BibTeX have OCR/author-name false positives;
         # _typos.toml extend-exclude is ignored when files are passed explicitly.
-        exclude: ^research/collection/[^/]+/[^/]+/source\.md$|^research/collection/[^/]+/[^/]+\.bib$
+        # tests/fixtures/ carries upstream HBN sidecars verbatim, so any
+        # spelling artifacts present in the source dataset stay untouched.
+        exclude: ^research/collection/[^/]+/[^/]+/source\.md$|^research/collection/[^/]+/[^/]+\.bib$|^tests/fixtures/
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.35.1

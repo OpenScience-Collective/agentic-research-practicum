@@ -1,0 +1,9 @@
+{
+  "PowerLineFrequency": 60,
+  "TaskName": "ThePresent",
+  "EEGReference": "Cz",
+  "RecordingType": "continuous",
+  "RecordingDuration": 60,
+  "SamplingFrequency": 100,
+  "SoftwareFilters": "n/a"
+}

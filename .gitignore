@@ -26,6 +26,17 @@ derivatives/**/_bids_import_scratch/
 !derivatives/**/params.json
 !derivatives/**/README.md
 
+# Allow-list: track the real-EEG test fixture so CI can run MATLAB tests
+# without the maintainer's /Volumes mount. The fixture is small (~2.3 MB,
+# 60 s of one HBN R3 subject; license CC-BY-SA 4.0 inherited).
+!tests/fixtures/
+!tests/fixtures/**/
+!tests/fixtures/**/*.bdf
+!tests/fixtures/**/*.tsv
+!tests/fixtures/**/*.json
+!tests/fixtures/**/*.md
+!tests/fixtures/**/README
+
 # MATLAB scratch
 *.asv
 *.m~
@@ -54,3 +65,4 @@ __pycache__/
 # .claude/ is tracked so collaborators see project agents, commands,
 # and epic-dev state. Only the per-user permission file is private.
 .claude/settings.local.json
+logs/

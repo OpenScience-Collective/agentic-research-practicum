@@ -4,11 +4,7 @@ function test_phase1_no_subjects
 %   the real cohort. Asserts hbn:phase1:no_subjects is raised before any
 %   pop_importbids work is attempted.
 
-    bidsRoot = "/Volumes/S1/Datasets/HBN/L100/R3_L100_bdf";
-    if ~isfolder(bidsRoot)
-        error("test_phase1_no_subjects:no_data", ...
-            "BIDS dataset not present at %s; cannot run a real-data test.", bidsRoot);
-    end
+    bidsRoot = test_bids_root();
 
     testOut = string(tempname);
     cleaner = onCleanup(@() rmdir_if_exists(testOut)); %#ok<NASGU>

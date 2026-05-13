@@ -68,13 +68,22 @@ if [[ -z "$EEGLAB_PATH" || ! -d "$EEGLAB_PATH" ]]; then
     echo "ERROR: EEGLAB_PATH must be set to an existing directory (got '$EEGLAB_PATH')." >&2
     exit 1
 fi
-if [[ -z "$BIDS_ROOT" || ! -d "$BIDS_ROOT" ]]; then
-    # The whole point of local CI is to run on real BDF data; a missing
-    # dataset would make smoke tests early-return on the no-data branch and
-    # mask regressions as green. Fail loudly instead.
-    echo "ERROR: BIDS_ROOT must be set to an existing directory (got '$BIDS_ROOT')." >&2
-    exit 1
+if [[ -z "${BIDS_ROOT:-}" || ! -d "$BIDS_ROOT" ]]; then
+    # When BIDS_ROOT is unset, fall back to the committed real-EEG fixture
+    # under tests/fixtures/bids_mini. This is the same fixture CI uses, so
+    # local and CI runs hit the same code paths on the same data when
+    # the full /Volumes mount is not available. The fail-loudly rule
+    # still applies: if neither the env var nor the fixture exists, error.
+    FIXTURE_ROOT="$REPO_ROOT/tests/fixtures/bids_mini"
+    if [[ -d "$FIXTURE_ROOT" ]]; then
+        echo "BIDS_ROOT unset; falling back to fixture at $FIXTURE_ROOT"
+        BIDS_ROOT="$FIXTURE_ROOT"
+    else
+        echo "ERROR: BIDS_ROOT unset and fixture not found at $FIXTURE_ROOT." >&2
+        exit 1
+    fi
 fi
+export HBN_BIDS_ROOT="$BIDS_ROOT"
 
 # 1. Style + lint via miss_hit. Skipping silently was masking missing
 #    coverage on dev machines without the tool installed; require it unless

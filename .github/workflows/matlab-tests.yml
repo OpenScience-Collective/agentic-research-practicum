@@ -1,0 +1,85 @@
+name: matlab-tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+# A single test job that installs MATLAB (matlab-actions/setup-matlab is
+# free for public repos), clones EEGLAB plus the plugins needed for our
+# Phase 1 tests, then runs tests/matlab/run_all_tests.m against the
+# real-data fixture under tests/fixtures/bids_mini/. The fixture itself
+# is committed to the repo (tracked, ~2-3 MB) so CI never reaches for the
+# /Volumes path that only exists on the maintainer's machine.
+
+jobs:
+  matlab-tests:
+    name: matlab unit + smoke tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      # Pin EEGLAB to a tagged release so CI is reproducible across runs.
+      # 2026.0.0 is the latest stable as of 2026-05-12. The release bundles
+      # the plugins we need for phase 1 as git submodules: EEG-BIDS,
+      # clean_rawdata, dipfit, firfilt, ICLabel. Biosig (for BDF I/O) is
+      # not bundled and is auto-installed by EEGLAB's plugin manager on
+      # first call to pop_biosig; we trigger that explicitly below.
+      EEGLAB_TAG: "2026.0.0"
+      EEGLAB_DIR: ${{ github.workspace }}/.eeglab
+      HBN_BIDS_ROOT: ${{ github.workspace }}/tests/fixtures/bids_mini
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # EEGLAB plus its bundled submodule plugins is >500 MB and slow to
+      # clone fresh on every run. Cache it keyed on the pinned tag so a
+      # version bump invalidates cleanly.
+      - name: Cache EEGLAB + bundled plugins
+        id: cache-eeglab
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.EEGLAB_DIR }}
+          key: eeglab-${{ env.EEGLAB_TAG }}-${{ runner.os }}-v1
+
+      - name: Clone EEGLAB (cache miss)
+        if: steps.cache-eeglab.outputs.cache-hit != 'true'
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch "$EEGLAB_TAG" --recurse-submodules \
+            https://github.com/sccn/eeglab.git "$EEGLAB_DIR"
+
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024a
+
+      - name: Run MATLAB tests against the fixture
+        uses: matlab-actions/run-command@v2
+        with:
+          command: |
+            addpath('${{ env.EEGLAB_DIR }}');
+            evalc('eeglab nogui');
+            % Biosig is required for BDF I/O and is not bundled with EEGLAB.
+            % plugin_askinstall runs headless and pulls the plugin into
+            % EEGLAB_DIR/plugins/, where eeglab's path setup finds it on the
+            % next call. The Biosig install is what enables pop_biosig and
+            % pop_writeeeg.
+            try
+                plugin_askinstall('Biosig', [], true);
+            catch ME
+                warning('hbn:ci:biosig_install', ...
+                    'Biosig auto-install failed: %s', ME.message);
+            end
+            evalc('eeglab nogui'); % re-init to pick up newly installed plugins
+            addpath(genpath(fullfile(pwd, 'src', 'matlab')));
+            addpath(genpath(fullfile(pwd, 'tests', 'matlab')));
+            results = run_all_tests();
+            disp(results);
+            if any(~results.passed)
+                error('hbn:ci:test_failures', ...
+                    'One or more MATLAB tests failed; see table above.');
+            end
