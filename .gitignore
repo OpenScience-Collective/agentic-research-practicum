@@ -21,6 +21,7 @@ derivatives/**/*.txt
 derivatives/**/*.log
 derivatives/**/scratch*
 derivatives/**/_bids_import_scratch/
+derivatives/**/_amica/
 !derivatives/**/*.png
 !derivatives/**/qa_*.csv
 !derivatives/**/params.json
@@ -66,3 +67,4 @@ __pycache__/
 # and epic-dev state. Only the per-user permission file is private.
 .claude/settings.local.json
 logs/
+tmpflist

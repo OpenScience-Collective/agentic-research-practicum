@@ -2,9 +2,13 @@ function pngPath = save_dipole_figure(EEG, outDir, subjId)
 %SAVE_DIPOLE_FIGURE Render dipole montage to PNG for QA review.
 %
 %   pngPath = hbn.save_dipole_figure(EEG, outDir, subjId) writes
-%   <outDir>/<subjId>_dipoles.png with the standard pop_dipplot montage
-%   (top + side + back views). ICs that did not get a dipole (residual
-%   variance NaN) are skipped.
+%   <outDir>/<subjId>_dipoles.png with the standard pop_dipplot
+%   top-view image. ICs without a finite dipole position (RV NaN) are
+%   skipped.
+%
+%   Like save_ic_topo_figure, this snapshots figure handles before and
+%   after pop_dipplot to grab the figure that pop_dipplot actually
+%   creates, instead of exporting an empty pre-allocated handle.
 
     arguments
         EEG (1, 1) struct
@@ -30,8 +34,7 @@ function pngPath = save_dipole_figure(EEG, outDir, subjId)
             "No ICs have finite dipole positions; nothing to plot.");
     end
 
-    fig = figure('Visible', 'off', 'Position', [100 100 1400 500]);
-    cleaner = onCleanup(@() close(fig)); %#ok<NASGU>
+    handlesBefore = findall(groot, 'Type', 'figure');
 
     try
         pop_dipplot(EEG, fitted, ...
@@ -44,9 +47,35 @@ function pngPath = save_dipole_figure(EEG, outDir, subjId)
             "pop_dipplot failed: %s", ME.message);
     end
 
-    sgtitle(sprintf('%s, fitted dipoles (%d of %d ICs)', ...
-        subjId, numel(fitted), numel(EEG.dipfit.model)), 'Interpreter', 'none');
+    handlesAfter = findall(groot, 'Type', 'figure');
+    newHandles = setdiff(handlesAfter, handlesBefore);
+    if isempty(newHandles)
+        error("hbn:phase2:dipplot:no_figure", ...
+            "pop_dipplot did not create a figure for %s", subjId);
+    end
+    fig = newHandles(end);
+    cleaner = onCleanup(@() close_if_valid(newHandles)); %#ok<NASGU>
+
+    set(fig, 'Visible', 'off');
+    % pop_dipplot leaves the axes visible by default which prints a
+    % gridline mesh across the rendered brain. Hide every axes inside
+    % the figure so the export shows only the dipole + head surface.
+    axesHandles = findall(fig, 'Type', 'axes');
+    for a = axesHandles(:)'
+        set(a, 'Visible', 'off');
+    end
+    try
+        sgtitle(fig, sprintf('%s, fitted dipoles (%d of %d ICs)', ...
+            subjId, numel(fitted), numel(EEG.dipfit.model)), 'Interpreter', 'none');
+    catch
+    end
 
     pngPath = fullfile(outDir, sprintf("%s_dipoles.png", subjId));
     exportgraphics(fig, pngPath, 'Resolution', 150);
+end
+
+function close_if_valid(handles)
+    for h = handles(:)'
+        if isgraphics(h); close(h); end
+    end
 end
