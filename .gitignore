@@ -7,10 +7,20 @@ derivatives/
 *.mat
 
 # Allow-list: track small QA artifacts under derivatives/ (figures, csv,
-# params) so 3-subject results survive repo moves; heavy .set/.fdt files
-# stay ignored via the extension-based rules above.
+# params) so 3-subject results survive repo moves; heavy .set/.fdt/.bdf/
+# .mat files stay ignored via the extension-based rules above.
+#
+# Caveat: this is a permissive allow-list. The extension rules catch the
+# real heavy binaries, but `git add derivatives/` would also stage stray
+# text files (notes.txt, scratch.json) if anyone created them. The denylist
+# below blocks the common stray patterns; reviewers should still check the
+# diff before merging.
 !derivatives/
 !derivatives/**/
+derivatives/**/*.txt
+derivatives/**/*.log
+derivatives/**/scratch*
+derivatives/**/_bids_import_scratch/
 !derivatives/**/*.png
 !derivatives/**/qa_*.csv
 !derivatives/**/params.json
