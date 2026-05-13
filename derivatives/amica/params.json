@@ -1,0 +1,22 @@
+{
+  "PreprocDir": "/Users/yahya/Documents/git/osc/hbn-phase2/derivatives/preproc",
+  "OutDir": "/Users/yahya/Documents/git/osc/hbn-phase2/derivatives/amica",
+  "Task": "ThePresent",
+  "Subjects": [],
+  "NumModels": 1,
+  "MaxIter": 2000,
+  "MaxThreads": 14,
+  "DoReject": true,
+  "NumRej": 5,
+  "RejSig": 4,
+  "NumTopoICs": 30,
+  "EeglabRoot": "",
+  "n_subjects_input": 3,
+  "n_subjects_ok": 3,
+  "n_subjects_failed": 0,
+  "eeglab_root": "/Users/yahya/Documents/git/eeg/eeglab",
+  "matlab_version": "25.2.0.3055257 (R2025b) Update 2",
+  "eeglab_version": "dev",
+  "git_sha": "4b6f73642d4eb8016d7c54e3aee50e0303f1d936",
+  "timestamp_iso": "2026-05-13T07:53:41Z"
+}

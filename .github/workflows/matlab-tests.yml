@@ -20,7 +20,7 @@ jobs:
   matlab-tests:
     name: matlab unit + smoke tests
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     env:
       # Pin EEGLAB to a tagged release so CI is reproducible across runs.
@@ -44,7 +44,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.EEGLAB_DIR }}
-          key: eeglab-${{ env.EEGLAB_TAG }}-${{ runner.os }}-v1
+          key: eeglab-${{ env.EEGLAB_TAG }}-${{ runner.os }}-v2-amica
 
       - name: Clone EEGLAB (cache miss)
         if: steps.cache-eeglab.outputs.cache-hit != 'true'
@@ -52,6 +52,18 @@ jobs:
           set -euo pipefail
           git clone --depth 1 --branch "$EEGLAB_TAG" --recurse-submodules \
             https://github.com/sccn/eeglab.git "$EEGLAB_DIR"
+
+      - name: Install MPI runtime for AMICA Linux binary
+        # The AMICA plugin ships amica15ex (Linux Fortran binary) which
+        # dynamically links against MPICH's Fortran library libmpifort.so.12.
+        # Ubuntu runners do not have it preinstalled; without it AMICA
+        # fails at "error while loading shared libraries: libmpifort.so.12".
+        # libmpich-dev pulls the runtime plus headers; runtime-only is also
+        # fine but the -dev package resolves regardless of Ubuntu version.
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y libmpich-dev
 
       - uses: matlab-actions/setup-matlab@v2
         with:
@@ -63,16 +75,17 @@ jobs:
           command: |
             addpath('${{ env.EEGLAB_DIR }}');
             evalc('eeglab nogui');
-            % Biosig is required for BDF I/O and is not bundled with EEGLAB.
-            % plugin_askinstall runs headless and pulls the plugin into
-            % EEGLAB_DIR/plugins/, where eeglab's path setup finds it on the
-            % next call. The Biosig install is what enables pop_biosig and
-            % pop_writeeeg.
-            try
-                plugin_askinstall('Biosig', [], true);
-            catch ME
-                warning('hbn:ci:biosig_install', ...
-                    'Biosig auto-install failed: %s', ME.message);
+            % Plugins not bundled with EEGLAB are auto-installed here via
+            % plugin_askinstall (headless). Biosig is needed for BDF I/O;
+            % amica is needed for Phase 2 ICA decomposition; Fieldtrip-lite
+            % is required by pop_dipfit_settings for dipole fitting.
+            for plugin = {'Biosig', 'amica', 'Fieldtrip-lite'}
+                try
+                    plugin_askinstall(plugin{1}, [], true);
+                catch ME
+                    warning('hbn:ci:plugin_install', ...
+                        '%s auto-install failed: %s', plugin{1}, ME.message);
+                end
             end
             evalc('eeglab nogui'); % re-init to pick up newly installed plugins
             addpath(genpath(fullfile(pwd, 'src', 'matlab')));

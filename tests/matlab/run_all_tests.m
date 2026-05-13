@@ -1,5 +1,5 @@
 function results = run_all_tests
-%RUN_ALL_TESTS Execute every Phase 1 test in sequence, collecting results.
+%RUN_ALL_TESTS Execute every phase test in sequence, collecting results.
 %   results = run_all_tests returns a table of name / passed / message.
 %   Intended to be invoked from the MATLAB MCP shell or CI entrypoint.
 
@@ -7,7 +7,8 @@ function results = run_all_tests
         @test_list_eligible_subjects, ...
         @test_write_qa_channels_csv, ...
         @test_phase1_no_subjects, ...
-        @test_phase1_smoke};
+        @test_phase1_smoke, ...
+        @test_phase2_smoke};
 
     names = strings(numel(tests), 1);
     passed = false(numel(tests), 1);

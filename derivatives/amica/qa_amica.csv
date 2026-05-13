@@ -1,0 +1,4 @@
+participant_id,status,ica_method,n_components,final_ll,iterations,reached_max_iter,median_rv,num_models,max_threads,duration_s,error_message
+sub-NDARAA948VFH,ok,amica,123,-1.481,2000,true,0.3682,1,14,1891,
+sub-NDARAC853DTE,ok,amica,112,-2.221,2000,true,0.4204,1,14,1313,
+sub-NDARAD774HAZ,ok,amica,98,-2.512,2000,true,0.3682,1,14,1156,
