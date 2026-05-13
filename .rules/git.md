@@ -40,7 +40,7 @@
 ## Merge Strategy
 - **Squash merge** for feature branches (clean history)
 - **Rebase** to update feature branches from base (`git rebase origin/main`)
-- **Never force-push** to shared branches (main, develop)
+- **Never force-push** to `main` (the only shared branch in this repo)
 - **Delete branch** after merge
 
 ## Git Commands

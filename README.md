@@ -88,7 +88,8 @@ derivatives/        # phase checkpoints (gitignored)
 
 ## Development workflow
 
-1. Pick a phase / issue. `gh issue develop <N>` from `develop` to get a branch.
+1. Pick a phase / issue. `gh issue develop <N> -b main` to branch off `main`
+   (no `develop` track; phase branches land directly into `main`).
 2. One function per preprocessing step. Parameters in an `opts` struct,
    logged to `params.json` next to the checkpoint.
 3. Re-derive each parameter; do not silently inherit from the reference
@@ -96,8 +97,8 @@ derivatives/        # phase checkpoints (gitignored)
 4. Write tests on real EEG (`tests/matlab/`). NO MOCKS - if a test would
    only pass with synthetic data, do not write it.
 5. Atomic commits, <50 chars subject, no emoji, no AI attribution.
-6. PR to `develop`. Run `/review-pr`; address every non-false-positive finding.
-7. Close the phase issue. After all phases land, merge `develop` into `main`.
+6. PR to `main`. Run `/review-pr`; address every non-false-positive finding.
+7. Close the phase issue. Once all phases land, the epic issue is closed.
 
 See `CLAUDE.md` and `.rules/*.md` for the full conventions.
 
