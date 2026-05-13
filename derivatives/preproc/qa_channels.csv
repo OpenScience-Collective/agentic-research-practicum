@@ -1,0 +1,4 @@
+participant_id,status,n_channels_before,n_channels_after,rejected_channels,srate,cleanline_status,duration_s,error_message
+sub-NDARAA948VFH,ok,129,123,E7;E15;E48;E67;E80;Cz,100,skipped_nyquist,18.243,
+sub-NDARAC853DTE,ok,129,112,E7;E31;E32;E43;E48;E55;E67;E68;E73;E80;E105;E106;E112;E113;E119;E127;Cz,100,skipped_nyquist,7.389,
+sub-NDARAD774HAZ,ok,129,98,E2;E4;E6;E7;E13;E20;E24;E26;E30;E31;E32;E38;E39;E43;E48;E55;E64;E68;E73;E74;E80;E87;E95;E99;E105;E106;E112;E113;E119;E127;Cz,100,skipped_nyquist,6.771,
