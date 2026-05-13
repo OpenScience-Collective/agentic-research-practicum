@@ -45,4 +45,26 @@ Target under 650 words (NIH soft cap for 1 page at Helvetica 11pt, 0.5 inch marg
 
 - **Q1:** Should the R01 connector in Expected Impact name specific clinical conditions (autism spectrum, social anxiety) or stay generic ("clinical cohorts where animacy perception is altered")? Current draft is specific. Reviewer trade-off: specific is concrete but commits us to a particular follow-on, generic is safer but reads as boilerplate.
 - **Q2:** Frontal asymmetry's reliability is contested ([reznik-allen-2018-frontal-asymmetry](../../../research/collection/emotion/reznik-allen-2018-frontal-asymmetry/card.md) vs the [davidson-2000-affective-style](../../../research/collection/emotion/davidson-2000-affective-style/card.md) framework). H1B is exploratory in the gap-analysis and is presented as such in the Aims. Decide in Phase 3 whether to keep H1B in the Aim or push it to a secondary analysis.
-- **Q3:** Mu-band 8-13 Hz overlaps the alpha band. The Aims use "mu-band" but Phase 2 Innovation should clearly state how we distinguish mu from posterior alpha (IC topography + dipole location, AMICA + ICLabel pipeline).
+- **Q3:** Mu-band 8-13 Hz overlaps the alpha band. The Aims use "mu-band" but Phase 2 Innovation should clearly state how we distinguish mu from posterior alpha (IC topography + dipole location, AMICA + ICLabel pipeline). **Addressed in Phase 2 Innovation**: AMICA source clusters + ICLabel non-brain rejection separates central-rolandic mu IC clusters from posterior alpha IC clusters by topography and dipole.
+
+## 2026-05-13, Phase 2 decisions
+
+**Decision: Significance lands at ~420 words, not the planned 600.**
+
+The R21 1-page Significance budget is ~600-650 words at 11pt Helvetica with 0.5" margins. The draft came in at 423 words across three tight paragraphs. Each paragraph maps to one reviewer question (importance, gap, route). Holding the line at 423 leaves margin for Phase 5 polish without page-bleed. If reviewer feedback in Phase 5 suggests under-developed clinical or developmental anchors, candidate expansions are: extra paragraph on transdiagnostic NIMH portfolio fit (cites [happe-frith-2013-atypical-social-cognition], [lord-2020-autism-primer]); a sentence each on attention or social anxiety in HBN.
+
+**Decision: Innovation at 396 words across three labeled paragraphs (Conceptual, Technical, Methodological).**
+
+Within the 0.75 page budget (~400-500 words). The "Methodological" paragraph leads with the falsification commitment from the Aims page rather than presenting it as an afterthought; this elevates the pre-registration norm from boilerplate to a reviewer-visible rigor signal.
+
+**Decision: 14 new references added via opencite, not the 10-15 originally planned (target hit).**
+
+Curated from 73 candidate entries across 7 queries (`lit-review/r21-annex.md`). Drop ratio 80%. Largest sources of useful additions: HBN protocol ([alexander-2017-hbn-protocol]), HED/BIDS infrastructure (`pernet-2019-eeg-bids`, `robbins-2021-hed`, `hermes-2023-hed-schema`), and developmental-EEG methods reviews (`buzzell-2023-eeg-developmental-tool`, `matusz-2018-real-world-neuroscience`). Notable: `hermes-2023-hed-schema` carries the PI on the author list, supporting Approach-section claims of technical capability in Phase 3.
+
+**Decision: Per-query .bib outputs kept under `lit-review/` for audit trail.**
+
+Q1-Q7 .bib files committed alongside `r21-annex.md` so reviewers can trace any kept reference back to its opencite query. The 59 dropped entries are documented in the annex under "Notable rejections" with rationale.
+
+**Decision: Existing `direction-papers/movie-ersp-direction.md` is not modified.**
+
+The direction paper stays as the comprehensive 4-perspective reference; the R21 Significance and Innovation extract a focused, reviewer-paced subset. Re-writing the direction paper would create maintenance burden across the analysis epic (#1) and the grant epic (#35) for no reviewer benefit.

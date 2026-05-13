@@ -6,13 +6,15 @@ epic_branch: null
 worktree_base: "../r21-phase{N}-*"
 mechanism: "NIH R21"
 target_ic: "NIMH"
-nofo: "TBD in Phase 1 (parent PA-23-058 or NIMH-specific)"
+nofo: "PA-25-304 (NIH Parent R21, Clinical Trial Not Allowed); PA-25-150 (NINDS/NIMH joint) as alternate pending NOT-NS-26-007 verification"
 phases:
   - number: 1
     title: "NOFO selection and Specific Aims"
     issue: 36
     branch: "feature/issue-36-phase1-aims"
-    status: pending
+    status: complete
+    pr: 41
+    note: "Merged 2026-05-13. Aims at 435 words, 2 aims, falsification conditions on Aims page. NOFO targeting PA-25-304."
   - number: 2
     title: "Significance and Innovation, lit-review expansion"
     issue: 37
@@ -33,9 +35,9 @@ phases:
     issue: 40
     branch: "feature/issue-40-phase5-assembly"
     status: pending
-current_phase: 1
+current_phase: 2
 created_at: "2026-05-13T17:05:00Z"
-updated_at: "2026-05-13T17:05:00Z"
+updated_at: "2026-05-13T18:45:00Z"
 ---
 
 ## Notes

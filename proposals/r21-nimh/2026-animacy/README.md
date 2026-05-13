@@ -28,8 +28,8 @@
 
 | Phase | Issue | Status | Deliverable |
 |---|---|---|---|
-| 1. NOFO + Specific Aims | [#36](https://github.com/OpenScience-Collective/agentic-research-practicum/issues/36) | in_progress | `NOFO.md`, `submission/specific-aims.md`, scaffold |
-| 2. Significance + Innovation + lit expansion | [#37](https://github.com/OpenScience-Collective/agentic-research-practicum/issues/37) | pending | `submission/research-strategy/significance.md`, `innovation.md`, `refs.bib` |
+| 1. NOFO + Specific Aims | [#36](https://github.com/OpenScience-Collective/agentic-research-practicum/issues/36) | complete (PR #41) | `NOFO.md`, `submission/specific-aims.md`, scaffold |
+| 2. Significance + Innovation + lit expansion | [#37](https://github.com/OpenScience-Collective/agentic-research-practicum/issues/37) | in_progress | `submission/research-strategy/significance.md`, `innovation.md`, `refs.bib` |
 | 3. Approach + preliminary data + timeline | [#38](https://github.com/OpenScience-Collective/agentic-research-practicum/issues/38) | pending | `submission/research-strategy/approach.md`, `figures/` |
 | 4. Supplemental sections | [#39](https://github.com/OpenScience-Collective/agentic-research-practicum/issues/39) | pending | Facilities, Equipment, DMS plan, Budget, Biosketches, LoS queue |
 | 5. Assembly + grant-review + humanizer | [#40](https://github.com/OpenScience-Collective/agentic-research-practicum/issues/40) | pending | `submission/build/r21.pdf`, `reviews/grant-review.md` |
