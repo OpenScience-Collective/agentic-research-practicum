@@ -15,6 +15,11 @@ extend-exclude = [
     "research/collection/*/*/source.md",
     # Strand BibTeX files contain author surnames and journal abbreviations.
     "research/collection/*/*.bib",
+    # Per-grant BibTeX (opencite output and curated refs) carries author surnames
+    # that the typos default dictionary misreads (Wass, Hsi, etc.). Author names
+    # are upstream identifiers we cannot change.
+    "proposals/*/*/refs.bib",
+    "proposals/*/*/lit-review/*.bib",
 ]
 
 [default]

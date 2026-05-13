@@ -32,7 +32,7 @@ repos:
         # _typos.toml extend-exclude is ignored when files are passed explicitly.
         # tests/fixtures/ carries upstream HBN sidecars verbatim, so any
         # spelling artifacts present in the source dataset stay untouched.
-        exclude: ^research/collection/[^/]+/[^/]+/source\.md$|^research/collection/[^/]+/[^/]+\.bib$|^tests/fixtures/
+        exclude: ^research/collection/[^/]+/[^/]+/source\.md$|^research/collection/[^/]+/[^/]+\.bib$|^proposals/[^/]+/[^/]+/refs\.bib$|^proposals/[^/]+/[^/]+/lit-review/[^/]+\.bib$|^tests/fixtures/
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.35.1
