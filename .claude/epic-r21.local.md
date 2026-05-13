@@ -19,12 +19,14 @@ phases:
     title: "Significance and Innovation, lit-review expansion"
     issue: 37
     branch: "feature/issue-37-phase2-sig-inn"
-    status: pending
+    status: complete
+    pr: 42
+    note: "Merged 2026-05-13. Significance 423w, Innovation 396w. 14 refs added via opencite from 73 candidates across 7 queries."
   - number: 3
     title: "Approach, preliminary data, timeline"
     issue: 38
     branch: "feature/issue-38-phase3-approach"
-    status: pending
+    status: in_progress
   - number: 4
     title: "Supplemental sections (Bib, Facilities, DMS, Budget, Biosketches)"
     issue: 39
@@ -35,9 +37,9 @@ phases:
     issue: 40
     branch: "feature/issue-40-phase5-assembly"
     status: pending
-current_phase: 2
+current_phase: 3
 created_at: "2026-05-13T17:05:00Z"
-updated_at: "2026-05-13T18:45:00Z"
+updated_at: "2026-05-13T20:45:00Z"
 ---
 
 ## Notes

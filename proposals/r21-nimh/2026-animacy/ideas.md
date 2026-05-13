@@ -68,3 +68,43 @@ Q1-Q7 .bib files committed alongside `r21-annex.md` so reviewers can trace any k
 **Decision: Existing `direction-papers/movie-ersp-direction.md` is not modified.**
 
 The direction paper stays as the comprehensive 4-perspective reference; the R21 Significance and Innovation extract a focused, reviewer-paced subset. Re-writing the direction paper would create maintenance burden across the analysis epic (#1) and the grant epic (#35) for no reviewer benefit.
+
+## 2026-05-13, Phase 3 decisions
+
+**Decision: Approach at ~1774 words across 5 sections.**
+
+Below the 2400-2900 word plan target but the figures bring total page count to ~4 pages, within the 4.25-page Approach budget. Each section (Overview/Preliminary, Aim 1, Aim 2, Rigor, Timeline) hits its sub-target. The Approach is the proposal's longest section but no reviewer reward for verbosity; lean prose beats padded prose. Phase 5 humanizer pass can trim further if needed.
+
+**Decision: Preliminary Data scoped to pilot pipeline feasibility on 3 subjects, not preliminary effects.**
+
+Honest framing: we have a working preprocessing + AMICA + dipole pipeline on 3 randomly sampled HBN subjects, validated by per-stage PSD progression and ICLabel + dipole-localization outputs. We do NOT have group-level ERSP, IC clustering across subjects, or condition contrasts. Approach.md states explicitly: "We do not claim hypothesis-level evidence for H1A, H1B, or H2 at the proposal stage; we claim that the pipeline that will produce that evidence is feasible at scale." This protects against the common R21 failure mode of overclaiming pilot data.
+
+**Decision: 5 figures planned, 3 generated as PNG in Phase 3, 2 deferred.**
+
+Generated now:
+- Fig 2 (`fig2-preliminary-data.png`, 1.3 MB): 2x3 composite of 3-subject IC topographies and dipole fits, built via `fig2-preliminary-data.py` from existing `derivatives/amica/` artifacts.
+- Fig 3 (`fig3-stimulus-annotation.png`, 183 KB): 3-panel diagram (shot-onset timeline, LLR distribution, duration histogram) built via `fig3-stimulus-annotation.py` from `shot_events.tsv`.
+
+Deferred (Mermaid markdown source / table for now, PNG render at Phase 5):
+- Fig 1 (`fig1-pipeline-schematic.md`, Mermaid): pipeline schematic with done-vs-proposed coloring.
+- Fig 5 (`fig5-timeline.md`, table): 24-month milestone Gantt as a markdown table; matplotlib Gantt at Phase 5 assembly.
+- Fig 4 (ERSP exemplar): placeholder until Epic #1 Phase 5 lands a real exemplar; can substitute a sketched panel at Phase 5 if Epic #1 Phase 5 has not produced one by then.
+
+**Decision: Shot-count reconciled with actual data (51, not 49).**
+
+`shot_events.tsv` at the repo root has 58 rows. With `match_diff_s` quality control (excluding rows with `|match_diff_s| > 1.0`, treating NaN as trusted), 51 shots survive: 20 boy-only, 15 puppy-only, 16 mixed-or-empty. The `49 trusted` claim in repo CLAUDE.md and Phase 1's `.context/ideas.md` is data-drift from an earlier QC pass. Approach.md uses the actual count (51); analysis-side documentation reconciliation (`CLAUDE.md`, `.context/ideas.md`) is logged as a Phase 5 hygiene item but not gating.
+
+**Decision: Falsification region is locked via `lipkin-2022-language-atlas` ±15 mm.**
+
+R21 Aim 2.D commits to the falsification region pre-registration on OSF at month 6. The locked criterion is "IC cluster dipole centroid within ±15 mm of any `lipkin-2022-language-atlas` peak coordinate". This is concrete enough for a reviewer to verify and tight enough to be a genuine commitment.
+
+**Decision: Blinded GLM protocol committed to month 6.**
+
+`tests/matlab/blinded_glm_protocol.m` does not exist yet in the analysis epic; Approach.md commits to implementing it in month 6 of the funded period. The analysis-epic phase 4-6 work informs the production implementation but the blinding wrapper is R21-specific.
+
+## 2026-05-13, Phase 3 unresolved items for Phase 5
+
+- **Fig 1 PNG render**: Mermaid source is in `fig1-pipeline-schematic.md`; needs render via `mmdc` CLI or web rasterizer at Phase 5.
+- **Fig 4 ERSP exemplar**: blocked on Epic #1 Phase 5. If Phase 5 of the grant epic comes first, substitute a sketched IC exemplar with explicit "schematic" labeling.
+- **Fig 5 Gantt PNG**: convert the Markdown timeline table to a horizontal Gantt bar chart via matplotlib at Phase 5.
+- **Shot-count reconciliation**: Update repo `CLAUDE.md` and `.context/ideas.md` from "49 trusted" to "51 trusted" in a separate small PR (analysis-epic hygiene, not R21-blocking).

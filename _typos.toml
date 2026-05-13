@@ -33,6 +33,7 @@ extend-ignore-re = [
 [default.extend-words]
 # EEG/neuro/method jargon
 ALLEEG = "ALLEEG"
+GAM = "GAM"
 EEGlab = "EEGlab"
 EEGLAB = "EEGLAB"
 amica = "amica"
