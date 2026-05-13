@@ -2,8 +2,8 @@
 epic_issue: 35
 epic_title: "R21 (NIMH), Animacy across age in naturalistic viewing (HBN R3)"
 integration_branch: main
-epic_branch: feature/issue-35-epic-r21-animacy
-worktree_base: "../epic-r21-animacy"
+epic_branch: null
+worktree_base: "../r21-phase{N}-*"
 mechanism: "NIH R21"
 target_ic: "NIMH"
 nofo: "TBD in Phase 1 (parent PA-23-058 or NIMH-specific)"
@@ -40,7 +40,7 @@ updated_at: "2026-05-13T17:05:00Z"
 
 ## Notes
 
-- Parallel to Epic #1 (HBN ERSP analysis). Both use main as integration branch; phase PRs land into main directly (no separate epic-merge branch unless cross-phase coordination requires it).
+- Parallel to Epic #1 (HBN ERSP analysis). Both use main as integration branch; phase PRs land into main directly (no separate epic-merge branch), matching the project convention in CLAUDE.md.
 - State file is separate from Epic #1's `.claude/epic.local.md` to avoid collision.
 - Preliminary data source: whatever Epic #1 derivatives have landed by Phase 3 start. Cite published HBN-EEG R3 group results where available; clearly label pilot vs group.
 - Lit-review strategy: existing 98-paper corpus in `research/collection/` plus `direction-papers/movie-ersp-direction.md` is the base. Phase 2 expands via `opencite:opencite` on animacy/biological motion, developmental EEG, and naturalistic-viewing time-resolved EEG.
