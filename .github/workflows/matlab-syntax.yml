@@ -1,0 +1,52 @@
+name: matlab-syntax
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/matlab/**'
+      - 'tests/matlab/**'
+      - '.github/workflows/matlab-syntax.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/matlab/**'
+      - 'tests/matlab/**'
+      - '.github/workflows/matlab-syntax.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  matlab-syntax:
+    name: matlab syntax (checkcode)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024a
+      - name: Run checkcode on src/matlab
+        uses: matlab-actions/run-command@v2
+        with:
+          command: |
+            files = dir(fullfile('src','matlab','**','*.m'));
+            if isempty(files)
+                error('hbn:lint:no_sources', ...
+                    'No MATLAB sources found under src/matlab; refusing to pass.');
+            end
+            paths = fullfile({files.folder}, {files.name});
+            issues = checkcode(paths{:}, '-id', '-severity');
+            n = 0;
+            for k = 1:numel(issues)
+                msgs = issues{k};
+                for j = 1:numel(msgs)
+                    fprintf('%s:%d: [%s] %s\n', paths{k}, msgs(j).line, msgs(j).id, msgs(j).message);
+                    if ~isempty(msgs(j).severity) && msgs(j).severity > 0
+                        n = n + 1;
+                    end
+                end
+            end
+            if n > 0
+                error('checkcode found %d severe issues.', n);
+            end
