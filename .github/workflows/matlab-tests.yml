@@ -53,6 +53,18 @@ jobs:
           git clone --depth 1 --branch "$EEGLAB_TAG" --recurse-submodules \
             https://github.com/sccn/eeglab.git "$EEGLAB_DIR"
 
+      - name: Install MPI runtime for AMICA Linux binary
+        # The AMICA plugin ships amica15ex (Linux Fortran binary) which
+        # dynamically links against MPICH's Fortran library libmpifort.so.12.
+        # Ubuntu runners do not have it preinstalled; without it AMICA
+        # fails at "error while loading shared libraries: libmpifort.so.12".
+        # libmpich-dev pulls the runtime plus headers; runtime-only is also
+        # fine but the -dev package resolves regardless of Ubuntu version.
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y libmpich-dev
+
       - uses: matlab-actions/setup-matlab@v2
         with:
           release: R2024a
