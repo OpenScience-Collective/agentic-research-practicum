@@ -44,8 +44,8 @@ QA-table checks:
 - `rejected_channels` must contain `Cz` for every subject; not having Cz means the reference was reconstructed and the rest of the pipeline is invalid.
 - `n_channels_after` distribution sanity: 90-128 is typical. Below 80 means an unusually bad recording or threshold mis-set. Flag subjects below 90 individually with the rejection count + reason.
 - `srate` must be 100 for every subject (local 100 Hz tier). 500 means the wrong dataset was loaded.
-- `duration_s` should be roughly comparable across subjects for the same task (`ThePresent` ~3.5 min, ≈ 210 s; tolerate ±10%).
-- `cleanline_status` should be `"skipped (srate<500)"` for every 100 Hz subject. Anything else is a finding.
+- `duration_s` is wall-clock processing time per subject (seconds spent inside `process_one_subject`), not recording duration. Compare across subjects to spot stragglers; do not compare against task length.
+- `cleanline_status` is one of the literal strings `applied` or `skipped_nyquist`. For 100 Hz data it must be `skipped_nyquist`; anything else is a finding.
 
 Known-accepted observations (do NOT flag as defects):
 - Cz rejected by `clean_rawdata`, expected, documented in `.context/scratch_history.md`.
