@@ -41,25 +41,16 @@ function [EEG, stats] = run_amica(EEG, outdir, opts)
         'numrej', opts.NumRej, ...
         'rejsig', opts.RejSig};
 
-    % runamica15 expects a data matrix, a .set filename, or a raw binary
-    % .fdt path. Prefer the .fdt path when EEG was loaded from disk:
-    % the AMICA Fortran binary reads it directly and skips the
-    % MATLAB-side data copy. Passing the EEG struct itself silently
-    % corrupts argument parsing (forrtl-66 overflow on macOS).
-    datfile = "";
-    has_datfile = isfield(EEG, 'datfile') && ~isempty(EEG.datfile) && ...
-        isfield(EEG, 'filepath') && ~isempty(EEG.filepath);
-    if has_datfile
-        candidate = fullfile(EEG.filepath, EEG.datfile);
-        if isfile(candidate); datfile = candidate; end
-    end
-
+    % runamica15 wants a data matrix, a .set filename, or a raw binary
+    % path with num_chans. The .fdt-path optimization (passes the on-disk
+    % float file directly) tripped over a file-type detection mismatch
+    % on the CI Linux AMICA build ("unknown file type, need num_chans")
+    % even though it worked locally. The save-a-copy benefit is
+    % negligible at our channel counts; always pass EEG.data(:,:) so the
+    % code path is identical local and on CI. The earlier crash on
+    % macOS was caused by passing the EEG STRUCT (not the matrix).
     try
-        if datfile ~= ""
-            runamica15(char(datfile), args{:});
-        else
-            runamica15(EEG.data(:, :), args{:});
-        end
+        runamica15(EEG.data(:, :), args{:});
     catch ME
         error("hbn:phase2:amica:run_failed", ...
             "runamica15 failed: %s", ME.message);
