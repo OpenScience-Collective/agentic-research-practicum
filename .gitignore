@@ -6,6 +6,16 @@ derivatives/
 *.edf
 *.mat
 
+# Allow-list: track small QA artifacts under derivatives/ (figures, csv,
+# params) so 3-subject results survive repo moves; heavy .set/.fdt files
+# stay ignored via the extension-based rules above.
+!derivatives/
+!derivatives/**/
+!derivatives/**/*.png
+!derivatives/**/qa_*.csv
+!derivatives/**/params.json
+!derivatives/**/README.md
+
 # MATLAB scratch
 *.asv
 *.m~
@@ -30,5 +40,7 @@ __pycache__/
 .env.*
 !.env.example
 *.local
-.claude/*.local.md
+
+# .claude/ is tracked so collaborators see project agents, commands,
+# and epic-dev state. Only the per-user permission file is private.
 .claude/settings.local.json

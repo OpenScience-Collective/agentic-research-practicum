@@ -36,7 +36,7 @@ derivatives/
 1. **Check context:** `.context/plan.md` for current phase and tasks
 2. **Design decisions:** `.context/ideas.md` (contrast choice, baseline window, LLR handling)
 3. **Pipeline notes and refs:** `.context/research.md`
-4. **Branch per phase:** `gh issue develop <issue-number>` from `develop` (or `main` if no dev track yet)
+4. **Branch per phase:** `gh issue develop <issue-number>` from `main` (no `develop` track; phase branches land directly into `main`)
 5. **One function per preprocessing step**, CLI-callable, deterministic
 6. **Checkpoint after each phase** under `derivatives/<stage>/`
 7. **Document failures:** log in `.context/scratch_history.md` immediately

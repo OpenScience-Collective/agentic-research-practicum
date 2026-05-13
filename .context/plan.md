@@ -36,7 +36,7 @@
 - [x] Real-data smoke test on 1 subject (`test_phase1_smoke.m`) green
 - [x] Stage B on 3 subjects validates generalization (channels lost: 6 / 17 / 31 of 129)
 - [ ] Stage C full fan-out (all subjects with `ThePresent == "available"`)
-- [ ] Open PR against `develop`, run `/review-pr`, address findings, merge
+- [ ] Open PR against `main`, run `/review-pr`, address findings, merge
 **Deliverable:** cleaned EEG checkpoint + QA CSV + 4 PSD PNGs per subject + params.json.
 
 ## Phase 2 — AMICA + dipfit
