@@ -1,0 +1,25 @@
+{
+  "BidsRoot": "/Volumes/S1/Datasets/HBN/L100/R3_L100_bdf",
+  "Task": "ThePresent",
+  "OutDir": "derivatives/preproc",
+  "Subjects": [],
+  "HpfHz": 1,
+  "RunCleanline": false,
+  "LineNoiseHz": [
+    60,
+    120,
+    180
+  ],
+  "ChannelCriterion": 0.8,
+  "LineNoiseCriterion": 5,
+  "SmokeSubjectCount": 3,
+  "n_subjects_eligible": 3,
+  "n_subjects_ok": 3,
+  "n_subjects_failed": 0,
+  "n_subjects_missing_from_import": 0,
+  "bids_import_scratch": "derivatives/preproc/_bids_import_scratch",
+  "matlab_version": "25.2.0.3055257 (R2025b) Update 2",
+  "eeglab_version": "dev",
+  "git_sha": "d1471fef1dc241e38fd3cd7bfb7c43e638057e67",
+  "timestamp_iso": "2026-05-13T05:16:15Z"
+}
