@@ -41,7 +41,14 @@ function paramsPath = phase2_amica(opts)
 %     NumRej       (1,1) double   default 5
 %     RejSig       (1,1) double   default 4
 %     NumTopoICs   (1,1) double   default 30
+%     IcaMethod    (1,1) string   default "amica"        ("amica" or "runica")
 %     EeglabRoot   (1,1) string   default ""             (probed if empty)
+%
+%   IcaMethod="amica" is the production path (matches the brief). The
+%   CI smoke test sets IcaMethod="runica" because AMICA's native Fortran
+%   binary needs MPI runtime libs that Ubuntu runners do not have. Both
+%   paths populate EEG.icaweights / icasphere / icawinv, so downstream
+%   dipfit + figure code does not branch on the method.
 
     arguments
         opts.PreprocDir (1, 1) string = "derivatives/preproc"
@@ -55,6 +62,7 @@ function paramsPath = phase2_amica(opts)
         opts.NumRej (1, 1) double {mustBeNonnegative, mustBeInteger} = 5
         opts.RejSig (1, 1) double {mustBePositive} = 4
         opts.NumTopoICs (1, 1) double {mustBePositive, mustBeInteger} = 30
+        opts.IcaMethod (1, 1) string {mustBeMember(opts.IcaMethod, ["amica", "runica"])} = "amica"
         opts.EeglabRoot (1, 1) string = ""
     end
 
@@ -117,6 +125,7 @@ function paramsPath = phase2_amica(opts)
             hbn.write_qa_amica_csv(opts.OutDir, struct( ...
                 'participant_id', subjId, ...
                 'status', "failed_" + stage, ...
+                'ica_method', opts.IcaMethod, ...
                 'n_components', NaN, ...
                 'final_ll', NaN, ...
                 'iterations', NaN, ...
@@ -145,7 +154,15 @@ function qaRow = process_one_subject(EEG, subjId, head_model, opts)
         if ~isfolder(d); mkdir(d); end
     end
 
-    [EEG, amicaStats] = hbn.run_amica(EEG, out_amica_dir, opts);
+    switch lower(opts.IcaMethod)
+        case "amica"
+            [EEG, amicaStats] = hbn.run_amica(EEG, out_amica_dir, opts);
+        case "runica"
+            [EEG, amicaStats] = hbn.run_infomax(EEG, out_amica_dir, opts);
+        otherwise
+            error("hbn:phase2:unknown_ica_method", ...
+                "IcaMethod=%s not supported", opts.IcaMethod);
+    end
 
     [EEG, dipoleStats] = hbn.fit_dipoles(EEG, head_model);
 
@@ -156,6 +173,7 @@ function qaRow = process_one_subject(EEG, subjId, head_model, opts)
     pop_saveset(EEG, 'filename', char(out_set), 'filepath', char(out_eeg_dir));
 
     qaRow = struct( ...
+        'ica_method', opts.IcaMethod, ...
         'n_components', EEG.nbchan, ...
         'final_ll', amicaStats.final_ll, ...
         'iterations', amicaStats.iterations, ...

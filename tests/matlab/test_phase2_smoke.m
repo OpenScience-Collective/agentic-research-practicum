@@ -38,7 +38,8 @@ function test_phase2_smoke
         PreprocDir = preprocDir, ...
         OutDir = amicaDir, ...
         MaxIter = 100, ...
-        DoReject = false);
+        DoReject = false, ...
+        IcaMethod = "runica");
 
     assert(isfile(paramsPath), "params.json missing at %s", paramsPath);
     qaPath = fullfile(amicaDir, "qa_amica.csv");
@@ -57,14 +58,19 @@ function test_phase2_smoke
     assert(height(qa) == 1, "qa_amica.csv should have 1 row, has %d", height(qa));
     assert(qa.status(1) == "ok", "qa row status=%s expected ok", qa.status(1));
     assert(qa.n_components(1) > 0, "n_components should be positive");
-    assert(isfinite(qa.final_ll(1)), "final_ll should be finite");
-    assert(qa.iterations(1) > 0, "iterations should be positive");
+    % final_ll and iterations are AMICA-specific QA fields; Infomax
+    % (used by the CI smoke test) does not expose a log-likelihood.
+    % Assert finiteness only when AMICA was the engine.
+    if strcmpi(qa.ica_method(1), "amica")
+        assert(isfinite(qa.final_ll(1)), "final_ll should be finite for amica");
+        assert(qa.iterations(1) > 0, "iterations should be positive for amica");
+    end
     assert(isfinite(qa.median_rv(1)) && qa.median_rv(1) >= 0 && qa.median_rv(1) <= 1, ...
         "median_rv should be in [0,1], got %.3f", qa.median_rv(1));
 
     params = jsondecode(fileread(paramsPath));
     requiredFields = ["NumModels", "MaxIter", "MaxThreads", "DoReject", ...
-        "NumRej", "RejSig", "PreprocDir", "OutDir", "Task", ...
+        "NumRej", "RejSig", "PreprocDir", "OutDir", "Task", "IcaMethod", ...
         "matlab_version", "eeglab_version", "git_sha", "timestamp_iso", ...
         "n_subjects_input", "n_subjects_ok", "n_subjects_failed", "eeglab_root"];
     missingFields = setdiff(requiredFields, string(fieldnames(params)));
