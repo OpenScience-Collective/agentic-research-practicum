@@ -1,0 +1,54 @@
+% NIH R21 LaTeX header for pandoc-rendered submission PDF.
+% Constraints from NIH grants.gov format requirements,
+% see https://grants.nih.gov/grants/how-to-apply-application-guide/format-and-write/format-attachments.htm
+%
+% Helvetica 11pt body (Arial substitute), 0.5 inch margins on all sides,
+% 4pt space between paragraphs, no paragraph indentation, justified text.
+
+\usepackage[letterpaper, margin=0.5in]{geometry}
+% Use fontspec (xelatex-native) for full unicode support including beta, Delta,
+% approximately, arrow, and curly quotes used in the GLM equations and prose.
+% Helvetica Neue is installed by default on macOS; on Linux/CI install
+% texlive-fonts-extra or fall back to Arimo/Liberation Sans via fontspec
+% AutoFakeBold/Slant features.
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}[Ligatures=TeX]
+\setsansfont{Helvetica Neue}[Ligatures=TeX]
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+% Paragraph spacing
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+
+% Justified text (default in LaTeX; reaffirm for clarity)
+\sloppy
+
+% Section heading sizes appropriate for 1-page Aims and 6-page Research Strategy
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+\titlespacing*{\subsection}{0pt}{4pt}{1pt}
+
+% Tighter list spacing for R21 page budget
+\usepackage{enumitem}
+\setlist{itemsep=1pt, topsep=2pt, parsep=0pt}
+
+% Tables for budget summary
+\usepackage{booktabs}
+
+% Hyperlinks (NIH-acceptable; review panels expect functional citations)
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
+
+% Figures
+\usepackage{graphicx}
+\graphicspath{{../../figures/}}
+
+% Page numbers in footer (NIH allows; many applicants include for navigability)
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}

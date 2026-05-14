@@ -138,3 +138,25 @@ The markdown slug citations in Aims, Significance, Innovation, and Approach rema
 **Decision: Biosketch placeholders use NIH format but call out SciENcv export at submission.**
 
 `PI-Shirazi.md` is a substantial NIH-format draft with `[BRACKETED]` fields for degrees, positions, honors, and citation lists; **the actual submission biosketch is exported from SciENcv** by the PI at submission time. The Phase 4 markdown serves as a planning document for what to populate in SciENcv. Co-investigator and senior-advisor biosketches are skeletons only.
+
+## 2026-05-13, Phase 5 decisions
+
+**Decision: Pandoc + xelatex build pipeline; PDF built and committed.**
+
+`build.sh` concatenates cover + Aims + Significance + Innovation + Approach and renders to `build/r21.pdf` via xelatex with the NIH formatting in `build/header.tex` (Helvetica Neue via fontspec, 0.5" margins, 4pt parskip, justified). Build runs locally on the maintainer's macOS with MacTeX installed; total 8 pages (1 cover + 1 Aims + 6 Research Strategy). The choice of xelatex over pdflatex was forced by the GLM equation unicode (β, Δ, ≈) and curly apostrophes in author surnames. One Unicode arrow (→) was replaced with "then" in approach.md to avoid the last missing-glyph warning.
+
+**Decision: Reviews are documented, not auto-applied.**
+
+The three Phase 5 review passes (grant-review, figure-qa, humanizer) write to `reviews/*.md` with concrete findings, but no edit is auto-applied to the proposal text. The user triages and applies the recommended edits at their discretion before submission. This is correct for an R21 because (a) the PI is the scientific authority on which edits to accept, (b) some findings (like "widen the H1A effect-size range") need PI judgment about what range is defensible, and (c) Phase 5 is a closeout phase whose deliverable is "ready for PI review", not "ready for submission as-is".
+
+**Decision: Pre-submission CHECKLIST.md aggregates Phase 5 outputs into actionable next steps.**
+
+The CHECKLIST has 3 categories matching grant-writing SKILL.md Step 7: content completeness, budget+administrative, formatting. Each item is `[x]` complete, `[ ]` blocking, or `[?]` deferred to submitter. Four items are flagged as currently blocking submission: actual letters of support, Figure 2 dpi regen, Figure 3 caption / median fix, README.md shot-count update. None are scientific or structural; all are tractable within 2 weeks of the receipt date.
+
+**Decision: Epic closeout via Phase 5 PR.**
+
+The Phase 5 PR uses "Closes #35" in the body to auto-close the epic on merge. Each prior phase PR has already auto-closed its sub-issue. After Phase 5 merges, the entire R21 epic (Issue #35 + sub-issues #36-#40) is closed; the proposal package under `proposals/r21-nimh/2026-animacy/` is in PI-customization-ready state.
+
+**Decision: Final humanizer recommendations are minimal (2 light edits).**
+
+The proposal already reads in a humanizer-clean style by design (avoided "groundbreaking" / "paradigm-shifting" in Innovation; balanced hedging in Approach alternatives; substantive lists-of-three rather than rhetorical ones). The 2 recommended edits in `humanizer-2026-05-13.md` (Innovation Methodological closing sentence; Significance Paragraph 1 lead) can be applied as a single 30-second commit if the user wants.

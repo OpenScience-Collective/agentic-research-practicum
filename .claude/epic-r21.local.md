@@ -33,15 +33,17 @@ phases:
     title: "Supplemental sections (Bib, Facilities, DMS, Budget, Biosketches)"
     issue: 39
     branch: "feature/issue-39-phase4-supplemental"
-    status: in_progress
+    status: complete
+    pr: 44
+    note: "Merged 2026-05-13. 9 supplemental files + 117-entry bibliography.bib. [BRACKETED] placeholders for PI institution / co-Is / F&A rate."
   - number: 5
     title: "Assembly, grant-review, humanizer pass"
     issue: 40
     branch: "feature/issue-40-phase5-assembly"
-    status: pending
-current_phase: 4
+    status: in_progress
+current_phase: 5
 created_at: "2026-05-13T17:05:00Z"
-updated_at: "2026-05-13T22:30:00Z"
+updated_at: "2026-05-13T23:55:00Z"
 ---
 
 ## Notes
