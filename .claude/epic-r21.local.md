@@ -26,20 +26,22 @@ phases:
     title: "Approach, preliminary data, timeline"
     issue: 38
     branch: "feature/issue-38-phase3-approach"
-    status: in_progress
+    status: complete
+    pr: 43
+    note: "Merged 2026-05-13. Approach 1774w across 5 subsections. 5 figures planned, 3 PNGs generated (fig2 composite, fig3 from shot_events.tsv via uv). Shot-count reconciled to 51 (was 49 in CLAUDE.md)."
   - number: 4
     title: "Supplemental sections (Bib, Facilities, DMS, Budget, Biosketches)"
     issue: 39
     branch: "feature/issue-39-phase4-supplemental"
-    status: pending
+    status: in_progress
   - number: 5
     title: "Assembly, grant-review, humanizer pass"
     issue: 40
     branch: "feature/issue-40-phase5-assembly"
     status: pending
-current_phase: 3
+current_phase: 4
 created_at: "2026-05-13T17:05:00Z"
-updated_at: "2026-05-13T20:45:00Z"
+updated_at: "2026-05-13T22:30:00Z"
 ---
 
 ## Notes
