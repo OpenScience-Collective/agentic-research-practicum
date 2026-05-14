@@ -108,3 +108,33 @@ R21 Aim 2.D commits to the falsification region pre-registration on OSF at month
 - **Fig 4 ERSP exemplar**: blocked on Epic #1 Phase 5. If Phase 5 of the grant epic comes first, substitute a sketched IC exemplar with explicit "schematic" labeling.
 - **Fig 5 Gantt PNG**: convert the Markdown timeline table to a horizontal Gantt bar chart via matplotlib at Phase 5.
 - **Shot-count reconciliation**: Update repo `CLAUDE.md` and `.context/ideas.md` from "49 trusted" to "51 trusted" in a separate small PR (analysis-epic hygiene, not R21-blocking).
+
+## 2026-05-13, Phase 4 decisions
+
+**Decision: All 9 supplemental files drafted with `[BRACKETED]` placeholders.**
+
+PI institution, named co-Is, statistical consultant, F&A rate, and specific cluster names are bracketed throughout the supplemental docs. The user customizes by find-replace before submission. This was selected over pre-filling UCSD / SCCN because (a) PI affiliation is not formally locked, (b) bracketed placeholders force explicit attention and prevent stale defaults from slipping through to submission.
+
+**Decision: Bibliography is consolidated, not slug-rewritten.**
+
+`bibliography.bib` concatenates all 4 strand `.bib` files plus `refs.bib` plus 4 new entries for slugs missing from the corpus (Delorme & Makeig 2004 EEGLAB, Hamlin 2013 infant social cognition, Palmer 2008 AMICA, Plöchl 2012 eye-EEG artifact). Total 117 BibTeX entries. The R21 markdown uses citation slugs; `bibliography.md` documents the slug-to-key mapping. Phase 5 LaTeX assembly does the slug-to-key resolution at render time. This was selected over rewriting all entries with slug keys because (a) faster (no per-entry rewrite), (b) preserves the strand bibs as the source of truth, (c) deduplication and NIH-numbering happen once at Phase 5 rather than twice.
+
+**Decision: Budget is 5+6 modules ($125K Y1 + $150K Y2).**
+
+Front-loads pipeline validation in Year 1 (lower expenses, higher PI effort drafting / preregistering); back-loads group-level analyses, manuscript production, statistical consulting, replication, and depositions in Year 2. This split is defended in `budget/budget.md` against the alternative symmetric split. R21 cap of $200K/year is respected at both years.
+
+**Decision: F&A indirect cost rate left bracketed.**
+
+The F&A rate varies by institution and rate agreement date. `budget/budget.md` shows the `[CALCULATED AT PI INSTITUTION F&A RATE]` placeholder for both years; the **[PI INSTITUTION]** grants office computes the final total cost figure at submission. Indirect costs do not count against the $275K direct-cost cap.
+
+**Decision: Bibliography render to NIH-numbered style happens at Phase 5.**
+
+The markdown slug citations in Aims, Significance, Innovation, and Approach remain readable in source. At Phase 5 LaTeX assembly, a build step converts slug references to NIH-numbered citations (Vancouver-like, no author-year), keeping the source readable while producing reviewer-format output.
+
+**Decision: Letters of support are queued, not drafted in Phase 4.**
+
+`REQUEST_QUEUE.md` lists 5 named targets with explicit asks, draft-language file references (`templates/los-*.md`), solicit dates, and follow-up dates. The actual letter templates are deferred to a follow-up commit when the user provides named contacts; this avoids stale draft language that would be re-written for each named target.
+
+**Decision: Biosketch placeholders use NIH format but call out SciENcv export at submission.**
+
+`PI-Shirazi.md` is a substantial NIH-format draft with `[BRACKETED]` fields for degrees, positions, honors, and citation lists; **the actual submission biosketch is exported from SciENcv** by the PI at submission time. The Phase 4 markdown serves as a planning document for what to populate in SciENcv. Co-investigator and senior-advisor biosketches are skeletons only.
