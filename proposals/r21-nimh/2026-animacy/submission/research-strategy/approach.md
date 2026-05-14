@@ -66,7 +66,7 @@ where i indexes subject, j indexes IC cluster, k indexes shot. Random intercept 
 
 **Figure 5** (24-month milestone chart):
 
-- **Months 1 to 6, pipeline validation.** Validate AMICA stability on N=20 → N=50. Validate IC clustering. Lock ERSP precompute parameters. Pre-register Aim 1 and Aim 2 plans on the Open Science Framework (OSF). Implement and freeze the blinded-GLM protocol.
+- **Months 1 to 6, pipeline validation.** Validate AMICA stability on N=20 then N=50. Validate IC clustering. Lock ERSP precompute parameters. Pre-register Aim 1 and Aim 2 plans on the Open Science Framework (OSF). Implement and freeze the blinded-GLM protocol.
 - **Months 7 to 12, Aim 1 group analysis.** Full N≈160 H1A (mu-band ERD across age) and H1B (frontal asymmetry × condition × age). Aim 1 manuscript drafted by month 11, submitted by month 12.
 - **Months 13 to 18, Aim 2 group analysis.** LLR-partialled GLM, falsification-region localization, age moderator. Internal 60/40 replication. Cross-cohort replication on the adult EEG-fMRI cohort (`telesford-2023-eeg-fmri-naturalistic`). Pipeline and derivatives deposited to OpenNeuro and NEMAR (month 18).
 - **Months 19 to 24, closeout and R01 preparation.** Aim 2 manuscript submission. R01 follow-on prep targeting NIMH's autism portfolio (`lord-2020-autism-primer`), leveraging HBN's transdiagnostic stratification.
