@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1100 660"
-     width="170mm" height="102mm"
+     viewBox="0 0 1100 740"
+     width="170mm" height="114mm"
      font-family="Helvetica, Arial, sans-serif">
   <title>Figure 2. Naturalness gradient crossed with developmental cohort coverage</title>
   <desc>Stimulus naturalness (x-axis) versus participant cohort age (y-axis). Markers are sized by number of corpus cards and shaped by modality. The child-cohort EEG-ERSP cell at character animation is highlighted as the empty cell of interest.</desc>
 
-  <rect width="1100" height="660" fill="#ffffff"/>
+  <rect width="1100" height="740" fill="#ffffff"/>
 
   <text x="40" y="30" font-size="22" font-weight="600" fill="#000000">Figure 2. Naturalness gradient and developmental cohort coverage</text>
   <text x="40" y="50" font-size="15" fill="#444444">Marker size encodes number of cards in the four-strand corpus. Modality is encoded by shape and colour. The empty cell at (child, character animation, EEG ERSP) is highlighted.</text>
@@ -36,26 +36,34 @@
     <text x="-10" y="194" font-size="16" text-anchor="end" fill="#000000">adolescent</text>
     <text x="-10" y="320" font-size="16" text-anchor="end" fill="#000000">child</text>
 
+    <!-- X axis stimulus thumbnails (generated via figures:transparent-icons) -->
+    <image href="icons/stim_gratings.png" x="51" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
+    <image href="icons/stim_photographs.png" x="201" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
+    <image href="icons/stim_heider-simmel.png" x="351" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
+    <image href="icons/stim_abstract-animation.png" x="501" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
+    <image href="icons/stim_character-animation.png" x="651" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
+    <image href="icons/stim_live-action-film.png" x="801" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
+
     <!-- X axis labels (stimulus types) -->
-    <text x="75" y="400" font-size="15" text-anchor="middle" fill="#000000">controlled</text>
-    <text x="75" y="412" font-size="15" text-anchor="middle" fill="#000000">gratings</text>
+    <text x="75" y="450" font-size="15" text-anchor="middle" fill="#000000">controlled</text>
+    <text x="75" y="465" font-size="15" text-anchor="middle" fill="#000000">gratings</text>
 
-    <text x="225" y="400" font-size="15" text-anchor="middle" fill="#000000">static</text>
-    <text x="225" y="412" font-size="15" text-anchor="middle" fill="#000000">photographs</text>
+    <text x="225" y="450" font-size="15" text-anchor="middle" fill="#000000">static</text>
+    <text x="225" y="465" font-size="15" text-anchor="middle" fill="#000000">photographs</text>
 
-    <text x="375" y="400" font-size="15" text-anchor="middle" fill="#000000">Heider-Simmel</text>
-    <text x="375" y="412" font-size="15" text-anchor="middle" fill="#000000">triangles</text>
+    <text x="375" y="450" font-size="15" text-anchor="middle" fill="#000000">Heider-Simmel</text>
+    <text x="375" y="465" font-size="15" text-anchor="middle" fill="#000000">triangles</text>
 
-    <text x="525" y="400" font-size="15" text-anchor="middle" fill="#000000">abstract</text>
-    <text x="525" y="412" font-size="15" text-anchor="middle" fill="#000000">animation</text>
+    <text x="525" y="450" font-size="15" text-anchor="middle" fill="#000000">abstract</text>
+    <text x="525" y="465" font-size="15" text-anchor="middle" fill="#000000">animation</text>
 
-    <text x="675" y="400" font-size="15" text-anchor="middle" fill="#000000">character</text>
-    <text x="675" y="412" font-size="15" text-anchor="middle" fill="#000000">animation</text>
+    <text x="675" y="450" font-size="15" text-anchor="middle" fill="#000000">character</text>
+    <text x="675" y="465" font-size="15" text-anchor="middle" fill="#000000">animation</text>
 
-    <text x="825" y="400" font-size="15" text-anchor="middle" fill="#000000">live-action</text>
-    <text x="825" y="412" font-size="15" text-anchor="middle" fill="#000000">film</text>
+    <text x="825" y="450" font-size="15" text-anchor="middle" fill="#000000">live-action</text>
+    <text x="825" y="465" font-size="15" text-anchor="middle" fill="#000000">film</text>
 
-    <text x="450" y="438" font-size="15" font-style="italic" text-anchor="middle" fill="#666666">naturalness gradient</text>
+    <text x="450" y="492" font-size="15" font-style="italic" text-anchor="middle" fill="#666666">naturalness gradient</text>
 
     <!-- Axis arrow -->
     <line x1="0" y1="380" x2="900" y2="380" stroke="#000000" stroke-width="0.7" marker-end="url(#xarrow)"/>
@@ -114,7 +122,7 @@
   </g>
 
   <!-- Legend bottom -->
-  <g transform="translate(150,570)">
+  <g transform="translate(150,650)">
     <text x="0" y="0" font-size="16" font-weight="600" fill="#000000">Modality (shape and colour):</text>
 
     <circle cx="195" cy="-3" r="6" fill="#0072B2" fill-opacity="0.85"/>
@@ -135,7 +143,7 @@
     <text x="600" y="0" font-size="15" fill="#000000">Marker size scales with number of cards in cell.</text>
   </g>
 
-  <text x="40" y="630" font-size="14" fill="#666666">Sources: research/synthesis/dataset-hierarchy.md, science-map.md Theme 3, and four *-ontology.md files. Marker placement reflects representative cards, not exhaustive enumeration.</text>
+  <text x="40" y="710" font-size="14" fill="#666666">Sources: research/synthesis/dataset-hierarchy.md, science-map.md Theme 3, and four *-ontology.md files. Marker placement reflects representative cards, not exhaustive enumeration.</text>
 
   <defs>
     <marker id="xarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
