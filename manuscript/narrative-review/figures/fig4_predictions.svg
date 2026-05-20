@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1100 600"
+     width="1100" height="600"
+     font-family="Helvetica, Arial, sans-serif">
+  <title>Figure 4. Predictions per perspective</title>
+  <desc>Four perspectives by band, topography, latency, and pre-registered falsification region. The head schematic per row indicates the topographic focus of the predicted effect.</desc>
+
+  <rect width="1100" height="600" fill="#ffffff"/>
+
+  <text x="40" y="30" font-size="15" font-weight="600" fill="#000000">Figure 4. Predictions and falsification regions, per perspective</text>
+  <text x="40" y="50" font-size="10" fill="#444444">Each perspective makes a different kind of prediction at the 0-500 ms post-shot-onset window. The falsification column names the band-and-topography rejection criterion.</text>
+
+  <!-- Column headers -->
+  <g transform="translate(40,80)" font-size="11" font-weight="600">
+    <rect x="0" y="0" width="180" height="36" fill="#444444"/>
+    <text x="90" y="22" fill="#ffffff" text-anchor="middle">perspective</text>
+
+    <rect x="180" y="0" width="120" height="36" fill="#444444"/>
+    <text x="240" y="22" fill="#ffffff" text-anchor="middle">topography</text>
+
+    <rect x="300" y="0" width="160" height="36" fill="#444444"/>
+    <text x="380" y="22" fill="#ffffff" text-anchor="middle">band</text>
+
+    <rect x="460" y="0" width="160" height="36" fill="#444444"/>
+    <text x="540" y="22" fill="#ffffff" text-anchor="middle">latency</text>
+
+    <rect x="620" y="0" width="400" height="36" fill="#444444"/>
+    <text x="820" y="22" fill="#ffffff" text-anchor="middle">falsification region</text>
+  </g>
+
+  <!-- Row 1: Psychophysics -->
+  <g transform="translate(40,116)" font-size="10">
+    <rect x="0" y="0" width="180" height="100" fill="#0072B2" fill-opacity="0.18" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="10" y="22" font-weight="600">Psychophysics</text>
+    <text x="10" y="40" font-size="9">(bottom-up floor;</text>
+    <text x="10" y="52" font-size="9">partialled, not</text>
+    <text x="10" y="64" font-size="9">predicted)</text>
+
+    <rect x="180" y="0" width="120" height="100" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <!-- Head schematic: occipital filled -->
+    <ellipse cx="240" cy="50" rx="34" ry="40" fill="none" stroke="#000000" stroke-width="1"/>
+    <path d="M225,15 L255,15 L240,8 Z" fill="none" stroke="#000000" stroke-width="0.6"/>
+    <ellipse cx="240" cy="78" rx="14" ry="6" fill="#0072B2" fill-opacity="0.75"/>
+    <text x="240" y="96" font-size="8" text-anchor="middle">occipital</text>
+
+    <rect x="300" y="0" width="160" height="100" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="380" y="38" text-anchor="middle">broadband VEP</text>
+    <text x="380" y="54" text-anchor="middle">(LLR-driven)</text>
+    <text x="380" y="74" text-anchor="middle" font-size="9" fill="#666666">P100, N170 components</text>
+
+    <rect x="460" y="0" width="160" height="100" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="540" y="38" text-anchor="middle">50-300 ms</text>
+    <text x="540" y="58" text-anchor="middle" font-size="9" fill="#666666">earliest window;</text>
+    <text x="540" y="70" text-anchor="middle" font-size="9" fill="#666666">largest amplitude</text>
+
+    <rect x="620" y="0" width="400" height="100" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="630" y="22" font-size="9">No falsification region; this perspective is the</text>
+    <text x="630" y="36" font-size="9">covariate, not the prediction. If LLR plus motion</text>
+    <text x="630" y="50" font-size="9">energy explain all condition-level variance, the</text>
+    <text x="630" y="64" font-size="9">four-perspective ranking falls back to the bottom-up</text>
+    <text x="630" y="78" font-size="9">exhaustion null.</text>
+  </g>
+
+  <!-- Row 2: Action -->
+  <g transform="translate(40,216)" font-size="10">
+    <rect x="0" y="0" width="180" height="120" fill="#D55E00" fill-opacity="0.18" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="10" y="22" font-weight="600">Action</text>
+    <text x="10" y="40" font-size="9">(strongest specific</text>
+    <text x="10" y="52" font-size="9">oscillatory prediction;</text>
+    <text x="10" y="64" font-size="9">mu-band ERD over</text>
+    <text x="10" y="76" font-size="9">central rolandic</text>
+    <text x="10" y="88" font-size="9">cortex)</text>
+
+    <rect x="180" y="0" width="120" height="120" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <ellipse cx="240" cy="60" rx="34" ry="40" fill="none" stroke="#000000" stroke-width="1"/>
+    <path d="M225,25 L255,25 L240,18 Z" fill="none" stroke="#000000" stroke-width="0.6"/>
+    <ellipse cx="240" cy="48" rx="22" ry="9" fill="#D55E00" fill-opacity="0.75"/>
+    <text x="240" y="108" font-size="8" text-anchor="middle">central rolandic (C3, Cz, C4)</text>
+
+    <rect x="300" y="0" width="160" height="120" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="380" y="42" text-anchor="middle">mu (8-13 Hz)</text>
+    <text x="380" y="62" text-anchor="middle" font-size="9" fill="#666666">+ optional beta</text>
+    <text x="380" y="76" text-anchor="middle" font-size="9" fill="#666666">rebound (15-25 Hz)</text>
+
+    <rect x="460" y="0" width="160" height="120" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="540" y="42" text-anchor="middle">100-500 ms</text>
+    <text x="540" y="62" text-anchor="middle" font-size="9" fill="#666666">ERD sustained</text>
+    <text x="540" y="76" text-anchor="middle" font-size="9" fill="#666666">across window</text>
+
+    <rect x="620" y="0" width="400" height="120" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="630" y="22" font-size="9">Confirmed by central-rolandic mu-band ERD</text>
+    <text x="630" y="36" font-size="9">surviving LLR partialling at cluster-level</text>
+    <text x="630" y="50" font-size="9">p &lt; 0.05 (corrected). Falsified by absence of</text>
+    <text x="630" y="64" font-size="9">central-rolandic effect or relocation of the surviving</text>
+    <text x="630" y="78" font-size="9">cluster to non-central sites. Hickok-style</text>
+    <text x="630" y="92" font-size="9">critiques temper the strength of this prediction.</text>
+  </g>
+
+  <!-- Row 3: Language -->
+  <g transform="translate(40,336)" font-size="10">
+    <rect x="0" y="0" width="180" height="100" fill="#009E73" fill-opacity="0.18" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="10" y="22" font-weight="600">Language</text>
+    <text x="10" y="40" font-size="9">(comparator of</text>
+    <text x="10" y="52" font-size="9">non-transfer; LM</text>
+    <text x="10" y="64" font-size="9">regressors structurally</text>
+    <text x="10" y="76" font-size="9">cannot apply)</text>
+
+    <rect x="180" y="0" width="120" height="100" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <ellipse cx="240" cy="50" rx="34" ry="40" fill="none" stroke="#000000" stroke-width="1"/>
+    <path d="M225,15 L255,15 L240,8 Z" fill="none" stroke="#000000" stroke-width="0.6"/>
+    <ellipse cx="220" cy="50" rx="10" ry="14" fill="#009E73" fill-opacity="0.55"/>
+    <text x="240" y="96" font-size="8" text-anchor="middle">left frontotemporal (negative control)</text>
+
+    <rect x="300" y="0" width="160" height="100" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="380" y="42" text-anchor="middle">none predicted</text>
+    <text x="380" y="62" text-anchor="middle" font-size="9" fill="#666666">N400 family</text>
+    <text x="380" y="76" text-anchor="middle" font-size="9" fill="#666666">does not transfer</text>
+
+    <rect x="460" y="0" width="160" height="100" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="540" y="42" text-anchor="middle">n/a (silent)</text>
+    <text x="540" y="62" text-anchor="middle" font-size="9" fill="#666666">no word-aligned</text>
+    <text x="540" y="76" text-anchor="middle" font-size="9" fill="#666666">regressor</text>
+
+    <rect x="620" y="0" width="400" height="100" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="630" y="22" font-size="9">A surviving cluster overlapping the Lipkin</text>
+    <text x="630" y="36" font-size="9">frontotemporal language-network atlas</text>
+    <text x="630" y="50" font-size="9">falsifies the four-perspective ranking by</text>
+    <text x="630" y="64" font-size="9">relocating the surviving signal into a perspective</text>
+    <text x="630" y="78" font-size="9">the thesis says should not transfer.</text>
+  </g>
+
+  <!-- Row 4: Emotion -->
+  <g transform="translate(40,436)" font-size="10">
+    <rect x="0" y="0" width="180" height="120" fill="#CC79A7" fill-opacity="0.18" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="10" y="22" font-weight="600">Emotion</text>
+    <text x="10" y="40" font-size="9">(two predictions at</text>
+    <text x="10" y="52" font-size="9">different latencies:</text>
+    <text x="10" y="64" font-size="9">early occipital alpha,</text>
+    <text x="10" y="76" font-size="9">later frontal-asymmetric</text>
+    <text x="10" y="88" font-size="9">alpha)</text>
+
+    <rect x="180" y="0" width="120" height="120" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <ellipse cx="240" cy="60" rx="34" ry="40" fill="none" stroke="#000000" stroke-width="1"/>
+    <path d="M225,25 L255,25 L240,18 Z" fill="none" stroke="#000000" stroke-width="0.6"/>
+    <ellipse cx="240" cy="92" rx="14" ry="6" fill="#CC79A7" fill-opacity="0.45"/>
+    <circle cx="222" cy="36" r="5" fill="#CC79A7" fill-opacity="0.75"/>
+    <circle cx="258" cy="36" r="5" fill="#CC79A7" fill-opacity="0.95"/>
+    <text x="240" y="111" font-size="8" text-anchor="middle">occipital (early) + frontal F3/F4 (later)</text>
+
+    <rect x="300" y="0" width="160" height="120" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="380" y="42" text-anchor="middle">alpha (8-13 Hz)</text>
+    <text x="380" y="62" text-anchor="middle" font-size="9" fill="#666666">desynchronisation +</text>
+    <text x="380" y="76" text-anchor="middle" font-size="9" fill="#666666">F4-F3 asymmetry</text>
+
+    <rect x="460" y="0" width="160" height="120" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="540" y="42" text-anchor="middle">80-300 ms (occipital)</text>
+    <text x="540" y="62" text-anchor="middle">200-500 ms (frontal)</text>
+    <text x="540" y="82" text-anchor="middle" font-size="9" fill="#666666">incompatible</text>
+    <text x="540" y="94" text-anchor="middle" font-size="9" fill="#666666">latencies</text>
+
+    <rect x="620" y="0" width="400" height="120" fill="#ffffff" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="630" y="22" font-size="9">Confirmed by early occipital alpha desynchronisation</text>
+    <text x="630" y="36" font-size="9">(Codispoti pattern) or by surviving frontal F3/F4</text>
+    <text x="630" y="50" font-size="9">asymmetry in the puppy-only condition. Falsified by</text>
+    <text x="630" y="64" font-size="9">absence of both effects in the LLR-partialled GLM.</text>
+    <text x="630" y="78" font-size="9">Frontal asymmetry is exploratory given recent</text>
+    <text x="630" y="92" font-size="9">reliability concerns at sub-second timescales.</text>
+  </g>
+
+  <text x="40" y="585" font-size="9" fill="#666666">Topographic predictions are stated at the electrode level (10-20 system) and the equivalent IC cluster centroid. Cluster-level alpha p &lt; 0.05 corrected by mass-univariate permutation.</text>
+</svg>
