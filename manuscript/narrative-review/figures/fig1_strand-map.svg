@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 600 720"
+     width="600" height="720"
+     font-family="Helvetica, Arial, sans-serif">
+  <title>Figure 1. Four-perspective strand map</title>
+  <desc>Four research perspectives (psychophysics, action, language, emotion) mapped against 15 corpus themes. Filled circles indicate the perspective owns or substantially contributes to the theme.</desc>
+
+  <!-- Background -->
+  <rect width="600" height="720" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="20" y="28" font-size="14" font-weight="600" fill="#000000">Figure 1. Four-perspective strand map</text>
+  <text x="20" y="46" font-size="10" fill="#444444">Perspectives (columns) by corpus themes (rows). Filled circles denote substantial contribution.</text>
+
+  <!-- Column headers (perspectives) -->
+  <g font-size="11" font-weight="600" text-anchor="middle">
+    <rect x="200" y="60" width="80" height="24" fill="#0072B2" rx="3"/>
+    <text x="240" y="77" fill="#ffffff">Psychophysics</text>
+
+    <rect x="290" y="60" width="80" height="24" fill="#D55E00" rx="3"/>
+    <text x="330" y="77" fill="#ffffff">Action</text>
+
+    <rect x="380" y="60" width="80" height="24" fill="#009E73" rx="3"/>
+    <text x="420" y="77" fill="#ffffff">Language</text>
+
+    <rect x="470" y="60" width="80" height="24" fill="#CC79A7" rx="3"/>
+    <text x="510" y="77" fill="#ffffff">Emotion</text>
+  </g>
+
+  <!-- Theme row labels (left) and grid cells -->
+  <g font-size="10" fill="#000000">
+    <!-- Row template: y starts at 100, step 38 -->
+
+    <!-- Theme 1 -->
+    <text x="20" y="116">1. Inter-subject correlation (ISC) as reliability metric</text>
+    <circle cx="240" cy="120" r="8" fill="#0072B2"/>
+    <circle cx="330" cy="120" r="8" fill="#D55E00"/>
+    <circle cx="420" cy="120" r="8" fill="#009E73"/>
+    <circle cx="510" cy="120" r="8" fill="#CC79A7"/>
+
+    <!-- Theme 2 -->
+    <text x="20" y="154">2. Event boundaries and segmentation</text>
+    <circle cx="240" cy="158" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="158" r="8" fill="#D55E00"/>
+    <circle cx="420" cy="158" r="8" fill="#009E73"/>
+    <circle cx="510" cy="158" r="8" fill="none" stroke="#888" stroke-width="1"/>
+
+    <!-- Theme 3 -->
+    <text x="20" y="192">3. Naturalness gradient of stimuli</text>
+    <circle cx="240" cy="196" r="8" fill="#0072B2"/>
+    <circle cx="330" cy="196" r="8" fill="#D55E00"/>
+    <circle cx="420" cy="196" r="8" fill="#009E73"/>
+    <circle cx="510" cy="196" r="8" fill="none" stroke="#888" stroke-width="1"/>
+
+    <!-- Theme 4 -->
+    <text x="20" y="230">4. Low-level feature regressors</text>
+    <circle cx="240" cy="234" r="8" fill="#0072B2"/>
+    <circle cx="330" cy="234" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="420" cy="234" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="510" cy="234" r="8" fill="none" stroke="#888" stroke-width="1"/>
+
+    <!-- Theme 5 -->
+    <text x="20" y="268">5. Time-resolved EEG/MEG to dynamic input</text>
+    <circle cx="240" cy="272" r="8" fill="#0072B2"/>
+    <circle cx="330" cy="272" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="420" cy="272" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="510" cy="272" r="8" fill="none" stroke="#888" stroke-width="1"/>
+
+    <!-- Theme 6 -->
+    <text x="20" y="306">6. Mu rhythm and action observation</text>
+    <circle cx="240" cy="310" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="310" r="8" fill="#D55E00"/>
+    <circle cx="420" cy="310" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="510" cy="310" r="8" fill="none" stroke="#888" stroke-width="1"/>
+
+    <!-- Theme 7 -->
+    <text x="20" y="344">7. Affective dynamics and emotion-driven engagement</text>
+    <circle cx="240" cy="348" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="348" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="420" cy="348" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="510" cy="348" r="8" fill="#CC79A7"/>
+
+    <!-- Theme 8 -->
+    <text x="20" y="382">8. Social cognition, ToM, mentalising</text>
+    <circle cx="240" cy="386" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="386" r="8" fill="#D55E00"/>
+    <circle cx="420" cy="386" r="8" fill="#009E73"/>
+    <circle cx="510" cy="386" r="8" fill="#CC79A7"/>
+
+    <!-- Theme 9 -->
+    <text x="20" y="420">9. Language models as transcript-based regressors</text>
+    <circle cx="240" cy="424" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="424" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="420" cy="424" r="8" fill="#009E73"/>
+    <circle cx="510" cy="424" r="8" fill="none" stroke="#888" stroke-width="1"/>
+
+    <!-- Theme 10 -->
+    <text x="20" y="458">10. Audiovisual integration and crossmodal coupling</text>
+    <circle cx="240" cy="462" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="462" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="420" cy="462" r="8" fill="#009E73"/>
+    <circle cx="510" cy="462" r="8" fill="none" stroke="#888" stroke-width="1"/>
+
+    <!-- Theme 11 -->
+    <text x="20" y="496">11. Free-viewing EEG with eye-movement coregistration</text>
+    <circle cx="240" cy="500" r="8" fill="#0072B2"/>
+    <circle cx="330" cy="500" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="420" cy="500" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="510" cy="500" r="8" fill="none" stroke="#888" stroke-width="1"/>
+
+    <!-- Theme 12 -->
+    <text x="20" y="534">12. Pet, animal, and baby-schema affective response</text>
+    <circle cx="240" cy="538" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="538" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="420" cy="538" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="510" cy="538" r="8" fill="#CC79A7"/>
+
+    <!-- Theme 13 -->
+    <text x="20" y="572">13. Developmental neuroimaging in cinematic paradigms</text>
+    <circle cx="240" cy="576" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="576" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="420" cy="576" r="8" fill="#009E73"/>
+    <circle cx="510" cy="576" r="8" fill="#CC79A7"/>
+
+    <!-- Theme 14 -->
+    <text x="20" y="610">14. Distributed multivariate signatures vs locationism</text>
+    <circle cx="240" cy="614" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="330" cy="614" r="8" fill="#D55E00"/>
+    <circle cx="420" cy="614" r="8" fill="none" stroke="#888" stroke-width="1"/>
+    <circle cx="510" cy="614" r="8" fill="#CC79A7"/>
+
+    <!-- Theme 15 -->
+    <text x="20" y="648">15. Predictive processing across modalities</text>
+    <circle cx="240" cy="652" r="8" fill="#0072B2"/>
+    <circle cx="330" cy="652" r="8" fill="#D55E00"/>
+    <circle cx="420" cy="652" r="8" fill="#009E73"/>
+    <circle cx="510" cy="652" r="8" fill="#CC79A7"/>
+  </g>
+
+  <!-- Legend: perspective-coloured swatches double as colour key -->
+  <g font-size="9" fill="#000000">
+    <text x="20" y="685" font-weight="600">Legend.</text>
+    <circle cx="80" cy="682" r="5" fill="#0072B2"/>
+    <circle cx="92" cy="682" r="5" fill="#D55E00"/>
+    <circle cx="104" cy="682" r="5" fill="#009E73"/>
+    <circle cx="116" cy="682" r="5" fill="#CC79A7"/>
+    <text x="128" y="685">substantial contribution (coloured by perspective)</text>
+    <circle cx="385" cy="682" r="5" fill="none" stroke="#888" stroke-width="1"/>
+    <text x="395" y="685">absent or peripheral</text>
+  </g>
+
+  <text x="20" y="708" font-size="9" fill="#666666">Source: research/synthesis/science-map.md; cross-strand summary of 98 paper cards.</text>
+</svg>
