@@ -1,28 +1,12 @@
 <!-- Section 3: Psychophysics. Budget: ~500 words.
 Filled by manuscript:manuscript-writing in v2 Phase 2.
+Skill pattern applied: Writing Principles only.
 -->
 
 # 3. Psychophysics: the bottom-up floor
 
-[Paragraph 1 (~150 words): lineage of bottom-up visual feature processing.
-- V1 receptive fields (Hubel and Wiesel 1962).
-- Divisive normalisation (Carandini and Heeger 2011).
-- Natural-image statistics + spatiotemporal energy (Bell and Sejnowski 1997; Simoncelli and Olshausen 2001; Adelson and Bergen 1985).
-- MT/MST motion machinery (Born and Bradley 2005; Bartels and Zeki 2008).
-- Nishimoto et al. 2011: movie reconstruction from BOLD via Adelson-Bergen feature bank (existence proof for motion-energy reconstructability).
-- Clinical VEP (Tobimatsu and Celesia 2006): luminance/contrast steps produce reliable scalp signatures with magno/parvo pathway assignment.]
+Psychophysics anchors the bottom-up floor that every per-shot analysis must clear before claiming a higher-order effect. The lineage runs from primary visual cortex receptive fields [Hubel1962ReceptiveFB] and divisive normalisation [Carandini2011NormalizationAA] through natural-image statistics and spatiotemporal energy [Bell1997TheC; Simoncelli2001NaturalIS; Adelson1985SpatiotemporalEM] to middle-temporal motion machinery [Born2005StructureAF; Bartels2008NaturalVR]. Nishimoto and colleagues reconstructed natural movies from blood-oxygen-level-dependent activity in occipitotemporal cortex using a motion-energy front end derived from Adelson and Bergen [Nishimoto2011ReconstructingVE]. The reconstruction is an existence proof that an Adelson-Bergen feature bank suffices to recover the stimulus from neural activity. Clinical visual evoked potential work supports a reliable scalp signature for luminance and contrast steps with magnocellular and parvocellular pathway assignment [Tobimatsu2006StudiesOH].
 
-[Paragraph 2 (~150 words): closest electrophysiological analogue.
-- Nentwich et al. 2023 iEEG: triple-regressor (motion, saccades, cuts) shows motion outranks luminance for occipitoparietal cortex.
-- Per-shot LLR is one of several low-level features that needs accounting; LLR is the minimum partialling for any social claim.
-- Whole-clip EEG ISC tracks low-level features at occipital electrodes more strongly than higher-order content (Dmochowski et al. 2012; Madsen and Parra 2022; Cohen and Parra 2016). Attention modulates this baseline (Ki et al. 2016).
-- Envelope-only auditory control (Kaneshiro et al. 2021) is the methodological template the LLR-as-covariate plan inherits.]
+The closest electrophysiological analogue to per-shot ERSP during naturalistic film is the intracranial electroencephalography (iEEG) study of Nentwich and colleagues, who showed that motion outranks luminance for occipitoparietal cortex when triple-regressed against optical-flow magnitude, saccade onsets, and film-cut onsets [Nentwich2023SemanticNM]. That result establishes a quantitative ranking among low-level regressors: per-shot LLR is one of several low-level features that need accounting. EEG ISC at the whole-clip scale tracks low-level features at occipital electrodes more strongly than higher-order content [dmochowski2012correlated; Madsen2022CognitivePO; Cohen2016MemorableAN], although attention strongly modulates this baseline [Ki2016AttentionSM]. An envelope-only auditory control isolating low-level acoustic structure from higher-level musical structure [Kaneshiro2021InterSubjectEC] is the methodological template the LLR-as-covariate plan inherits.
 
-[Paragraph 3 (~200 words): eye-movement caveat.
-- Free-viewing EEG depends on eye-movement coregistration to separate stimulus-onset from saccade-locked and fixation-related potentials (Dimigen et al. 2011; Plöchl et al. 2012). Regression deconvolution is the state of the art (Dimigen and Ehinger 2021).
-- Gaze coherence varies with stimulus class: highest on Hollywood trailers, lowest on natural movie clips and static images (Dorr et al. 2010); a Pixar short sits between these extremes.
-- HBN-EEG R3 has no synchronous eye tracker. Per-shot ERSP cannot deconvolve overlapping saccade-locked transients from shot-onset responses.
-- ICA-based artifact rejection through AMICA and ICLabel is the operating compromise (Bell and Sejnowski 1997 for ICA foundation).
-- Motion energy computed offline from the stimulus video is the named first follow-up regressor (Nishimoto et al. 2011; Nentwich et al. 2023).
-- mTRF toolbox (Crosse et al. 2016) supplies the production regression framework.
-- Forward-reference Figure 2 (naturalness gradient).]
+A second class of bottom-up drivers operates through the eye. Free-viewing EEG depends on eye-movement coregistration to separate stimulus-onset responses from saccade-locked and fixation-related potentials [Dimigen2011CoregistrationOE; Plöchl2012CombiningEA], and regression deconvolution of overlapping events is the methodological state of the art [Dimigen2021RegressionbasedAO]. Gaze coherence varies with stimulus class, highest on Hollywood trailers and lowest on natural movie clips and static images [Dorr2010VariabilityOE]; a Pixar short sits between these extremes. The HBN-EEG Release 3 cohort carries no synchronous eye tracker, which means a per-shot analysis cannot deconvolve overlapping saccade-locked transients from shot-onset responses. Independent component analysis (ICA)-based artifact rejection through adaptive mixture ICA (AMICA) and IC classification (ICLabel) is the operating compromise [Bell1997TheC]. The implication for per-shot ERSP is asymmetric: per-shot LLR is the minimum partialling for any social-content claim. Motion energy computed offline from the stimulus video is the named first follow-up regressor [Nishimoto2011ReconstructingVE; Nentwich2023SemanticNM]. The multivariate temporal response function (mTRF) toolbox supplies the production regression framework [Crosse2016TheMT]. Figure 2 places the empty cell on the naturalness gradient.
