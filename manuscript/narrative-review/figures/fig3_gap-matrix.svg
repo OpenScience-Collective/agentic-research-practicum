@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 1100 720"
-     width="170mm" height="111mm"
+     width="1100" height="720"
      font-family="Helvetica, Arial, sans-serif">
   <title>Figure 3. Gap matrix</title>
   <desc>Eight gaps from gap-analysis.md (rows) versus four prior-effort axes (columns). Filled cells indicate coverage, with a representative card slug. Empty cells in the last column define the gaps addressed by per-shot developmental EEG of silent character animation.</desc>
 
   <rect width="1100" height="720" fill="#ffffff"/>
 
-  <text x="40" y="32" font-size="22" font-weight="600" fill="#000000">Figure 3. Gap matrix: corpus coverage by gap and prior-effort axis</text>
-  <text x="40" y="52" font-size="15" fill="#444444">Eight named gaps (rows) versus four prior-effort axes (columns). Filled cells carry a representative card slug; empty cells highlight the gaps that the per-shot developmental EEG-ERSP framing addresses.</text>
+  <text x="40" y="32" font-size="15" font-weight="600" fill="#000000">Figure 3. Gap matrix: corpus coverage by gap and prior-effort axis</text>
+  <text x="40" y="52" font-size="10" fill="#444444">Eight named gaps (rows) versus four prior-effort axes (columns). Filled cells carry a representative card slug; empty cells highlight the gaps that the per-shot developmental EEG-ERSP framing addresses.</text>
 
   <!-- Header row -->
   <g transform="translate(40,80)">
     <rect x="280" y="0" width="180" height="36" fill="#0072B2"/>
-    <text x="370" y="22" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">cinematic fMRI</text>
+    <text x="370" y="22" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">cinematic fMRI</text>
 
     <rect x="460" y="0" width="180" height="36" fill="#0072B2" fill-opacity="0.78"/>
-    <text x="550" y="22" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">naturalistic scalp EEG</text>
+    <text x="550" y="22" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">naturalistic scalp EEG</text>
 
     <rect x="640" y="0" width="180" height="36" fill="#0072B2" fill-opacity="0.92"/>
-    <text x="730" y="22" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">intracranial / MEG</text>
+    <text x="730" y="22" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">intracranial / MEG</text>
 
     <rect x="820" y="0" width="180" height="36" fill="#0072B2" fill-opacity="0.86"/>
-    <text x="910" y="22" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">behavioural / eye-tracking</text>
+    <text x="910" y="22" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">behavioural / eye-tracking</text>
   </g>
 
   <!-- Data rows -->
-  <g transform="translate(40,116)" font-size="14">
+  <g transform="translate(40,116)" font-size="9">
 
     <!-- Gap 1 -->
     <rect x="0" y="0" width="280" height="62" fill="#fafafa" stroke="#dddddd" stroke-width="0.5"/>
-    <text x="10" y="22" font-size="15" font-weight="600">Gap 1</text>
-    <text x="10" y="38" font-size="14">Child-cohort EEG ERSP at</text>
-    <text x="10" y="50" font-size="14">shot onsets in animation</text>
+    <text x="10" y="22" font-size="10" font-weight="600">Gap 1</text>
+    <text x="10" y="38" font-size="9">Child-cohort EEG ERSP at</text>
+    <text x="10" y="50" font-size="9">shot onsets in animation</text>
 
     <rect x="280" y="0" width="180" height="62" fill="#e7f0fa" stroke="#cccccc" stroke-width="0.5"/>
     <text x="370" y="34" text-anchor="middle">richardson-saxe-2018</text>
@@ -53,9 +53,9 @@
 
     <!-- Gap 2 -->
     <rect x="0" y="62" width="280" height="62" fill="#fafafa" stroke="#dddddd" stroke-width="0.5"/>
-    <text x="10" y="84" font-size="15" font-weight="600">Gap 2</text>
-    <text x="10" y="100" font-size="14">LLR as continuous regressor</text>
-    <text x="10" y="112" font-size="14">in EEG ERSP</text>
+    <text x="10" y="84" font-size="10" font-weight="600">Gap 2</text>
+    <text x="10" y="100" font-size="9">LLR as continuous regressor</text>
+    <text x="10" y="112" font-size="9">in EEG ERSP</text>
 
     <rect x="280" y="62" width="180" height="62" fill="#e7f0fa" stroke="#cccccc" stroke-width="0.5"/>
     <text x="370" y="90" text-anchor="middle">kauttonen-2015</text>
@@ -74,9 +74,9 @@
 
     <!-- Gap 3 -->
     <rect x="0" y="124" width="280" height="62" fill="#fafafa" stroke="#dddddd" stroke-width="0.5"/>
-    <text x="10" y="146" font-size="15" font-weight="600">Gap 3</text>
-    <text x="10" y="162" font-size="14">Pet- or animal-evoked</text>
-    <text x="10" y="174" font-size="14">affective EEG in children</text>
+    <text x="10" y="146" font-size="10" font-weight="600">Gap 3</text>
+    <text x="10" y="162" font-size="9">Pet- or animal-evoked</text>
+    <text x="10" y="174" font-size="9">affective EEG in children</text>
 
     <rect x="280" y="124" width="180" height="62" fill="#e7f0fa" stroke="#cccccc" stroke-width="0.5"/>
     <text x="370" y="152" text-anchor="middle">stoeckel-2014</text>
@@ -94,9 +94,9 @@
 
     <!-- Gap 4 -->
     <rect x="0" y="186" width="280" height="62" fill="#fafafa" stroke="#dddddd" stroke-width="0.5"/>
-    <text x="10" y="208" font-size="15" font-weight="600">Gap 4</text>
-    <text x="10" y="224" font-size="14">Silent-narrative ERSP at</text>
-    <text x="10" y="236" font-size="14">0-500 ms event boundaries</text>
+    <text x="10" y="208" font-size="10" font-weight="600">Gap 4</text>
+    <text x="10" y="224" font-size="9">Silent-narrative ERSP at</text>
+    <text x="10" y="236" font-size="9">0-500 ms event boundaries</text>
 
     <rect x="280" y="186" width="180" height="62" fill="#e7f0fa" stroke="#cccccc" stroke-width="0.5"/>
     <text x="370" y="214" text-anchor="middle">castelli-2000</text>
@@ -114,9 +114,9 @@
 
     <!-- Gap 5 -->
     <rect x="0" y="248" width="280" height="62" fill="#fafafa" stroke="#dddddd" stroke-width="0.5"/>
-    <text x="10" y="270" font-size="15" font-weight="600">Gap 5</text>
-    <text x="10" y="286" font-size="14">Cross-strand multi-regressor</text>
-    <text x="10" y="298" font-size="14">per-shot ERSP model</text>
+    <text x="10" y="270" font-size="10" font-weight="600">Gap 5</text>
+    <text x="10" y="286" font-size="9">Cross-strand multi-regressor</text>
+    <text x="10" y="298" font-size="9">per-shot ERSP model</text>
 
     <rect x="280" y="248" width="180" height="62" fill="#e7f0fa" stroke="#cccccc" stroke-width="0.5"/>
     <text x="370" y="282" text-anchor="middle">kauttonen-2015</text>
@@ -133,9 +133,9 @@
 
     <!-- Gap 6 -->
     <rect x="0" y="310" width="280" height="62" fill="#fafafa" stroke="#dddddd" stroke-width="0.5"/>
-    <text x="10" y="332" font-size="15" font-weight="600">Gap 6</text>
-    <text x="10" y="348" font-size="14">Free-viewing EEG without</text>
-    <text x="10" y="360" font-size="14">synchronous eye tracker</text>
+    <text x="10" y="332" font-size="10" font-weight="600">Gap 6</text>
+    <text x="10" y="348" font-size="9">Free-viewing EEG without</text>
+    <text x="10" y="360" font-size="9">synchronous eye tracker</text>
 
     <rect x="280" y="310" width="180" height="62" fill="#ffffff" stroke="#D55E00" stroke-width="1.4" stroke-dasharray="4 3"/>
     <text x="370" y="344" text-anchor="middle" font-weight="600" fill="#D55E00">no coverage</text>
@@ -153,9 +153,9 @@
 
     <!-- Gap 7 -->
     <rect x="0" y="372" width="280" height="62" fill="#fafafa" stroke="#dddddd" stroke-width="0.5"/>
-    <text x="10" y="394" font-size="15" font-weight="600">Gap 7</text>
-    <text x="10" y="410" font-size="14">Mu-band action-observation</text>
-    <text x="10" y="422" font-size="14">EEG to animated agents</text>
+    <text x="10" y="394" font-size="10" font-weight="600">Gap 7</text>
+    <text x="10" y="410" font-size="9">Mu-band action-observation</text>
+    <text x="10" y="422" font-size="9">EEG to animated agents</text>
 
     <rect x="280" y="372" width="180" height="62" fill="#e7f0fa" stroke="#cccccc" stroke-width="0.5"/>
     <text x="370" y="400" text-anchor="middle">rizzolatti-2004</text>
@@ -173,9 +173,9 @@
 
     <!-- Gap 8 -->
     <rect x="0" y="434" width="280" height="62" fill="#fafafa" stroke="#dddddd" stroke-width="0.5"/>
-    <text x="10" y="456" font-size="15" font-weight="600">Gap 8</text>
-    <text x="10" y="472" font-size="14">Frontal alpha asymmetry at</text>
-    <text x="10" y="484" font-size="14">sub-second naturalistic scale</text>
+    <text x="10" y="456" font-size="10" font-weight="600">Gap 8</text>
+    <text x="10" y="472" font-size="9">Frontal alpha asymmetry at</text>
+    <text x="10" y="484" font-size="9">sub-second naturalistic scale</text>
 
     <rect x="280" y="434" width="180" height="62" fill="#ffffff" stroke="#D55E00" stroke-width="1.4" stroke-dasharray="4 3"/>
     <text x="370" y="468" text-anchor="middle" font-weight="600" fill="#D55E00">no coverage</text>
@@ -194,20 +194,20 @@
   <!-- Legend -->
   <g transform="translate(40,650)">
     <rect x="0" y="-12" width="14" height="14" fill="#e7f0fa" stroke="#cccccc" stroke-width="0.5"/>
-    <text x="20" y="0" font-size="15" fill="#000000">cinematic fMRI</text>
+    <text x="20" y="0" font-size="10" fill="#000000">cinematic fMRI</text>
 
     <rect x="135" y="-12" width="14" height="14" fill="#fef0e7" stroke="#cccccc" stroke-width="0.5"/>
-    <text x="155" y="0" font-size="15" fill="#000000">naturalistic scalp EEG</text>
+    <text x="155" y="0" font-size="10" fill="#000000">naturalistic scalp EEG</text>
 
     <rect x="305" y="-12" width="14" height="14" fill="#e8f4ee" stroke="#cccccc" stroke-width="0.5"/>
-    <text x="325" y="0" font-size="15" fill="#000000">intracranial / MEG</text>
+    <text x="325" y="0" font-size="10" fill="#000000">intracranial / MEG</text>
 
     <rect x="460" y="-12" width="14" height="14" fill="#f4ecf2" stroke="#cccccc" stroke-width="0.5"/>
-    <text x="480" y="0" font-size="15" fill="#000000">behavioural / eye-tracking</text>
+    <text x="480" y="0" font-size="10" fill="#000000">behavioural / eye-tracking</text>
 
     <rect x="640" y="-12" width="14" height="14" fill="#ffffff" stroke="#D55E00" stroke-width="1.4" stroke-dasharray="4 3"/>
-    <text x="660" y="0" font-size="15" font-weight="600" fill="#D55E00">no coverage</text>
+    <text x="660" y="0" font-size="10" font-weight="600" fill="#D55E00">no coverage</text>
   </g>
 
-  <text x="40" y="700" font-size="14" fill="#666666">Source: research/synthesis/gap-analysis.md three-column coverage table. Cards listed are representative, not exhaustive.</text>
+  <text x="40" y="700" font-size="9" fill="#666666">Source: research/synthesis/gap-analysis.md three-column coverage table. Cards listed are representative, not exhaustive.</text>
 </svg>

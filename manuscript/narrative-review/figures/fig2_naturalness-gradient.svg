@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1100 740"
-     width="170mm" height="114mm"
+     viewBox="0 0 1100 660"
+     width="1100" height="660"
      font-family="Helvetica, Arial, sans-serif">
   <title>Figure 2. Naturalness gradient crossed with developmental cohort coverage</title>
   <desc>Stimulus naturalness (x-axis) versus participant cohort age (y-axis). Markers are sized by number of corpus cards and shaped by modality. The child-cohort EEG-ERSP cell at character animation is highlighted as the empty cell of interest.</desc>
 
-  <rect width="1100" height="740" fill="#ffffff"/>
+  <rect width="1100" height="660" fill="#ffffff"/>
 
-  <text x="40" y="30" font-size="22" font-weight="600" fill="#000000">Figure 2. Naturalness gradient and developmental cohort coverage</text>
-  <text x="40" y="50" font-size="15" fill="#444444">Marker size encodes number of cards in the four-strand corpus. Modality is encoded by shape and colour. The empty cell at (child, character animation, EEG ERSP) is highlighted.</text>
+  <text x="40" y="30" font-size="15" font-weight="600" fill="#000000">Figure 2. Naturalness gradient and developmental cohort coverage</text>
+  <text x="40" y="50" font-size="10" fill="#444444">Marker size encodes number of cards in the four-strand corpus. Modality is encoded by shape and colour. The empty cell at (child, character animation, EEG ERSP) is highlighted.</text>
 
   <!-- Plot area -->
   <g transform="translate(150,90)">
@@ -28,42 +28,34 @@
 
     <!-- Highlight the empty cell: child (y=252-380) x character animation (x=600-750) -->
     <rect x="600" y="252" width="150" height="128" fill="#F0E442" fill-opacity="0.32" stroke="#D55E00" stroke-width="1.5" stroke-dasharray="4 3"/>
-    <text x="675" y="268" font-size="15" font-weight="600" text-anchor="middle" fill="#333333">target: per-shot EEG ERSP</text>
-    <text x="675" y="280" font-size="14" text-anchor="middle" fill="#333333">(0-500 ms post-shot-onset)</text>
+    <text x="675" y="268" font-size="10" font-weight="600" text-anchor="middle" fill="#333333">target: per-shot EEG ERSP</text>
+    <text x="675" y="280" font-size="9" text-anchor="middle" fill="#333333">(0-500 ms post-shot-onset)</text>
 
     <!-- Y axis labels (cohorts) -->
-    <text x="-10" y="68" font-size="16" text-anchor="end" fill="#000000">adult</text>
-    <text x="-10" y="194" font-size="16" text-anchor="end" fill="#000000">adolescent</text>
-    <text x="-10" y="320" font-size="16" text-anchor="end" fill="#000000">child</text>
-
-    <!-- X axis stimulus thumbnails (generated via figures:transparent-icons) -->
-    <image href="icons/stim_gratings.png" x="51" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
-    <image href="icons/stim_photographs.png" x="201" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
-    <image href="icons/stim_heider-simmel.png" x="351" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
-    <image href="icons/stim_abstract-animation.png" x="501" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
-    <image href="icons/stim_character-animation.png" x="651" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
-    <image href="icons/stim_live-action-film.png" x="801" y="386" width="48" height="48" preserveAspectRatio="xMidYMid meet"/>
+    <text x="-10" y="68" font-size="11" text-anchor="end" fill="#000000">adult</text>
+    <text x="-10" y="194" font-size="11" text-anchor="end" fill="#000000">adolescent</text>
+    <text x="-10" y="320" font-size="11" text-anchor="end" fill="#000000">child</text>
 
     <!-- X axis labels (stimulus types) -->
-    <text x="75" y="450" font-size="15" text-anchor="middle" fill="#000000">controlled</text>
-    <text x="75" y="465" font-size="15" text-anchor="middle" fill="#000000">gratings</text>
+    <text x="75" y="400" font-size="10" text-anchor="middle" fill="#000000">controlled</text>
+    <text x="75" y="412" font-size="10" text-anchor="middle" fill="#000000">gratings</text>
 
-    <text x="225" y="450" font-size="15" text-anchor="middle" fill="#000000">static</text>
-    <text x="225" y="465" font-size="15" text-anchor="middle" fill="#000000">photographs</text>
+    <text x="225" y="400" font-size="10" text-anchor="middle" fill="#000000">static</text>
+    <text x="225" y="412" font-size="10" text-anchor="middle" fill="#000000">photographs</text>
 
-    <text x="375" y="450" font-size="15" text-anchor="middle" fill="#000000">Heider-Simmel</text>
-    <text x="375" y="465" font-size="15" text-anchor="middle" fill="#000000">triangles</text>
+    <text x="375" y="400" font-size="10" text-anchor="middle" fill="#000000">Heider-Simmel</text>
+    <text x="375" y="412" font-size="10" text-anchor="middle" fill="#000000">triangles</text>
 
-    <text x="525" y="450" font-size="15" text-anchor="middle" fill="#000000">abstract</text>
-    <text x="525" y="465" font-size="15" text-anchor="middle" fill="#000000">animation</text>
+    <text x="525" y="400" font-size="10" text-anchor="middle" fill="#000000">abstract</text>
+    <text x="525" y="412" font-size="10" text-anchor="middle" fill="#000000">animation</text>
 
-    <text x="675" y="450" font-size="15" text-anchor="middle" fill="#000000">character</text>
-    <text x="675" y="465" font-size="15" text-anchor="middle" fill="#000000">animation</text>
+    <text x="675" y="400" font-size="10" text-anchor="middle" fill="#000000">character</text>
+    <text x="675" y="412" font-size="10" text-anchor="middle" fill="#000000">animation</text>
 
-    <text x="825" y="450" font-size="15" text-anchor="middle" fill="#000000">live-action</text>
-    <text x="825" y="465" font-size="15" text-anchor="middle" fill="#000000">film</text>
+    <text x="825" y="400" font-size="10" text-anchor="middle" fill="#000000">live-action</text>
+    <text x="825" y="412" font-size="10" text-anchor="middle" fill="#000000">film</text>
 
-    <text x="450" y="492" font-size="15" font-style="italic" text-anchor="middle" fill="#666666">naturalness gradient</text>
+    <text x="450" y="438" font-size="10" font-style="italic" text-anchor="middle" fill="#666666">naturalness gradient</text>
 
     <!-- Axis arrow -->
     <line x1="0" y1="380" x2="900" y2="380" stroke="#000000" stroke-width="0.7" marker-end="url(#xarrow)"/>
@@ -104,7 +96,7 @@
 
     <!-- Child row (y=315) -->
     <!-- static photographs, child: behavioural cuteness (Borgi 3-6). -->
-    <text x="225" y="319" font-size="21" fill="#444444" font-weight="700" text-anchor="middle">b</text>
+    <text x="225" y="319" font-size="14" fill="#444444" font-weight="700" text-anchor="middle">b</text>
 
     <!-- Heider-Simmel triangles, child: fMRI autism (Castelli 2002). -->
     <circle cx="375" cy="315" r="7" fill="#0072B2" fill-opacity="0.85"/>
@@ -118,32 +110,32 @@
     <rect x="688" y="308" width="14" height="14" fill="#D55E00" fill-opacity="0.45" stroke="#D55E00" stroke-dasharray="2 2"/>
 
     <!-- live-action film, child: behavioural (Klin autism eye-tracking). -->
-    <text x="825" y="319" font-size="21" fill="#444444" font-weight="700" text-anchor="middle">b</text>
+    <text x="825" y="319" font-size="14" fill="#444444" font-weight="700" text-anchor="middle">b</text>
   </g>
 
   <!-- Legend bottom -->
-  <g transform="translate(150,650)">
-    <text x="0" y="0" font-size="16" font-weight="600" fill="#000000">Modality (shape and colour):</text>
+  <g transform="translate(150,570)">
+    <text x="0" y="0" font-size="11" font-weight="600" fill="#000000">Modality (shape and colour):</text>
 
     <circle cx="195" cy="-3" r="6" fill="#0072B2" fill-opacity="0.85"/>
-    <text x="206" y="0" font-size="15" fill="#000000">fMRI</text>
+    <text x="206" y="0" font-size="10" fill="#000000">fMRI</text>
 
     <rect x="248" y="-9" width="12" height="12" fill="#D55E00" fill-opacity="0.85"/>
-    <text x="263" y="0" font-size="15" fill="#000000">EEG</text>
+    <text x="263" y="0" font-size="10" fill="#000000">EEG</text>
 
     <polygon points="312,-9 322,7 302,7" fill="#009E73" fill-opacity="0.85"/>
-    <text x="328" y="0" font-size="15" fill="#000000">MEG</text>
+    <text x="328" y="0" font-size="10" fill="#000000">MEG</text>
 
     <polygon points="367,-7 379,0 367,7 357,0" fill="#CC79A7" fill-opacity="0.85"/>
-    <text x="385" y="0" font-size="15" fill="#000000">iEEG</text>
+    <text x="385" y="0" font-size="10" fill="#000000">iEEG</text>
 
-    <text x="430" y="0" font-size="15" fill="#000000" font-style="italic">b</text>
-    <text x="442" y="0" font-size="15" fill="#000000">= behavioural-only card</text>
+    <text x="430" y="0" font-size="10" fill="#000000" font-style="italic">b</text>
+    <text x="442" y="0" font-size="10" fill="#000000">= behavioural-only card</text>
 
-    <text x="600" y="0" font-size="15" fill="#000000">Marker size scales with number of cards in cell.</text>
+    <text x="600" y="0" font-size="10" fill="#000000">Marker size scales with number of cards in cell.</text>
   </g>
 
-  <text x="40" y="710" font-size="14" fill="#666666">Sources: research/synthesis/dataset-hierarchy.md, science-map.md Theme 3, and four *-ontology.md files. Marker placement reflects representative cards, not exhaustive enumeration.</text>
+  <text x="40" y="630" font-size="9" fill="#666666">Sources: research/synthesis/dataset-hierarchy.md, science-map.md Theme 3, and four *-ontology.md files. Marker placement reflects representative cards, not exhaustive enumeration.</text>
 
   <defs>
     <marker id="xarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
