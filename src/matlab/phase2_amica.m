@@ -42,6 +42,13 @@ function paramsPath = phase2_amica(opts)
 %     RejSig       (1,1) double   default 4
 %     NumTopoICs   (1,1) double   default 30
 %     IcaMethod    (1,1) string   default "amica"        ("amica" or "runica")
+%     IcaTasks     (1,:) string   default ["DespicableMe","DiaryOfAWimpyKid",
+%                                          "FunwithFractals","ThePresent"]
+%     BidsRoot     (1,1) string   default ""             (only needed if
+%                                                          IcaTasks contain
+%                                                          tasks whose Phase 1
+%                                                          checkpoint is missing
+%                                                          and must be regenerated)
 %     EeglabRoot   (1,1) string   default ""             (probed if empty)
 %
 %   IcaMethod="amica" is the production path (matches the brief). The
@@ -49,6 +56,14 @@ function paramsPath = phase2_amica(opts)
 %   binary needs MPI runtime libs that Ubuntu runners do not have. Both
 %   paths populate EEG.icaweights / icasphere / icawinv, so downstream
 %   dipfit + figure code does not branch on the method.
+%
+%   IcaTasks controls the data pool used to train AMICA. ThePresent alone
+%   is ~210 s at 100 Hz, giving k=samples/n_chans^2 of ~1.1, well below
+%   the standard k>=20 threshold for stable ICA. The default concatenates
+%   the four passive-viewing movie tasks (k ~ 3.5), matching the data-pool
+%   expansion pattern in the reference pipeline. The downstream analysis
+%   stays on Task=ThePresent only; the multi-task pool is just the ICA
+%   training set. Set IcaTasks=[Task] to keep the legacy single-task path.
 
     arguments
         opts.PreprocDir (1, 1) string = "derivatives/preproc"
@@ -63,6 +78,8 @@ function paramsPath = phase2_amica(opts)
         opts.RejSig (1, 1) double {mustBePositive} = 4
         opts.NumTopoICs (1, 1) double {mustBePositive, mustBeInteger} = 30
         opts.IcaMethod (1, 1) string {mustBeMember(opts.IcaMethod, ["amica", "runica"])} = "amica"
+        opts.IcaTasks (1, :) string = ["DespicableMe", "DiaryOfAWimpyKid", "FunwithFractals", "ThePresent"]
+        opts.BidsRoot (1, 1) string = ""
         opts.EeglabRoot (1, 1) string = ""
     end
 
@@ -126,6 +143,10 @@ function paramsPath = phase2_amica(opts)
                 'participant_id', subjId, ...
                 'status', "failed_" + stage, ...
                 'ica_method', opts.IcaMethod, ...
+                'ica_tasks', strjoin(opts.IcaTasks, "+"), ...
+                'ica_samples', NaN, ...
+                'k_factor', NaN, ...
+                'common_channels', NaN, ...
                 'n_components', NaN, ...
                 'final_ll', NaN, ...
                 'iterations', NaN, ...
@@ -146,7 +167,7 @@ function paramsPath = phase2_amica(opts)
         'eeglab_root', char(eeglab_root)));
 end
 
-function qaRow = process_one_subject(EEG, subjId, head_model, opts)
+function qaRow = process_one_subject(targetEEG, subjId, head_model, opts)
     out_eeg_dir = fullfile(opts.OutDir, subjId, "eeg");
     out_amica_dir = fullfile(opts.OutDir, subjId, "_amica");
     out_fig_dir = fullfile(opts.OutDir, subjId, "figures");
@@ -154,14 +175,38 @@ function qaRow = process_one_subject(EEG, subjId, head_model, opts)
         if ~isfolder(d); mkdir(d); end
     end
 
+    % Build the AMICA training set. Single-task mode (IcaTasks == [Task])
+    % keeps the legacy single-source decomposition. Multi-task mode
+    % (default) concatenates the cleaned per-task .set files and trains
+    % AMICA on the merged data, then transplants weights back onto the
+    % Task-only EEG for downstream analysis.
+    if isscalar(opts.IcaTasks) && opts.IcaTasks(1) == opts.Task
+        trainEEG = targetEEG;
+        mtInfo = struct( ...
+            'ica_tasks', opts.Task, ...
+            'ica_samples', size(targetEEG.data, 2), ...
+            'k_factor', size(targetEEG.data, 2) / (size(targetEEG.data, 1)^2), ...
+            'common_channels', size(targetEEG.data, 1));
+    else
+        [trainEEG, mtInfo] = hbn.prepare_multitask_amica_input(opts, subjId);
+        common = string({trainEEG.chanlocs.labels});
+        targetEEG = pop_select(targetEEG, 'channel', cellstr(common));
+    end
+
     switch lower(opts.IcaMethod)
         case "amica"
-            [EEG, amicaStats] = hbn.run_amica(EEG, out_amica_dir, opts);
+            [trainEEG, amicaStats] = hbn.run_amica(trainEEG, out_amica_dir, opts);
         case "runica"
-            [EEG, amicaStats] = hbn.run_infomax(EEG, out_amica_dir, opts);
+            [trainEEG, amicaStats] = hbn.run_infomax(trainEEG, out_amica_dir, opts);
         otherwise
             error("hbn:phase2:unknown_ica_method", ...
                 "IcaMethod=%s not supported", opts.IcaMethod);
+    end
+
+    if isscalar(opts.IcaTasks) && opts.IcaTasks(1) == opts.Task
+        EEG = trainEEG;
+    else
+        EEG = hbn.apply_ica_weights(trainEEG, targetEEG);
     end
 
     [EEG, dipoleStats] = hbn.fit_dipoles(EEG, head_model);
@@ -174,6 +219,10 @@ function qaRow = process_one_subject(EEG, subjId, head_model, opts)
 
     qaRow = struct( ...
         'ica_method', opts.IcaMethod, ...
+        'ica_tasks', mtInfo.ica_tasks, ...
+        'ica_samples', mtInfo.ica_samples, ...
+        'k_factor', mtInfo.k_factor, ...
+        'common_channels', mtInfo.common_channels, ...
         'n_components', EEG.nbchan, ...
         'final_ll', amicaStats.final_ll, ...
         'iterations', amicaStats.iterations, ...
