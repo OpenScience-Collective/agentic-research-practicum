@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Figure 3 panel. viewBox in pt. 174mm x 130mm = 493pt x 369pt. -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="174mm" height="130mm" viewBox="0 0 493 369"
+     font-family="Helvetica, Arial, sans-serif">
+  <title>Figure 3 panel. Gap matrix.</title>
+  <desc>8 gaps by 4 prior-effort axes. Filled cells contain card slugs; empty cells show "no coverage" in vermillion dashed border.</desc>
+
+  <rect width="493" height="369" fill="#ffffff"/>
+
+  <text x="8" y="16" font-size="11" font-weight="600" fill="#000000">Figure 3. Gap matrix: corpus coverage by gap and prior-effort axis</text>
+  <text x="8" y="29" font-size="7" fill="#444444">Filled cells carry a representative card slug; cells with vermillion dashed border indicate uncovered combinations.</text>
+
+  <!-- Column headers, full Cell Press blue with adequate contrast for white text on all four -->
+  <!-- Column widths: row label gutter 130pt, then 4 data columns of (493-130)/4 = 91pt -->
+  <rect x="130" y="42" width="91" height="22" fill="#0072B2"/>
+  <text x="175.5" y="56" font-size="7" font-weight="600" fill="#ffffff" text-anchor="middle">cinematic fMRI</text>
+
+  <rect x="221" y="42" width="91" height="22" fill="#0072B2" fill-opacity="0.92"/>
+  <text x="266.5" y="56" font-size="7" font-weight="600" fill="#ffffff" text-anchor="middle">naturalistic scalp EEG</text>
+
+  <rect x="312" y="42" width="91" height="22" fill="#0072B2" fill-opacity="0.86"/>
+  <text x="357.5" y="56" font-size="7" font-weight="600" fill="#ffffff" text-anchor="middle">intracranial / MEG</text>
+
+  <rect x="403" y="42" width="90" height="22" fill="#0072B2" fill-opacity="0.82"/>
+  <text x="448" y="56" font-size="7" font-weight="600" fill="#ffffff" text-anchor="middle">behavioural / eye-tracking</text>
+
+  <!-- Data rows: y=64 + 8*32 = 320; row height 32pt -->
+  <!-- Row label gutter colour: very light grey -->
+
+  <!-- Gap 1 -->
+  <rect x="0" y="64" width="130" height="32" fill="#fafafa" stroke="#dddddd" stroke-width="0.4"/>
+  <text x="6" y="76" font-size="7" font-weight="600" fill="#000000">Gap 1</text>
+  <text x="6" y="85" font-size="6.5" fill="#000000">Child-cohort EEG ERSP at</text>
+  <text x="6" y="93" font-size="6.5" fill="#000000">shot onsets in animation</text>
+
+  <rect x="130" y="64" width="91" height="32" fill="#0072B2" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="175.5" y="80" font-size="6" text-anchor="middle">richardson-saxe-2018</text>
+  <text x="175.5" y="89" font-size="6" text-anchor="middle">vanderwal-2015-inscapes</text>
+
+  <rect x="221" y="64" width="91" height="32" fill="#D55E00" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="266.5" y="77" font-size="6" text-anchor="middle">petroni-cohen-2018</text>
+  <text x="266.5" y="85" font-size="6" text-anchor="middle">(whole-clip ISC,</text>
+  <text x="266.5" y="93" font-size="6" text-anchor="middle">not per-shot ERSP)</text>
+
+  <rect x="312" y="64" width="91" height="32" fill="#009E73" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="357.5" y="80" font-size="6" text-anchor="middle">nentwich-2023</text>
+  <text x="357.5" y="89" font-size="6" text-anchor="middle">(adult iEEG)</text>
+
+  <rect x="403" y="64" width="90" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="448" y="83" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <!-- Gap 2 -->
+  <rect x="0" y="96" width="130" height="32" fill="#fafafa" stroke="#dddddd" stroke-width="0.4"/>
+  <text x="6" y="108" font-size="7" font-weight="600" fill="#000000">Gap 2</text>
+  <text x="6" y="117" font-size="6.5" fill="#000000">LLR as continuous regressor</text>
+  <text x="6" y="125" font-size="6.5" fill="#000000">in EEG ERSP</text>
+
+  <rect x="130" y="96" width="91" height="32" fill="#0072B2" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="175.5" y="112" font-size="6" text-anchor="middle">kauttonen-2015</text>
+  <text x="175.5" y="121" font-size="6" text-anchor="middle">(multi-feature fMRI)</text>
+
+  <rect x="221" y="96" width="91" height="32" fill="#D55E00" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="266.5" y="112" font-size="6" text-anchor="middle">kaneshiro-2021</text>
+  <text x="266.5" y="121" font-size="6" text-anchor="middle">(envelope-only audio)</text>
+
+  <rect x="312" y="96" width="91" height="32" fill="#009E73" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="357.5" y="112" font-size="6" text-anchor="middle">nentwich-2023</text>
+  <text x="357.5" y="121" font-size="6" text-anchor="middle">(motion &gt; luminance)</text>
+
+  <rect x="403" y="96" width="90" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="448" y="115" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <!-- Gap 3 -->
+  <rect x="0" y="128" width="130" height="32" fill="#fafafa" stroke="#dddddd" stroke-width="0.4"/>
+  <text x="6" y="140" font-size="7" font-weight="600" fill="#000000">Gap 3</text>
+  <text x="6" y="149" font-size="6.5" fill="#000000">Pet- or animal-evoked</text>
+  <text x="6" y="157" font-size="6.5" fill="#000000">affective EEG in children</text>
+
+  <rect x="130" y="128" width="91" height="32" fill="#0072B2" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="175.5" y="144" font-size="6" text-anchor="middle">stoeckel-2014</text>
+  <text x="175.5" y="153" font-size="6" text-anchor="middle">glocker-2009</text>
+
+  <rect x="221" y="128" width="91" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="266.5" y="147" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <rect x="312" y="128" width="91" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="357.5" y="147" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <rect x="403" y="128" width="90" height="32" fill="#CC79A7" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="448" y="144" font-size="6" text-anchor="middle">borgi-2014</text>
+  <text x="448" y="153" font-size="6" text-anchor="middle">(3-6 yr cuteness)</text>
+
+  <!-- Gap 4 -->
+  <rect x="0" y="160" width="130" height="32" fill="#fafafa" stroke="#dddddd" stroke-width="0.4"/>
+  <text x="6" y="172" font-size="7" font-weight="600" fill="#000000">Gap 4</text>
+  <text x="6" y="181" font-size="6.5" fill="#000000">Silent-narrative ERSP at</text>
+  <text x="6" y="189" font-size="6.5" fill="#000000">0-500 ms event boundaries</text>
+
+  <rect x="130" y="160" width="91" height="32" fill="#0072B2" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="175.5" y="176" font-size="6" text-anchor="middle">castelli-2000</text>
+  <text x="175.5" y="185" font-size="6" text-anchor="middle">naci-2014, vanderwal-2015</text>
+
+  <rect x="221" y="160" width="91" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="266.5" y="179" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <rect x="312" y="160" width="91" height="32" fill="#009E73" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="357.5" y="176" font-size="6" text-anchor="middle">lankinen-2014</text>
+  <text x="357.5" y="185" font-size="6" text-anchor="middle">(silent-visual MEG, N=8)</text>
+
+  <rect x="403" y="160" width="90" height="32" fill="#CC79A7" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="448" y="179" font-size="6" text-anchor="middle">magliano-2011</text>
+
+  <!-- Gap 5 -->
+  <rect x="0" y="192" width="130" height="32" fill="#fafafa" stroke="#dddddd" stroke-width="0.4"/>
+  <text x="6" y="204" font-size="7" font-weight="600" fill="#000000">Gap 5</text>
+  <text x="6" y="213" font-size="6.5" fill="#000000">Cross-strand multi-regressor</text>
+  <text x="6" y="221" font-size="6.5" fill="#000000">per-shot ERSP model</text>
+
+  <rect x="130" y="192" width="91" height="32" fill="#0072B2" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="175.5" y="211" font-size="6" text-anchor="middle">kauttonen-2015</text>
+
+  <rect x="221" y="192" width="91" height="32" fill="#D55E00" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="266.5" y="207" font-size="6" text-anchor="middle">madsen-parra-2022</text>
+  <text x="266.5" y="216" font-size="6" text-anchor="middle">dmochowski-2012</text>
+
+  <rect x="312" y="192" width="91" height="32" fill="#009E73" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="357.5" y="211" font-size="6" text-anchor="middle">nentwich-2023</text>
+
+  <rect x="403" y="192" width="90" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="448" y="211" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <!-- Gap 6 -->
+  <rect x="0" y="224" width="130" height="32" fill="#fafafa" stroke="#dddddd" stroke-width="0.4"/>
+  <text x="6" y="236" font-size="7" font-weight="600" fill="#000000">Gap 6</text>
+  <text x="6" y="245" font-size="6.5" fill="#000000">Free-viewing EEG without</text>
+  <text x="6" y="253" font-size="6.5" fill="#000000">synchronous eye tracker</text>
+
+  <rect x="130" y="224" width="91" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="175.5" y="243" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <rect x="221" y="224" width="91" height="32" fill="#D55E00" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="266.5" y="240" font-size="6" text-anchor="middle">dimigen-2011</text>
+  <text x="266.5" y="249" font-size="6" text-anchor="middle">ploechl-2012 (with tracker)</text>
+
+  <rect x="312" y="224" width="91" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="357.5" y="243" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <rect x="403" y="224" width="90" height="32" fill="#CC79A7" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="448" y="240" font-size="6" text-anchor="middle">dorr-2010</text>
+  <text x="448" y="249" font-size="6" text-anchor="middle">klin-2002, klin-2009</text>
+
+  <!-- Gap 7 -->
+  <rect x="0" y="256" width="130" height="32" fill="#fafafa" stroke="#dddddd" stroke-width="0.4"/>
+  <text x="6" y="268" font-size="7" font-weight="600" fill="#000000">Gap 7</text>
+  <text x="6" y="277" font-size="6.5" fill="#000000">Mu-band action-observation</text>
+  <text x="6" y="285" font-size="6.5" fill="#000000">EEG to animated agents</text>
+
+  <rect x="130" y="256" width="91" height="32" fill="#0072B2" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="175.5" y="272" font-size="6" text-anchor="middle">rizzolatti-2004</text>
+  <text x="175.5" y="281" font-size="6" text-anchor="middle">iacoboni-2009</text>
+
+  <rect x="221" y="256" width="91" height="32" fill="#D55E00" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="266.5" y="272" font-size="6" text-anchor="middle">hari-1998, pineda-2005</text>
+  <text x="266.5" y="281" font-size="6" text-anchor="middle">oberman-2007 (adult hand)</text>
+
+  <rect x="312" y="256" width="91" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="357.5" y="275" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <rect x="403" y="256" width="90" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="448" y="275" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <!-- Gap 8 -->
+  <rect x="0" y="288" width="130" height="32" fill="#fafafa" stroke="#dddddd" stroke-width="0.4"/>
+  <text x="6" y="300" font-size="7" font-weight="600" fill="#000000">Gap 8</text>
+  <text x="6" y="309" font-size="6.5" fill="#000000">Frontal alpha asymmetry at</text>
+  <text x="6" y="317" font-size="6.5" fill="#000000">sub-second naturalistic scale</text>
+
+  <rect x="130" y="288" width="91" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="175.5" y="307" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <rect x="221" y="288" width="91" height="32" fill="#D55E00" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+  <text x="266.5" y="304" font-size="6" text-anchor="middle">davidson-2000, coan-2004</text>
+  <text x="266.5" y="313" font-size="6" text-anchor="middle">codispoti-2023 (seconds)</text>
+
+  <rect x="312" y="288" width="91" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="357.5" y="307" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <rect x="403" y="288" width="90" height="32" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="448" y="307" font-size="6.5" font-weight="600" fill="#D55E00" text-anchor="middle">no coverage</text>
+
+  <!-- Legend -->
+  <g>
+    <rect x="8" y="335" width="9" height="9" fill="#0072B2" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+    <text x="20" y="343" font-size="6.5" fill="#000000">cinematic fMRI</text>
+
+    <rect x="100" y="335" width="9" height="9" fill="#D55E00" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+    <text x="112" y="343" font-size="6.5" fill="#000000">naturalistic scalp EEG</text>
+
+    <rect x="220" y="335" width="9" height="9" fill="#009E73" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+    <text x="232" y="343" font-size="6.5" fill="#000000">intracranial / MEG</text>
+
+    <rect x="328" y="335" width="9" height="9" fill="#CC79A7" fill-opacity="0.10" stroke="#cccccc" stroke-width="0.4"/>
+    <text x="340" y="343" font-size="6.5" fill="#000000">behavioural / eye-tracking</text>
+
+    <rect x="446" y="335" width="9" height="9" fill="#ffffff" stroke="#D55E00" stroke-width="1.2" stroke-dasharray="3 2"/>
+    <text x="458" y="343" font-size="6.5" font-weight="600" fill="#D55E00">no coverage</text>
+  </g>
+
+  <text x="8" y="362" font-size="6" fill="#666666">Source: research/synthesis/gap-analysis.md three-column coverage table. Cards listed are representative.</text>
+</svg>

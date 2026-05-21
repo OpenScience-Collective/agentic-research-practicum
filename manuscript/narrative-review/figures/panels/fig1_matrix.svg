@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Figure 1 panel. viewBox in pt (1 user unit = 1pt) so font-sizes are pt directly.
+     Physical size: 174mm x 130mm (Cell Press two-column).
+     493pt x 369pt = 174mm x 130mm (1mm = 2.835pt). -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="174mm" height="130mm" viewBox="0 0 493 369"
+     font-family="Helvetica, Arial, sans-serif">
+  <title>Figure 1 panel. Four-perspective strand map.</title>
+  <desc>4 perspective columns by 15 theme rows. Filled circles = substantial; outlined = peripheral.</desc>
+
+  <rect width="493" height="369" fill="#ffffff"/>
+
+  <text x="8" y="16" font-size="11" font-weight="600" fill="#000000">Figure 1. Four-perspective strand map</text>
+  <text x="8" y="29" font-size="7" fill="#444444">Perspectives (columns) by corpus themes (rows). Filled circles denote substantial contribution.</text>
+
+  <!-- Column header rects -->
+  <rect x="184" y="42" width="62" height="17" fill="#0072B2" rx="2"/>
+  <text x="215" y="54" font-size="7.5" font-weight="600" fill="#ffffff" text-anchor="middle">Psychophysics</text>
+
+  <rect x="258" y="42" width="62" height="17" fill="#D55E00" rx="2"/>
+  <text x="289" y="54" font-size="7.5" font-weight="600" fill="#ffffff" text-anchor="middle">Action</text>
+
+  <rect x="332" y="42" width="62" height="17" fill="#009E73" rx="2"/>
+  <text x="363" y="54" font-size="7.5" font-weight="600" fill="#ffffff" text-anchor="middle">Language</text>
+
+  <rect x="406" y="42" width="62" height="17" fill="#CC79A7" rx="2"/>
+  <text x="437" y="54" font-size="7.5" font-weight="600" fill="#ffffff" text-anchor="middle">Emotion</text>
+
+  <!-- 15 rows; row 1 baseline y=80, step 16 pt. Circles at cy = baseline - 4 -->
+
+  <text x="8" y="80" font-size="7" fill="#000000">1. Inter-subject correlation (ISC) as reliability metric</text>
+  <circle cx="215" cy="76" r="4.5" fill="#0072B2"/>
+  <circle cx="289" cy="76" r="4.5" fill="#D55E00"/>
+  <circle cx="363" cy="76" r="4.5" fill="#009E73"/>
+  <circle cx="437" cy="76" r="4.5" fill="#CC79A7"/>
+
+  <text x="8" y="96" font-size="7" fill="#000000">2. Event boundaries and segmentation</text>
+  <circle cx="215" cy="92" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="289" cy="92" r="4.5" fill="#D55E00"/>
+  <circle cx="363" cy="92" r="4.5" fill="#009E73"/>
+  <circle cx="437" cy="92" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+
+  <text x="8" y="112" font-size="7" fill="#000000">3. Naturalness gradient of stimuli</text>
+  <circle cx="215" cy="108" r="4.5" fill="#0072B2"/>
+  <circle cx="289" cy="108" r="4.5" fill="#D55E00"/>
+  <circle cx="363" cy="108" r="4.5" fill="#009E73"/>
+  <circle cx="437" cy="108" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+
+  <text x="8" y="128" font-size="7" fill="#000000">4. Low-level feature regressors</text>
+  <circle cx="215" cy="124" r="4.5" fill="#0072B2"/>
+  <circle cx="289" cy="124" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="363" cy="124" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="437" cy="124" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+
+  <text x="8" y="144" font-size="7" fill="#000000">5. Time-resolved EEG/MEG to dynamic input</text>
+  <circle cx="215" cy="140" r="4.5" fill="#0072B2"/>
+  <circle cx="289" cy="140" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="363" cy="140" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="437" cy="140" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+
+  <text x="8" y="160" font-size="7" fill="#000000">6. Mu rhythm and action observation</text>
+  <circle cx="215" cy="156" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="289" cy="156" r="4.5" fill="#D55E00"/>
+  <circle cx="363" cy="156" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="437" cy="156" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+
+  <text x="8" y="176" font-size="7" fill="#000000">7. Affective dynamics and emotion-driven engagement</text>
+  <circle cx="215" cy="172" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="289" cy="172" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="363" cy="172" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="437" cy="172" r="4.5" fill="#CC79A7"/>
+
+  <text x="8" y="192" font-size="7" fill="#000000">8. Social cognition, ToM, mentalising</text>
+  <circle cx="215" cy="188" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="289" cy="188" r="4.5" fill="#D55E00"/>
+  <circle cx="363" cy="188" r="4.5" fill="#009E73"/>
+  <circle cx="437" cy="188" r="4.5" fill="#CC79A7"/>
+
+  <text x="8" y="208" font-size="7" fill="#000000">9. Language models as transcript-based regressors</text>
+  <circle cx="215" cy="204" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="289" cy="204" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="363" cy="204" r="4.5" fill="#009E73"/>
+  <circle cx="437" cy="204" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+
+  <text x="8" y="224" font-size="7" fill="#000000">10. Audiovisual integration and crossmodal coupling</text>
+  <circle cx="215" cy="220" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="289" cy="220" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="363" cy="220" r="4.5" fill="#009E73"/>
+  <circle cx="437" cy="220" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+
+  <text x="8" y="240" font-size="7" fill="#000000">11. Free-viewing EEG with eye-movement coregistration</text>
+  <circle cx="215" cy="236" r="4.5" fill="#0072B2"/>
+  <circle cx="289" cy="236" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="363" cy="236" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="437" cy="236" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+
+  <text x="8" y="256" font-size="7" fill="#000000">12. Pet, animal, and baby-schema affective response</text>
+  <circle cx="215" cy="252" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="289" cy="252" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="363" cy="252" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="437" cy="252" r="4.5" fill="#CC79A7"/>
+
+  <text x="8" y="272" font-size="7" fill="#000000">13. Developmental neuroimaging in cinematic paradigms</text>
+  <circle cx="215" cy="268" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="289" cy="268" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="363" cy="268" r="4.5" fill="#009E73"/>
+  <circle cx="437" cy="268" r="4.5" fill="#CC79A7"/>
+
+  <text x="8" y="288" font-size="7" fill="#000000">14. Distributed multivariate signatures vs locationism</text>
+  <circle cx="215" cy="284" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="289" cy="284" r="4.5" fill="#D55E00"/>
+  <circle cx="363" cy="284" r="4.5" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="437" cy="284" r="4.5" fill="#CC79A7"/>
+
+  <text x="8" y="304" font-size="7" fill="#000000">15. Predictive processing across modalities</text>
+  <circle cx="215" cy="300" r="4.5" fill="#0072B2"/>
+  <circle cx="289" cy="300" r="4.5" fill="#D55E00"/>
+  <circle cx="363" cy="300" r="4.5" fill="#009E73"/>
+  <circle cx="437" cy="300" r="4.5" fill="#CC79A7"/>
+
+  <!-- Legend at y=326 -->
+  <text x="8" y="328" font-size="6.5" font-weight="600" fill="#000000">Legend.</text>
+  <circle cx="62" cy="325" r="4" fill="#0072B2"/>
+  <circle cx="73" cy="325" r="4" fill="#D55E00"/>
+  <circle cx="84" cy="325" r="4" fill="#009E73"/>
+  <circle cx="95" cy="325" r="4" fill="#CC79A7"/>
+  <text x="105" y="328" font-size="6.5" fill="#000000">substantial (coloured by perspective)</text>
+  <circle cx="306" cy="325" r="4" fill="none" stroke="#888" stroke-width="1"/>
+  <text x="314" y="328" font-size="6.5" fill="#000000">absent or peripheral</text>
+
+  <text x="8" y="356" font-size="6" fill="#666666">Source: research/synthesis/science-map.md (cross-strand summary of 98 paper cards).</text>
+</svg>
