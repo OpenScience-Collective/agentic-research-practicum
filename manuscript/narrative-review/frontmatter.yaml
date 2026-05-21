@@ -1,0 +1,42 @@
+# TiCS Forum Review — frontmatter.
+#
+# Built by manuscript:manuscript-formatting in v2 Phase 1.
+# Matches the skill's "Title page" submission-checklist item.
+
+title: "Per-shot EEG during naturalistic film: a four-perspective developmental review"
+short_title: "Per-shot EEG in development"
+article_type: "Forum Review"
+target_journal: "Trends in Cognitive Sciences"
+
+authors:
+  - name: "Seyed Yahya Shirazi"
+    affiliation: 1
+    email: "shirazi@ieee.org"
+    orcid: ""    # to be filled by author
+    corresponding: true
+
+affiliations:
+  - id: 1
+    name: "Open Science Collective"
+
+keywords: []   # TiCS Forum Reviews do not require keywords; left empty intentionally
+
+status: "v2 Phase 1 scaffold (manuscript-formatting)"
+date: "2026-05-20"
+
+# Word budget map (TiCS Forum Review)
+word_budget:
+  main_text: 4000        # ceiling
+  abstract: 120          # ceiling
+  highlights_chars_per_bullet: 85
+  references_target_low: 80
+  references_target_high: 120
+  figures_min: 3
+  figures_max: 5
+
+# Compliance flags for Phase 5 verification
+compliance:
+  no_em_dashes: true
+  no_emojis: true
+  abbreviations_defined_on_first_use: true
+  italicise_film_titles: true
