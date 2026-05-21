@@ -1,35 +1,17 @@
 <!-- Section 4: Action. Budget: ~500 words.
 Filled by manuscript:manuscript-writing in v2 Phase 2.
-
+Skill pattern applied: Writing Principles only.
 Carry-forwards from v1 self-review:
-- I3 (Hickok critique): explicitly name the mu-system critique tradition and temper the prediction.
+- I3 (Hickok critique): explicitly named and weighted.
+- m8 (Klin autism moves to Section 7 limitations, not here).
 -->
 
 # 4. Action: mu-band ERD and event segmentation
 
-[Paragraph 1 (~150 words): mu-band lineage.
-- Hari et al. 1998 MEG: primary motor cortex activated during passive observation of hand action via 15-25 Hz rolandic rebound suppression (31-46% of execution-related suppression).
-- Pineda 2005: EEG mu rhythm (8-13 Hz over C3, Cz, C4) as non-invasive proxy for human mirror-system engagement.
-- Oberman et al. 2007: mu suppression magnitude correlates with self-reported social skill.
-- Saygin 2007: lesion-symptom mapping places posterior STS and ventral premotor cortex as causally necessary nodes for biological-motion perception. Johansson 1973 (biological motion).
-- Predictive-coding reformulations: Kilner et al. 2007; Rizzolatti and Craighero 2004; Iacoboni 2009.
-- **I3 carry-forward**: Hickok-style critiques of one-to-one mirror-system interpretations of mu suppression are not represented in the corpus and temper the weight that the action-perspective prediction can carry.]
+The action perspective makes the most specific positive prediction in the 0 to 500 ms ERSP window. Hari and colleagues showed by magnetoencephalography (MEG) that primary motor cortex is activated during passive observation of hand action via 15 to 25 Hz rolandic rebound suppression that reaches 31 to 46 percent of execution-related suppression [hari1998action]. Pineda framed the EEG mu rhythm (8 to 13 Hz over electrodes C3, Cz, and C4) as a non-invasive proxy for human mirror-system engagement [pineda2005mu]. Mu suppression magnitude during action observation correlates with self-reported social skill across neurotypical adults [oberman2007mirror]. Lesion-symptom mapping places posterior superior temporal sulcus (STS) and ventral premotor cortex as causally necessary nodes for biological-motion perception [saygin2007sts; johansson1973biological]. Predictive-coding reformulations recast mirror responses as scaling with prediction error over goal and intention [kilner2007predictive; rizzolatti2004mirror; iacoboni2009mirror]. The mirror-system framing has well-known critiques outside the corpus, in particular Hickok-style objections to one-to-one mirror-interpretations of mu suppression; the absence of these critiques inside the corpus tempers the weight that the action prediction can carry.
 
-[Paragraph 2 (~100 words): animated-agent extrapolation.
-- Heider-Simmel triangle animations (Castelli et al. 2000): even abstract triangles recruit posterior STS, mPFC, and temporal poles when motion implies intention.
-- Naturalness gradient (Hasson et al. 2010) places character animation between abstract Heider-Simmel and live-action.
-- The inferential bridge from triangle-animation fMRI activation to character-animation mu-band EEG ERD is plausible and untested.
-- Shots dominated by character action should produce ERD in the mu band over central electrodes, with possible beta-band rebound suppression.]
+Even with that tempering, the prediction is specific. Shots dominated by character action should produce ERD in the mu band over central electrodes, with possible beta-band rebound suppression. The Heider-Simmel tradition shows that even abstract triangle animations recruit posterior STS, medial prefrontal cortex, and temporal poles when motion implies intention [castelli2000heider]. The naturalness gradient places character animation between abstract Heider-Simmel and live-action [hasson2010natural]. The inferential bridge from triangle-animation fMRI activation to character-animation mu-band EEG ERD is plausible and untested at scalp-EEG resolution.
 
-[Paragraph 3 (~150 words): event segmentation as second action beat.
-- Speer et al. 2007: posterior cingulate, MT+, posterior STS boundary-locked transients in fMRI.
-- Baldassano et al. 2017: HMM recovers hierarchy of event boundaries from Sherlock fMRI; hippocampal boundary signals predict subsequent free recall.
-- Lerner et al. 2011: temporal receptive windows from sensory cortex (ms) to default-mode (tens of s).
-- Chen et al. 2017: event-specific DMN patterns shared across viewers and reactivated at recall.
-- Ben-Yakov and Henson 2018: hippocampus distinguishes within-event camera cuts (minimal response) from across-event narrative boundaries (robust response).
-- Magliano and Zacks 2011: behavioural foundation for shot-segmentation independent of dialogue.]
+The second action beat is event segmentation. Speer and colleagues found posterior cingulate, middle-temporal, and posterior STS boundary-locked transients in fMRI during narrative listening [speer2007narrative]. Baldassano and colleagues recovered a hierarchy of event boundaries from Sherlock-movie fMRI using hidden Markov models, with hippocampal boundary signals predicting subsequent free recall [baldassano2017event]. Lerner and colleagues mapped temporal receptive windows from sensory cortex (milliseconds) to default-mode regions (tens of seconds) [lerner2011temporal]. Chen and colleagues showed event-specific patterns in the default-mode network are shared across viewers and reactivated at recall [chen2017shared]. Ben-Yakov and Henson distinguished within-event camera cuts, which produce minimal hippocampal responses, from across-event narrative boundaries, which produce robust ones [Ben-Yakov2018TheHF]. Magliano and Zacks supplied the behavioural foundation that viewers segment edited films along cuts independent of dialogue [Magliano2011TheIO].
 
-[Paragraph 4 (~100 words): single-agent vs two-agent contrast.
-- Sliwa and Freiwald 2017: dedicated cortical network in macaque for two-agent social interaction, separable from single-agent action perception.
-- This motivates excluding two-agent shots from a clean single-agent contrast (the social-interaction network may dominate two-agent variance).
-- Note that autism subsample considerations (Klin et al. 2002, 2009) move to Section 7 limitations (per v1 m8 carry-forward to keep Section 4 focused).]
+A third action beat concerns single-agent versus two-agent shots. Sliwa and Freiwald documented a dedicated cortical network in macaque for processing two-agent social interaction, separable from single-agent action perception [sliwa2017macaque]. This motivates excluding two-agent shots from a clean single-agent contrast, since the social-interaction network may dominate two-agent variance.

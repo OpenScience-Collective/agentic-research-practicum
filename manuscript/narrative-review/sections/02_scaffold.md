@@ -1,27 +1,17 @@
 <!-- Section 2: Four-perspective scaffold. Budget: ~600 words.
 Filled by manuscript:manuscript-writing in v2 Phase 2.
-
+Skill pattern applied: Writing Principles only (Clarity, Precision, Flow,
+Citations). The skill's IMRAD templates do not cover perspective scaffolding
+in narrative reviews; reported up front.
 Carry-forwards from v1 self-review:
-- I4 (cohesion): explicit bridge from Section 1 thesis to perspective body in Section 3.
-- I4 (theme catalogue): paragraph 2 must be argumentative, not an inventory of all 15 themes.
+- I4 (cohesion): explicit bridge from Section 1 thesis at open, Section 3 at close.
+- I4 (theme catalogue): perspective-driven paragraph, not 15-theme enumeration.
 -->
 
 # 2. The four-perspective scaffold
 
-[Paragraph 1 (~200 words): defend the four-perspective scaffold as structural rather than decorative. Each perspective makes a different *kind* of prediction:
-- Psychophysics: a regressor of no interest that must be partialled before any social claim can be defended (LLR; motion energy).
-- Action: a band-and-topography prediction (mu-band ERD over central rolandic cortex) inherited from adult mirror-system work but never tested in animated agents.
-- Language: a method that structurally cannot transfer (LM surprisal aligned to spoken transcripts) plus a positive silent-narrative sub-thread (Castelli, Vanderwal, Naci, Lankinen).
-- Emotion: two predictions at incompatible latencies (early occipital alpha; later frontal-asymmetric alpha).
-Together the four form a hierarchy of prior-evidence depth that the data can rerank.]
+The four-perspective scaffold is structural rather than decorative. Each perspective makes a different *kind* of prediction. Psychophysics names a regressor of no interest that must be partialled before any social claim can be defended; the regressor is LLR, with motion energy as a named follow-up. Action names a band-and-topography prediction: mu-band event-related desynchronisation (ERD) over central rolandic cortex, inherited from adult mirror-system work [hari1998action; pineda2005mu] but never tested in animated agents. Language names a method that structurally cannot transfer (language-model surprisal aligned to spoken transcripts) plus a positive sub-thread of silent-narrative findings that does transfer (Castelli's Heider-Simmel triangle paradigm [castelli2000heider], Vanderwal's Inscapes [Vanderwal2015InscapesAM], Naci's Hitchcock excerpt [Naci2014ACN], Lankinen's silent-visual MEG ISC [Lankinen2014IntersubjectCO]). Emotion names two predictions at incompatible latencies: early occipital alpha desynchronisation and later frontal-asymmetric alpha. The four perspectives form a hierarchy of prior-evidence depth that the data can rerank.
 
-[Paragraph 2 (~250 words): perspective-to-theme mapping (per I4 carry-forward: argumentative, not catalogue). Use the 15 corpus themes from `research/synthesis/science-map.md`. Group themes by which perspective owns them, not by theme number.
-- Two cross-perspective backbones: Theme 1 (ISC as reliability metric) and Theme 2 (event segmentation). These anchor every per-shot analysis.
-- Psychophysics-owned: Themes 4 (low-level feature regressors), 5 (time-resolved EEG/MEG), 11 (free-viewing EEG with eye coregistration).
-- Action-owned: Themes 6 (mu rhythm and action observation), 8 (social cognition through biological motion), with contributions to Themes 2 and 14 (distributed multivariate signatures).
-- Language-owned: Theme 9 (LMs as regressors) and Theme 10 (audiovisual integration); silent-narrative sub-thread cuts across Themes 8 and 13 (developmental neuroimaging in cinematic paradigms).
-- Emotion-owned: Themes 7 (affective dynamics), 12 (pet/animal/baby-schema), 13.
-- Theme 15 (predictive processing) is a cross-perspective unifier.
-Forward-reference Figures 1 and 4.]
+Two themes anchor the analytic backbone independent of perspective. Theme 1, inter-subject correlation as a reliability metric, originated in fMRI [Hasson2004IntersubjectSO] and migrated to scalp EEG [dmochowski2012correlated], MEG [Lankinen2014IntersubjectCO], peripheral physiology [Madsen2022CognitivePO], and audience prediction [Dmochowski2014AudiencePA]. Theme 2, event segmentation, anchors in event-segmentation theory and hidden-Markov-model event-state recovery [zacks2007event; baldassano2017event; speer2007narrative; Ben-Yakov2018TheHF]. The four perspectives then sit in specific corners of the theme space. Psychophysics owns Themes 4 (low-level feature regressors) [Adelson1985SpatiotemporalEM; Carandini2011NormalizationAA; Nishimoto2011ReconstructingVE], 5 (time-resolved EEG and MEG), and 11 (free-viewing EEG with eye coregistration). Action owns Themes 6 (mu rhythm and action observation) [hari1998action; pineda2005mu] and 8 (social cognition through biological motion), and contributes to Themes 2 and 14 (distributed multivariate signatures). Language owns Theme 9 (LMs as regressors) [Goldstein2022SharedCP; Caucheteux2022BrainsAA] as a structural comparator and Theme 10 (audiovisual integration); the silent-narrative sub-thread cuts across Themes 8 and 13 (developmental neuroimaging in cinematic paradigms). Emotion owns Themes 7 (affective dynamics), 12 (pet, animal, and baby-schema affective response), and 13. Theme 15 (predictive processing) unifies across perspectives: it ties mu-band ERD to mirror-system prediction error, LM surprisal to next-word prediction, and event boundaries to prediction-error transients. Theme 3 (naturalness gradient; Figure 2) places the stimulus on a continuum from controlled gratings to live-action film, with character animation as the intermediate point that motivates the empty-cell framing.
 
-[Paragraph 3 (~150 words): perspective interaction is intentional, not residual. Briefly preview the synthesis in Section 7 (where the four rejection regions combine into a pre-registerable test). Explicit transition to Section 3.]
+Perspective overlap is intentional rather than residual. The four perspectives interact at the per-shot ERSP level rather than partitioning variance cleanly. Sections 3 to 6 develop them in order, naming the band-by-topography signature each makes and the falsification region attached to each (Figure 4). Section 7 closes by combining the four rejection regions into a single pre-registerable test before group analysis. Section 3 begins with psychophysics because the bottom-up floor must be cleared before any higher-order claim can be defended.

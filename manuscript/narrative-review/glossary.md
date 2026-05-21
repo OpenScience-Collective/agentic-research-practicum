@@ -1,38 +1,36 @@
 <!-- Glossary. 10-15 defined terms. Each definition <=50 words.
-TiCS convention; not in the manuscript-formatting SKILL.md but is required for TiCS Forum Reviews.
+TiCS convention; not in SKILL.md.
 Filled by manuscript:manuscript-writing in v2 Phase 2.
 -->
 
 # Glossary
 
-[Each entry follows the pattern: **Term (acronym if any).** Definition sentence(s), <=50 words.]
+**Event-related spectral perturbation (ERSP).** A time-frequency representation of the change in spectral power (and optionally inter-trial phase coherence) at each frequency and latency relative to an event, computed by averaging single-trial power spectrograms after subtracting a baseline window.
 
-**Event-related spectral perturbation (ERSP).** [Definition placeholder.]
+**Inter-subject correlation (ISC).** The Pearson correlation between time courses of different participants viewing the same stimulus, computed voxel-wise (fMRI) or component-wise (EEG and MEG); a stimulus-locked reliability metric.
 
-**Inter-subject correlation (ISC).** [Definition placeholder.]
+**Log luminance ratio (LLR).** The base-10 logarithm of the ratio of mean luminance in the first post-shot frame to the mean luminance in the last pre-shot frame; a per-shot stimulus-side regressor of the visual transient at shot onset.
 
-**Log luminance ratio (LLR).** [Definition placeholder.]
+**Adaptive mixture independent component analysis (AMICA).** A multi-model extension of ICA that estimates a mixture of ICA decompositions, used in EEGLAB-style pipelines for artifact-resistant source separation.
 
-**Adaptive mixture independent component analysis (AMICA).** [Definition placeholder.]
+**IC classification (ICLabel).** An automated classifier that labels independent components as brain, muscle, eye, heart, line noise, channel noise, or other.
 
-**IC classification (ICLabel).** [Definition placeholder.]
+**Mu rhythm.** An 8 to 13 Hz oscillation over central rolandic electrodes (C3, Cz, C4) that desynchronises during motor execution and during observation of others' actions.
 
-**Mu rhythm.** [Definition placeholder.]
+**Event-related desynchronisation (ERD).** A decrease in spectral power in a specific frequency band time-locked to an event, interpreted as cortical activation in the band's reference resting state.
 
-**Event-related desynchronisation (ERD).** [Definition placeholder.]
+**Frontal alpha asymmetry.** The difference between right and left frontal alpha-band (8 to 13 Hz) power, traditionally framed as an approach-withdrawal index; recent meta-analyses report smaller effects and reliability concerns.
 
-**Frontal alpha asymmetry.** [Definition placeholder.]
+**Default-mode network (DMN).** A set of cortical regions including medial prefrontal cortex, posterior cingulate cortex, and lateral parietal cortex that show coordinated activity during internally directed cognition, narrative comprehension, and rest.
 
-**Default-mode network (DMN).** [Definition placeholder.]
+**Theory of mind (ToM).** The cognitive capacity to attribute mental states (beliefs, desires, intentions) to self and others.
 
-**Theory of mind (ToM).** [Definition placeholder.]
+**Temporal response function (TRF).** A linear filter that maps a continuous stimulus feature to a continuous neural response, fit via regularised regression.
 
-**Temporal response function (TRF).** [Definition placeholder.]
+**Baby schema.** A set of infantile physical features (large head, large eyes, round cheeks) that elicit attentional, affective, and caregiving responses.
 
-**Baby schema.** [Definition placeholder.]
+**Naturalistic stimulus.** A continuous, ecologically valid stimulus (typically a film, audiobook, or video game) presented without trial-by-trial structuring. Naturalness is a continuum from controlled gratings to live-action film, with character animation and abstract Heider-Simmel triangles as intermediate points (Figure 2).
 
-**Naturalistic stimulus.** [Definition placeholder.]
+**Event segmentation.** The cognitive process of parsing continuous experience into discrete events at moments of high prediction error, organised hierarchically.
 
-**Event segmentation.** [Definition placeholder.]
-
-**Temporal receptive window.** [Definition placeholder.]
+**Temporal receptive window.** The span of preceding time over which a brain region integrates information; ranges from milliseconds in primary sensory cortex to tens of seconds in default-mode regions.
